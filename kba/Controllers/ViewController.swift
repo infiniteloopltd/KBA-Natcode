@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UITableViewController {
 
     var SelectedCountry : Countries = .Germany
+    
+    var Code : String = ""
  
     @IBOutlet weak var GermanCell: UITableViewCell!
     
@@ -18,13 +20,10 @@ class ViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+  
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(tableView.indexPathForSelectedRow?.section ?? "?")
@@ -45,6 +44,12 @@ class ViewController: UITableViewController {
         
         tableView.deselectRow(at: indexPath, animated: true)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destination = segue.destination as! ResultsTableViewController
+        destination.Code = Code
+        destination.SelectedCountry = SelectedCountry
+    }
 
     @IBAction func searchButtonPressed(_ sender: UIBarButtonItem) {
     
@@ -64,7 +69,7 @@ class ViewController: UITableViewController {
         
         let action = UIAlertAction(title: "Search", style: UIAlertActionStyle.default) { (alertAction) in
             print(alertText.text!)
-           
+            self.Code = alertText.text!
             // Perform segue
             self.performSegue(withIdentifier: "goToResults", sender: self)
             

@@ -9,6 +9,6 @@
 import Foundation
 
 enum Countries {
-    case Germany
+    case Germany // 0005/ALQ
     case Austria
 }
