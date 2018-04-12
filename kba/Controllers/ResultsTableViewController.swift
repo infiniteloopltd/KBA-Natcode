@@ -24,11 +24,27 @@ class ResultsTableViewController: UITableViewController {
         super.viewDidLoad()
         
         SVProgressHUD.show()
-        CallWebservice(){
+        CallWebservice(){ success in
             SVProgressHUD.dismiss()
+            if !success
+            {
+                self.ShowMessage(title: "Sorry", message: "Failed to find any data")
+            }
         }
         
      
+    }
+    
+    func ShowMessage(title: String, message : String)
+    {
+        
+            let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+
+            alertController.addAction(cancelAction)
+
+            self.present(alertController, animated: true, completion: nil)
     }
     
     func ProcessGermanJson(with codeJson : JSON)
@@ -136,7 +152,7 @@ class ResultsTableViewController: UITableViewController {
     }
     
     
-    func CallWebservice(callback: @escaping () -> Void)
+    func CallWebservice(callback: @escaping (Bool) -> Void)
     {
         var url = ""
         
@@ -159,6 +175,11 @@ class ResultsTableViewController: UITableViewController {
             // To-do: Handle failure case with alert!
             
             print("got Data back")
+            if (response.result.value == nil)
+            {
+                callback(false)
+                return
+            }
             let codeJson : JSON = JSON (response.result.value!)
             print(codeJson)
             
@@ -174,7 +195,7 @@ class ResultsTableViewController: UITableViewController {
             
             self.tableView.reloadData()
             
-            callback()
+            callback(true)
         }
     }
 
