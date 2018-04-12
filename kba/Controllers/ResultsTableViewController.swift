@@ -31,17 +31,9 @@ class ResultsTableViewController: UITableViewController {
      
     }
     
-    func CallWebservice(callback: @escaping () -> Void)
+    func ProcessGermanJson(with codeJson : JSON)
     {
-        let url = "https://www.regcheck.org.uk/api/json.aspx/CheckGermany/0005/ALQ"
-        Alamofire.request(url, method: .get)
-        .authenticate(user: "xxxx", password: "xxxx").responseJSON {
-            response in
-            print("got Data back")
-            let codeJson : JSON = JSON (response.result.value!)
-            print(codeJson)
-            
-            /*
+       /*
              {
                   "Description": "bmw 318 D TOURING",
                   "CarMake": {
@@ -63,29 +55,122 @@ class ResultsTableViewController: UITableViewController {
                   "ImageUrl": "http://www.kbaapi.de/image.aspx/@Ym13IDMxOCBEIFRPVVJJTkc="
                 }
             */
-            
+        
             let description = CarProperty(with: "Description")
             description.Value = codeJson["Description"].string!
             self.Properties.append(description)
-            
+        
             let PowerKW = CarProperty(with: "Power KW")
             PowerKW.Value = String(codeJson["PowerKW"].int!)
             self.Properties.append(PowerKW)
-            
+        
             let PowerHP = CarProperty(with: "Power HP")
             PowerHP.Value = String(codeJson["PowerHP"].int!)
             self.Properties.append(PowerHP)
-            
+        
             let EngineSize = CarProperty(with: "Engine Size")
             EngineSize.Value = String(codeJson["EngineSize"].int!)
             self.Properties.append(EngineSize)
-            
+        
             let Fuel = CarProperty(with: "Fuel")
             Fuel.Value = codeJson["Fuel"].string!
             self.Properties.append(Fuel)
-            
+        
             let image = codeJson["ImageUrl"].string!
             self.imageOfCar.downloadedFrom(link: image)
+    }
+    
+    func ProcessAustrianJson(with codeJson : JSON)
+    {
+        /*
+            {
+              "Description": "Mitsubishi  Colt CZ3 Invite 1,5 DI-D HP Invite , Diesel",
+              "CarMake": {
+                "CurrentTextValue": "Mitsubishi "
+              },
+              "CarModel": {
+                "CurrentTextValue": "Colt 3-tg. Diesel"
+              },
+              "MakeDescription": {
+                "CurrentTextValue": "Mitsubishi "
+              },
+              "ModelDescription": {
+                "CurrentTextValue": "Colt 3-tg. Diesel"
+              },
+              "PowerKW": 70,
+              "PowerHP": 95,
+              "EngineSize": 1493,
+              "IndicativeValue": 16490,
+              "DateRange": "2005-2007",
+              "ImageUrl": "http://www.natcode.at/image.aspx/@TWl0c3ViaXNoaSAgQ29sdCAzLXRnLiBEaWVzZWw="
+            }
+        */
+        
+          let description = CarProperty(with: "Description")
+            description.Value = codeJson["Description"].string!
+            self.Properties.append(description)
+        
+            let PowerKW = CarProperty(with: "Power KW")
+            PowerKW.Value = String(codeJson["PowerKW"].int!)
+            self.Properties.append(PowerKW)
+        
+            let PowerHP = CarProperty(with: "Power HP")
+            PowerHP.Value = String(codeJson["PowerHP"].int!)
+            self.Properties.append(PowerHP)
+        
+            let EngineSize = CarProperty(with: "Engine Size")
+            EngineSize.Value = String(codeJson["EngineSize"].int!)
+            self.Properties.append(EngineSize)
+        
+            let IndicativeValue = CarProperty(with: "IndicativeValue")
+            IndicativeValue.Value = "€" + String(codeJson["IndicativeValue"].int!)
+            self.Properties.append(IndicativeValue)
+        
+            let DateRange = CarProperty(with: "Date Range")
+            DateRange.Value = codeJson["DateRange"].string!
+            self.Properties.append(DateRange)
+        
+        
+            let image = codeJson["ImageUrl"].string!
+            self.imageOfCar.downloadedFrom(link: image)
+    }
+    
+    
+    func CallWebservice(callback: @escaping () -> Void)
+    {
+        var url = ""
+        
+        if self.SelectedCountry == .Germany
+        {
+            // Sample 0005/ALQ
+            url = "https://www.regcheck.org.uk/api/json.aspx/CheckGermany/" + Code
+        }
+
+        if self.SelectedCountry == .Austria
+        {
+            // 128740
+            url = "https://www.regcheck.org.uk/api/json.aspx/CheckAustria/" + Code;
+        }
+     
+        Alamofire.request(url, method: .get)
+        .authenticate(user: "xxx", password: "xxxx").responseJSON {
+            response in
+            
+            // To-do: Handle failure case with alert!
+            
+            print("got Data back")
+            let codeJson : JSON = JSON (response.result.value!)
+            print(codeJson)
+            
+            if self.SelectedCountry == .Germany
+            {
+                self.ProcessGermanJson(with: codeJson)
+            }
+            
+            if self.SelectedCountry == .Austria
+            {
+                self.ProcessAustrianJson(with: codeJson)
+            }
             
             self.tableView.reloadData()
             
