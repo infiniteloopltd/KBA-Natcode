@@ -9,10 +9,7 @@
 import UIKit
 
 class ViewController: UITableViewController {
-
-    var SelectedCountry : Countries = .Germany
-    
-    var Code : String = ""
+  
  
     @IBOutlet weak var GermanCell: UITableViewCell!
     
@@ -30,35 +27,32 @@ class ViewController: UITableViewController {
         
         if (indexPath.section == 0)
         {
-            SelectedCountry = .Germany
+            GlobalSettings.SelectedCountry = .Germany
             GermanCell.accessoryType = .checkmark
             AustrianCell.accessoryType = .none
         }
         
         if (indexPath.section == 1)
         {
-            SelectedCountry = .Austria
+            GlobalSettings.SelectedCountry = .Austria
             GermanCell.accessoryType = .none
             AustrianCell.accessoryType = .checkmark
         }
         
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        performSegue(withIdentifier: "goToMakes", sender: self)
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destination = segue.destination as! ResultsTableViewController
-        destination.Code = Code
-        destination.SelectedCountry = SelectedCountry
-    }
+   
 
     @IBAction func searchButtonPressed(_ sender: UIBarButtonItem) {
     
          var code = ""
-         if SelectedCountry == .Germany
+         if GlobalSettings.SelectedCountry == .Germany
          {
             code = "KBA"
          }
-         if SelectedCountry == .Austria
+         if GlobalSettings.SelectedCountry == .Austria
          {
             code = "Nat Code"
          }
@@ -69,7 +63,7 @@ class ViewController: UITableViewController {
         
         let action = UIAlertAction(title: "Search", style: UIAlertActionStyle.default) { (alertAction) in
             print(alertText.text!)
-            self.Code = alertText.text!
+            GlobalSettings.SelectedCode = alertText.text!
             // Perform segue
             self.performSegue(withIdentifier: "goToResults", sender: self)
             

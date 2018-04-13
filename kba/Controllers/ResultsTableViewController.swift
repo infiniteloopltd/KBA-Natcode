@@ -13,8 +13,7 @@ import SwiftyJSON
 
 class ResultsTableViewController: UITableViewController {
 
-    var SelectedCountry : Countries? = nil
-    var Code : String = ""
+   
     
     var Properties = [CarProperty]()
     
@@ -28,24 +27,14 @@ class ResultsTableViewController: UITableViewController {
             SVProgressHUD.dismiss()
             if !success
             {
-                self.ShowMessage(title: "Sorry", message: "Failed to find any data")
+                Utils.ShowMessage(title: "Sorry", message: "Failed to find any data", controller: self)
             }
         }
         
      
     }
     
-    func ShowMessage(title: String, message : String)
-    {
-        
-            let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        
-            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
 
-            alertController.addAction(cancelAction)
-
-            self.present(alertController, animated: true, completion: nil)
-    }
     
     func ProcessGermanJson(with codeJson : JSON)
     {
@@ -156,20 +145,20 @@ class ResultsTableViewController: UITableViewController {
     {
         var url = ""
         
-        if self.SelectedCountry == .Germany
+        if GlobalSettings.SelectedCountry == .Germany
         {
             // Sample 0005/ALQ
-            url = "https://www.regcheck.org.uk/api/json.aspx/CheckGermany/" + Code
+            url = "https://www.regcheck.org.uk/api/json.aspx/CheckGermany/" + GlobalSettings.SelectedCode
         }
 
-        if self.SelectedCountry == .Austria
+        if GlobalSettings.SelectedCountry == .Austria
         {
             // 128740
-            url = "https://www.regcheck.org.uk/api/json.aspx/CheckAustria/" + Code;
+            url = "https://www.regcheck.org.uk/api/json.aspx/CheckAustria/" + GlobalSettings.SelectedCode;
         }
      
         Alamofire.request(url, method: .get)
-        .authenticate(user: "xxx", password: "xxxx").responseJSON {
+        .authenticate(user: Secret.username , password: Secret.password).responseJSON {
             response in
             
             // To-do: Handle failure case with alert!
@@ -183,12 +172,12 @@ class ResultsTableViewController: UITableViewController {
             let codeJson : JSON = JSON (response.result.value!)
             print(codeJson)
             
-            if self.SelectedCountry == .Germany
+            if GlobalSettings.SelectedCountry == .Germany
             {
                 self.ProcessGermanJson(with: codeJson)
             }
             
-            if self.SelectedCountry == .Austria
+            if GlobalSettings.SelectedCountry == .Austria
             {
                 self.ProcessAustrianJson(with: codeJson)
             }
