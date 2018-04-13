@@ -1,48 +1,34 @@
 
-/* Class = "UITableViewController"; title = "Makes"; ObjectID = "1TB-oJ-CBY"; */
+/* Engish: "Makes" */
 "1TB-oJ-CBY.title" = "Fahrzeugmarken";
 
-/* Class = "UILabel"; text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.\rIn nisl purus, sollicitudin ac sapien eget, mollis tempor\rpurus. Sed nibh massa, pharetra sed tellus a, egestas \rfinibus lacus. In nunc lectus, ullamcorper et lorem ornare,\rtempus auctor velit. Aenean vitae consequat tortor. Aenean\rac neque id nisi aliquet condimentum. Aliquam vel eros tortor.\rNunc elementum non ante non pretium. Orci varius natoque \rpenatibus et magnis dis parturient montes, nascetur ridiculus\rmus.\r\rSed cursus, mi et dictum dictum, quam justo euismod massa,\rut fermentum nulla lectus sed lorem. Ut ut lacus et purus \rfacilisis viverra. Maecenas justo metus, molestie ac dictu\rm et, sodales quis nibh. Praesent posuere nibh sit amet \raugue lobortis, eu consequat lacus mattis. Fusce sed\rgravida lorem. Aliquam auctor dolor vel sapien posuere, \rviverra convallis nunc ultricies. Mauris at lacus sapien."; ObjectID = "1ek-SW-nGi"; */
+/* English: "This app allows you search for German KBA ("Kraftfahrt-Bundesamt") codes, and Austrian NatCode ("Nationaler Code") by searching by make and model, or by entering the code in the search box. We also offer an API that allows businesses to obtain this data automatically. If you are interested in the API, please visit our German or Austrian website below";  */
 "1ek-SW-nGi.text" = "Mit dieser App können Sie nach deutschen KBA\r(\"Kraftfahrt-Bundesamt\") und österreichischen \rNatCode (\"Nationaler Code\") suchen, indem Sie\rnach Marke und Modell suchen oder den Code in \rdas Suchfeld eingeben.\r\rWir bieten auch eine API, mit der Unternehmen \rdiese Daten automatisch erhalten können. Wenn \rSie an der API interessiert sind, besuchen \rSie bitte unsere deutsche oder österreichische\rWebsite unten.";
 
-/* Class = "UILabel"; text = "Title"; ObjectID = "79s-kI-kqJ"; */
-"79s-kI-kqJ.text" = "Titel";
 
-/* Class = "UINavigationItem"; title = "Search"; ObjectID = "8Es-09-kWi"; */
+/* English: "Search"; */
 "8Es-09-kWi.title" = "Suche";
 
-/* Class = "UITableViewController"; title = "Models"; ObjectID = "Hej-UV-y4d"; */
+/* English: "Models"; */
 "Hej-UV-y4d.title" = "Fahrzeugmodelle";
 
-/* Class = "UILabel"; text = "Subtitle"; ObjectID = "IBN-dv-ubQ"; */
-"IBN-dv-ubQ.text" = "Untertitel";
-
-/* Class = "UILabel"; text = "Help"; ObjectID = "KkW-wK-zWC"; */
+/* English:  "Help";  */
 "KkW-wK-zWC.text" = "Hilfe";
 
-/* Class = "UILabel"; text = "Title"; ObjectID = "MG6-pb-CJb"; */
-"MG6-pb-CJb.text" = "Titel";
-
-/* Class = "UIBarButtonItem"; title = "Help"; ObjectID = "VmG-Mr-hRh"; */
+/* English:  "Help"; */
 "VmG-Mr-hRh.title" = "Hilfe";
 
-/* Class = "UILabel"; text = "Germany"; ObjectID = "dyS-uw-o8S"; */
+/* English:  "Germany";  */
 "dyS-uw-o8S.text" = "Deutschland";
 
-/* Class = "UILabel"; text = "Title"; ObjectID = "ehb-ED-UK0"; */
-"ehb-ED-UK0.text" = "Titel";
-
-/* Class = "UILabel"; text = "Title"; ObjectID = "i2T-g2-fvb"; */
-"i2T-g2-fvb.text" = "Titel";
-
-/* Class = "UILabel"; text = "Austria"; ObjectID = "lmm-9u-4mM"; */
+/* English:  "Austria";  */
 "lmm-9u-4mM.text" = "Österreich";
 
-/* Class = "UIButton"; normalTitle = "Visit KBAAPI.de"; ObjectID = "lzZ-ap-4FP"; */
+/* English:  "Visit KBAAPI.de";  */
 "lzZ-ap-4FP.normalTitle" = "Besuchen Sie KBAAPI.de";
 
-/* Class = "UITableViewController"; title = "Variants"; ObjectID = "rX0-R8-2v3"; */
+/* English:  "Variants";  */
 "rX0-R8-2v3.title" = "Fahrzeugvariante";
 
-/* Class = "UIButton"; normalTitle = "Visit NatCode.at"; ObjectID = "uZe-u5-1tB"; */
+/* English: "Visit NatCode.at";  */
 "uZe-u5-1tB.normalTitle" = "Besuchen Sie NatCode.at";
