@@ -22,6 +22,7 @@
 		1A4BABC22080C25300F3E7B6 /* VariantsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4BABC12080C25300F3E7B6 /* VariantsTableViewController.swift */; };
 		1A4BABC42080C2BC00F3E7B6 /* GlobalSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4BABC32080C2BC00F3E7B6 /* GlobalSettings.swift */; };
 		1A4BABC62080C89A00F3E7B6 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4BABC52080C89A00F3E7B6 /* Utils.swift */; };
+		1A4BABC82080D3D100F3E7B6 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4BABC72080D3D100F3E7B6 /* HelpViewController.swift */; };
 		D18049DB069CFD1CB865FB97 /* Pods_kba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D1744E5929B79A3F7779374 /* Pods_kba.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		1A4BABC12080C25300F3E7B6 /* VariantsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariantsTableViewController.swift; sourceTree = "<group>"; };
 		1A4BABC32080C2BC00F3E7B6 /* GlobalSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalSettings.swift; sourceTree = "<group>"; };
 		1A4BABC52080C89A00F3E7B6 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		1A4BABC72080D3D100F3E7B6 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		3D1744E5929B79A3F7779374 /* Pods_kba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C29D1C7EA2A2683F86091089 /* Pods-kba.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kba.release.xcconfig"; path = "Pods/Target Support Files/Pods-kba/Pods-kba.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,6 +105,7 @@
 				1A4BABBD2080C23200F3E7B6 /* MakesTableViewController.swift */,
 				1A4BABBF2080C24300F3E7B6 /* ModelsTableViewController.swift */,
 				1A4BABC12080C25300F3E7B6 /* VariantsTableViewController.swift */,
+				1A4BABC72080D3D100F3E7B6 /* HelpViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				15CA09FA207FF19D00DCE93B /* CarProperty.swift in Sources */,
 				1A4BABC22080C25300F3E7B6 /* VariantsTableViewController.swift in Sources */,
 				1A4BABBE2080C23200F3E7B6 /* MakesTableViewController.swift in Sources */,
+				1A4BABC82080D3D100F3E7B6 /* HelpViewController.swift in Sources */,
 				1A4BABC02080C24300F3E7B6 /* ModelsTableViewController.swift in Sources */,
 				15CA09F6207FED9D00DCE93B /* ResultsTableViewController.swift in Sources */,
 				1A4BABBC2080BF9100F3E7B6 /* secret.swift in Sources */,
