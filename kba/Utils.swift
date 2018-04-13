@@ -12,10 +12,11 @@ class Utils
 {
     static func ShowMessage(title: String, message : String, controller : UIViewController)
     {
+        let cancelText = NSLocalizedString("Cancel", comment: "")
         
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        let cancelAction = UIAlertAction(title: cancelText, style: .cancel, handler: nil)
         
         alertController.addAction(cancelAction)
         

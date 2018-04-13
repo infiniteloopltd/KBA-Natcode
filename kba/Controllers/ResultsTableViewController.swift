@@ -21,13 +21,14 @@ class ResultsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let sorry = NSLocalizedString("Sorry", comment: "")
+        let fail = NSLocalizedString("Fail", comment: "")
         SVProgressHUD.show()
         CallWebservice(){ success in
             SVProgressHUD.dismiss()
             if !success
             {
-                Utils.ShowMessage(title: "Sorry", message: "Failed to find any data", controller: self)
+                Utils.ShowMessage(title: sorry, message: fail, controller: self)
             }
         }
         
@@ -38,7 +39,7 @@ class ResultsTableViewController: UITableViewController {
     
     func ProcessGermanJson(with codeJson : JSON)
     {
-       /*
+          /*
              {
                   "Description": "bmw 318 D TOURING",
                   "CarMake": {
@@ -60,28 +61,33 @@ class ResultsTableViewController: UITableViewController {
                   "ImageUrl": "http://www.kbaapi.de/image.aspx/@Ym13IDMxOCBEIFRPVVJJTkc="
                 }
             */
+            let descriptionText = NSLocalizedString("Description", comment: "")
+            let powerHPText = NSLocalizedString("Power HP", comment: "")
+            let powerKWText = NSLocalizedString("Power KW", comment: "")
+            let engineSizeText = NSLocalizedString("Engine Size", comment: "")
+            let fuelText = NSLocalizedString("Fuel", comment: "")
         
             let code = CarProperty(with: "KBA Code")
             code.Value = GlobalSettings.SelectedCode
             self.Properties.append(code)
         
-            let description = CarProperty(with: "Description")
+            let description = CarProperty(with: descriptionText)
             description.Value = codeJson["Description"].string!
             self.Properties.append(description)
         
-            let PowerKW = CarProperty(with: "Power KW")
+            let PowerKW = CarProperty(with: powerKWText)
             PowerKW.Value = String(codeJson["PowerKW"].int!)
             self.Properties.append(PowerKW)
         
-            let PowerHP = CarProperty(with: "Power HP")
+            let PowerHP = CarProperty(with: powerHPText)
             PowerHP.Value = String(codeJson["PowerHP"].int!)
             self.Properties.append(PowerHP)
         
-            let EngineSize = CarProperty(with: "Engine Size")
+            let EngineSize = CarProperty(with: engineSizeText)
             EngineSize.Value = String(codeJson["EngineSize"].int!)
             self.Properties.append(EngineSize)
         
-            let Fuel = CarProperty(with: "Fuel")
+            let Fuel = CarProperty(with: fuelText)
             Fuel.Value = codeJson["Fuel"].string!
             self.Properties.append(Fuel)
         
@@ -114,32 +120,38 @@ class ResultsTableViewController: UITableViewController {
               "ImageUrl": "http://www.natcode.at/image.aspx/@TWl0c3ViaXNoaSAgQ29sdCAzLXRnLiBEaWVzZWw="
             }
         */
+            let descriptionText = NSLocalizedString("Description", comment: "")
+            let powerHPText = NSLocalizedString("Power HP", comment: "")
+            let powerKWText = NSLocalizedString("Power KW", comment: "")
+            let engineSizeText = NSLocalizedString("Engine Size", comment: "")
+            let indicativeValueText = NSLocalizedString("Indicative Value", comment: "")
+            let dateRangeText = NSLocalizedString("Date Range", comment: "")
         
             let code = CarProperty(with: "NAT Code")
             code.Value = GlobalSettings.SelectedCode
             self.Properties.append(code)
         
-            let description = CarProperty(with: "Description")
+            let description = CarProperty(with: descriptionText)
             description.Value = codeJson["Description"].string!
             self.Properties.append(description)
         
-            let PowerKW = CarProperty(with: "Power KW")
+            let PowerKW = CarProperty(with: powerKWText)
             PowerKW.Value = String(codeJson["PowerKW"].int!)
             self.Properties.append(PowerKW)
         
-            let PowerHP = CarProperty(with: "Power HP")
+            let PowerHP = CarProperty(with: powerHPText)
             PowerHP.Value = String(codeJson["PowerHP"].int!)
             self.Properties.append(PowerHP)
         
-            let EngineSize = CarProperty(with: "Engine Size")
+            let EngineSize = CarProperty(with: engineSizeText)
             EngineSize.Value = String(codeJson["EngineSize"].int!)
             self.Properties.append(EngineSize)
         
-            let IndicativeValue = CarProperty(with: "IndicativeValue")
+            let IndicativeValue = CarProperty(with: indicativeValueText)
             IndicativeValue.Value = "€" + String(codeJson["IndicativeValue"].int!)
             self.Properties.append(IndicativeValue)
         
-            let DateRange = CarProperty(with: "Date Range")
+            let DateRange = CarProperty(with: dateRangeText)
             DateRange.Value = codeJson["DateRange"].string!
             self.Properties.append(DateRange)
         

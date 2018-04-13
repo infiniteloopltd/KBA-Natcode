@@ -8,3 +8,12 @@
 "Search" = "Suche";
 "Search by" = "Suche nach";
 "Cancel" = "Stornieren";
+"Sorry" = "Entschuldigung";
+"Fail" = "Es konnten keine Daten gefunden werden";
+"Description" = "Beschreibung";
+"Power KW" = "Leistung KW";
+"Power HP" = "Leistung PS";
+"Engine Size" = "Motor Größe";
+"Fuel" = "Treibstoff";
+"Indicative Value" = "Richtwert";
+"Date Range" = "Datumsbereich";

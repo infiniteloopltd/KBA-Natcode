@@ -8,3 +8,12 @@
 "Search" = "Search";
 "Search by" = "Search by";
 "Cancel" = "Cancel";
+"Sorry" = "Sorry";
+"Fail" = "Failed to find any data";
+"Description" = "Description";
+"Power KW" = "Power KW";
+"Power HP" = "Power HP";
+"Engine Size" = "Engine Size";
+"Fuel" = "Fuel";
+"Indicative Value" = "Indicative Value";
+"Date Range" = "Date Range";

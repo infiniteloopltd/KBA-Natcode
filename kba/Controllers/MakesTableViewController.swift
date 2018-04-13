@@ -18,12 +18,14 @@ class MakesTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let sorry = NSLocalizedString("Sorry", comment: "")
+        let fail = NSLocalizedString("Fail", comment: "")
         SVProgressHUD.show()
         CallWebservice(){ success in
             SVProgressHUD.dismiss()
             if !success
             {
-                Utils.ShowMessage(title: "Sorry", message: "Failed to find any data", controller: self)
+                Utils.ShowMessage(title: sorry, message: fail, controller: self)
             }
         }
      
