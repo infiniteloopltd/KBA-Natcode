@@ -47,6 +47,10 @@ class ViewController: UITableViewController {
 
     @IBAction func searchButtonPressed(_ sender: UIBarButtonItem) {
     
+         let searchTitle = NSLocalizedString("Search", comment: "")
+         let searchBy = NSLocalizedString("Search by", comment: "")
+         let cancelText = NSLocalizedString("Cancel", comment: "")
+        
          var code = ""
          if GlobalSettings.SelectedCountry == .Germany
          {
@@ -59,9 +63,9 @@ class ViewController: UITableViewController {
     
          var alertText : UITextField = UITextField()
         
-        let alert = UIAlertController(title: "Search By " + code, message: "", preferredStyle: .alert)
+        let alert = UIAlertController(title: searchBy + " " + code, message: "", preferredStyle: .alert)
         
-        let action = UIAlertAction(title: "Search", style: UIAlertActionStyle.default) { (alertAction) in
+        let action = UIAlertAction(title: searchTitle, style: UIAlertActionStyle.default) { (alertAction) in
             print(alertText.text!)
             GlobalSettings.SelectedCode = alertText.text!
             // Perform segue
@@ -69,7 +73,7 @@ class ViewController: UITableViewController {
             
         }
         
-        let cancel = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel)
+        let cancel = UIAlertAction(title: cancelText, style: UIAlertActionStyle.cancel)
         
         alert.addTextField { (textField) in
             textField.placeholder = code
