@@ -90,7 +90,7 @@ class ModelsTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        GlobalSettings.SelectedModel = models[indexPath.row]
+        GlobalSettings.SelectedModel = models[indexPath.row].addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!
         performSegue(withIdentifier: "goToVariants", sender: self)
     }
 

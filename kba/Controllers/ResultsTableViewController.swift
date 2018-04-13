@@ -61,6 +61,10 @@ class ResultsTableViewController: UITableViewController {
                 }
             */
         
+            let code = CarProperty(with: "KBA Code")
+            code.Value = GlobalSettings.SelectedCode
+            self.Properties.append(code)
+        
             let description = CarProperty(with: "Description")
             description.Value = codeJson["Description"].string!
             self.Properties.append(description)
@@ -111,7 +115,11 @@ class ResultsTableViewController: UITableViewController {
             }
         */
         
-          let description = CarProperty(with: "Description")
+            let code = CarProperty(with: "NAT Code")
+            code.Value = GlobalSettings.SelectedCode
+            self.Properties.append(code)
+        
+            let description = CarProperty(with: "Description")
             description.Value = codeJson["Description"].string!
             self.Properties.append(description)
         

@@ -7,89 +7,95 @@
 //
 
 import UIKit
+import SVProgressHUD
+import Alamofire
+import SwiftyJSON
 
 class VariantsTableViewController: UITableViewController {
 
+    var variants = [CarProperty]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        SVProgressHUD.show()
+        CallWebservice(){ success in
+            SVProgressHUD.dismiss()
+            if !success
+            {
+                Utils.ShowMessage(title: "Sorry", message: "Failed to find any data", controller: self)
+            }
+        }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func CallWebservice(callback: @escaping (Bool) -> Void)
+    {
+        var url = ""
+        
+        if GlobalSettings.SelectedCountry == .Germany
+        {
+            // Sample 0005/ALQ
+            url = "https://www.regcheck.org.uk/api/kba.aspx/DE/ListVariants/" + GlobalSettings.SelectedMake + "/" + GlobalSettings.SelectedModel
+        }
+        
+        if GlobalSettings.SelectedCountry == .Austria
+        {
+            // 128740
+            url = "https://www.regcheck.org.uk/api/kba.aspx/AT/ListVariants/" +
+                GlobalSettings.SelectedMake + "/" + GlobalSettings.SelectedModel
+        }
+        print(url)
+        Alamofire.request(url , method: .get)
+            .responseJSON {
+                response in
+                
+                print("got Data back")
+                if (response.result.value == nil)
+                {
+                    callback(false)
+                    return
+                }
+                let codeJson : JSON = JSON (response.result.value!)
+                print(codeJson)
+                
+                for (_, subJson) in codeJson {
+                    // Item1 - Code
+                    // Item2 - Text
+                    let description = subJson["Item2"].string!
+                    let code = subJson["Item1"].string!
+                    let carProperty = CarProperty(with: description)
+                    carProperty.Value = code
+                    self.variants.append(carProperty)
+                }
+                
+                self.tableView.reloadData()
+                
+                callback(true)
+        }
     }
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        
+        return variants.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "VariantsCell", for: indexPath)
 
-        // Configure the cell...
-
+        cell.textLabel?.text = variants[indexPath.row].Property
+        
         return cell
     }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        GlobalSettings.SelectedCode = variants[indexPath.row].Value
+        performSegue(withIdentifier: "goToResultsFromVariants", sender: self)
     }
-    */
 
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+   
+   
 
 }
