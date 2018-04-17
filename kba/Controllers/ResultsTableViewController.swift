@@ -74,6 +74,7 @@ class ResultsTableViewController: UITableViewController {
             let description = CarProperty(with: descriptionText)
             description.Value = codeJson["Description"].string!
             self.Properties.append(description)
+            title = description.Value
         
             let PowerKW = CarProperty(with: powerKWText)
             PowerKW.Value = String(codeJson["PowerKW"].int!)
@@ -134,6 +135,7 @@ class ResultsTableViewController: UITableViewController {
             let description = CarProperty(with: descriptionText)
             description.Value = codeJson["Description"].string!
             self.Properties.append(description)
+            title = description.Value
         
             let PowerKW = CarProperty(with: powerKWText)
             PowerKW.Value = String(codeJson["PowerKW"].int!)

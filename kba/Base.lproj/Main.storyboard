@@ -230,23 +230,16 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="493.66666666666669"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A2e-JW-MgQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="50.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="110.33333333333333"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Header" translatesAutoresizingMaskIntoConstraints="NO" id="Vng-9h-188">
-                                        <rect key="frame" x="0.0" y="50.333333333333343" width="375" height="100"/>
+                                        <rect key="frame" x="0.0" y="110.33333333333331" width="375" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="GXh-IC-pMu"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="oPp-vH-OGh"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KkW-wK-zWC">
-                                        <rect key="frame" x="0.0" y="150.33333333333334" width="99.666666666666671" height="60"/>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ek-SW-nGi">
                                         <rect key="frame" x="0.0" y="210.33333333333331" width="333.33333333333331" height="223.33333333333331"/>
                                         <string key="text">This app allows you search for German KBA
@@ -308,7 +301,7 @@ website below.</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <imageView key="tableHeaderView" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="afV-ak-77n">
+                        <imageView key="tableHeaderView" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="afV-ak-77n">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="238"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
@@ -356,8 +349,8 @@ website below.</string>
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="abi-Fs-YEM" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UTc-Dy-Shr">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="UTc-Dy-Shr">
+                        <rect key="frame" x="0.0" y="44" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

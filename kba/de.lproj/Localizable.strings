@@ -13,7 +13,8 @@
 "Description" = "Beschreibung";
 "Power KW" = "Leistung KW";
 "Power HP" = "Leistung PS";
-"Engine Size" = "Motor Größe";
+"Engine Size" = "Motorengröße";
 "Fuel" = "Treibstoff";
 "Indicative Value" = "Richtwert";
 "Date Range" = "Datumsbereich";
+"Help" = "Hilfe";

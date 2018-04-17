@@ -12,6 +12,7 @@ class HelpViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = NSLocalizedString("Help", comment: "")
 
         // Do any additional setup after loading the view.
     }
