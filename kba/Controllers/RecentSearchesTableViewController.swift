@@ -23,6 +23,14 @@ class RecentSearchesTableViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         recentSearches = realm.objects(RecentSearch.self)
+        
+        if (recentSearches?.count == 0)
+        {
+            let sorry = NSLocalizedString("Sorry", comment: "")
+            let fail = NSLocalizedString("Fail", comment: "")
+            Utils.ShowMessage(title: sorry, message: fail, controller: self)
+        }
+        tableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
