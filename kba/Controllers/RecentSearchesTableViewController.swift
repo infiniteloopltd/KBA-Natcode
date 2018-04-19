@@ -8,8 +8,9 @@
 
 import UIKit
 import RealmSwift
+import SwipeCellKit
 
-class RecentSearchesTableViewController: UITableViewController {
+class RecentSearchesTableViewController: UITableViewController, SwipeTableViewCellDelegate  {
 
     let realm = try! Realm()
     
@@ -17,7 +18,7 @@ class RecentSearchesTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableView.rowHeight = 80
         
     }
     
@@ -49,11 +50,13 @@ class RecentSearchesTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! SwipeTableViewCell
+        cell.delegate = self
 
         let search = recentSearches![indexPath.row]
         cell.textLabel?.text = search.Description
         cell.imageView?.downloadedFrom(url: URL(string: search.Image)!){}
+        cell.detailTextLabel?.text = search.Code
         return cell
     }
     
@@ -64,4 +67,25 @@ class RecentSearchesTableViewController: UITableViewController {
         performSegue(withIdentifier: "goToResultsFromRecents", sender: self)
     }
 
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) -> [SwipeAction]? {
+        guard orientation == .right else { return nil }
+
+        let deleteAction = SwipeAction(style: .destructive, title: "Delete") { action, indexPath in
+            // handle action by updating model with deletion
+             do {
+                try self.realm.write {
+                        self.realm.delete(self.recentSearches![indexPath.row])
+                    }
+                    self.tableView.reloadData()
+                }
+                catch{
+                    print("Failed to save data")
+                }
+        }
+
+        // customize the action appearance
+        deleteAction.image = #imageLiteral(resourceName: "trash")
+
+    return [deleteAction]
+}
 }
