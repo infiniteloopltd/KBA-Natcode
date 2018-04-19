@@ -15,6 +15,8 @@ class MakesTableViewController: UITableViewController {
 
     var makes = [String]()
     
+    var filteredMakes = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -65,7 +67,7 @@ class MakesTableViewController: UITableViewController {
                 for (_, subJson) in codeJson {
                     self.makes.append(subJson.string!)
                 }
-                
+                self.filteredMakes = self.makes
                 self.tableView.reloadData()
                 
                 callback(true)
@@ -78,20 +80,20 @@ class MakesTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return makes.count
+        return filteredMakes.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MakesCell", for: indexPath)
 
-        cell.textLabel?.text = makes[indexPath.row]
+        cell.textLabel?.text = filteredMakes[indexPath.row]
 
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        GlobalSettings.SelectedMake = makes[indexPath.row].addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!
+        GlobalSettings.SelectedMake = filteredMakes[indexPath.row].addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!
         performSegue(withIdentifier: "goToModels", sender: self)
     }
 
@@ -100,8 +102,24 @@ class MakesTableViewController: UITableViewController {
         SearchHandler.Show(sender: self)
     }
     
+}
 
-   
-
-
+extension MakesTableViewController: UISearchBarDelegate
+{
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchBar.text != nil && searchBar.text == ""
+        {
+            filteredMakes = makes
+            DispatchQueue.main.async {
+                searchBar.resignFirstResponder()
+            }
+        }
+        else
+        {
+            filteredMakes = makes.filter {
+                $0.lowercased().contains(searchBar.text!.lowercased())
+            }
+        }
+        tableView.reloadData()
+    }
 }

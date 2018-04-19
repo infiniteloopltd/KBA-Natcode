@@ -14,6 +14,7 @@ import SwiftyJSON
 class ModelsTableViewController: UITableViewController {
 
     var models = [String]()
+    var filteredModels = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,6 +67,7 @@ class ModelsTableViewController: UITableViewController {
                     self.models.append(subJson.string!)
                 }
                 
+                self.filteredModels = self.models
                 self.tableView.reloadData()
                 
                 callback(true)
@@ -81,20 +83,20 @@ class ModelsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return models.count
+        return filteredModels.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ModelsCell", for: indexPath)
 
-        cell.textLabel?.text = models[indexPath.row]
+        cell.textLabel?.text = filteredModels[indexPath.row]
         
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        GlobalSettings.SelectedModel = models[indexPath.row].addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!
+        GlobalSettings.SelectedModel = filteredModels[indexPath.row].addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!
         performSegue(withIdentifier: "goToVariants", sender: self)
     }
 
@@ -102,10 +104,25 @@ class ModelsTableViewController: UITableViewController {
     @IBAction func searchBarButtonPressed(_ sender: UIBarButtonItem) {
         SearchHandler.Show(sender: self)
     }
-    
-   
-  
- 
-  
 
+}
+
+extension ModelsTableViewController: UISearchBarDelegate
+{
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchBar.text != nil && searchBar.text == ""
+        {
+            filteredModels = models
+            DispatchQueue.main.async {
+                searchBar.resignFirstResponder()
+            }
+        }
+        else
+        {
+            filteredModels = models.filter {
+                $0.lowercased().contains(searchBar.text!.lowercased())
+            }
+        }
+        tableView.reloadData()
+    }
 }

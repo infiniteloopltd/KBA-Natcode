@@ -15,6 +15,8 @@ class VariantsTableViewController: UITableViewController {
 
     var variants = [CarProperty]()
     
+    var filteredVariants = [CarProperty]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let sorry = NSLocalizedString("Sorry", comment: "")
@@ -70,7 +72,7 @@ class VariantsTableViewController: UITableViewController {
                     carProperty.Value = code
                     self.variants.append(carProperty)
                 }
-                
+                self.filteredVariants = self.variants
                 self.tableView.reloadData()
                 
                 callback(true)
@@ -82,20 +84,20 @@ class VariantsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return variants.count
+        return filteredVariants.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "VariantsCell", for: indexPath)
 
-        cell.textLabel?.text = variants[indexPath.row].Property
+        cell.textLabel?.text = filteredVariants[indexPath.row].Property
         
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        GlobalSettings.SelectedCode = variants[indexPath.row].Value
+        GlobalSettings.SelectedCode = filteredVariants[indexPath.row].Value
         performSegue(withIdentifier: "goToResultsFromVariants", sender: self)
     }
 
@@ -105,4 +107,24 @@ class VariantsTableViewController: UITableViewController {
     }
     
 
+}
+
+extension VariantsTableViewController: UISearchBarDelegate
+{
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchBar.text != nil && searchBar.text == ""
+        {
+            filteredVariants = variants
+            DispatchQueue.main.async {
+                searchBar.resignFirstResponder()
+            }
+        }
+        else
+        {
+            filteredVariants = variants.filter {
+                $0.Property.lowercased().contains(searchBar.text!.lowercased())
+            }
+        }
+        tableView.reloadData()
+    }
 }
