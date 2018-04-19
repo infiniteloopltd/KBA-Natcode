@@ -93,7 +93,10 @@ class ResultsTableViewController: UITableViewController {
             self.Properties.append(Fuel)
         
             let image = codeJson["ImageUrl"].string!
-            self.imageOfCar.downloadedFrom(link: image)
+            SVProgressHUD.show()
+            self.imageOfCar.downloadedFrom(link: image){
+                SVProgressHUD.dismiss()
+            }
     }
     
     func ProcessAustrianJson(with codeJson : JSON)
@@ -159,7 +162,10 @@ class ResultsTableViewController: UITableViewController {
         
         
             let image = codeJson["ImageUrl"].string!
-            self.imageOfCar.downloadedFrom(link: image)
+            SVProgressHUD.show()
+            self.imageOfCar.downloadedFrom(link: image){
+                SVProgressHUD.dismiss()
+            }
     }
     
     

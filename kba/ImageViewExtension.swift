@@ -11,7 +11,9 @@ import UIKit
 
 // https://stackoverflow.com/questions/24231680/loading-downloading-image-from-url-on-swift
 extension UIImageView {
-    func downloadedFrom(url: URL, contentMode mode: UIViewContentMode = .scaleAspectFit) {
+    func downloadedFrom(url: URL,
+                        contentMode mode: UIViewContentMode = .scaleAspectFit,
+                        completion: @escaping () -> Void) {
         contentMode = mode
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard
@@ -22,11 +24,15 @@ extension UIImageView {
                 else { return }
             DispatchQueue.main.async() {
                 self.image = image
+                completion()
             }
             }.resume()
     }
-    func downloadedFrom(link: String, contentMode mode: UIViewContentMode = .scaleAspectFit) {
+    
+    func downloadedFrom(link: String,
+                        contentMode mode: UIViewContentMode = .scaleAspectFit,
+                        completion: @escaping () -> Void) {
         guard let url = URL(string: link) else { return }
-        downloadedFrom(url: url, contentMode: mode)
+        downloadedFrom(url: url, contentMode: mode, completion: completion)
     }
 }
