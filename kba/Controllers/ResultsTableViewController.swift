@@ -25,7 +25,7 @@ class ResultsTableViewController: UITableViewController {
         let fail = NSLocalizedString("Fail", comment: "")
         SVProgressHUD.show()
         CallWebservice(){ success in
-            SVProgressHUD.dismiss()
+            //SVProgressHUD.dismiss() // Will be dismissed when image loads
             if !success
             {
                 Utils.ShowMessage(title: sorry, message: fail, controller: self)
@@ -93,8 +93,9 @@ class ResultsTableViewController: UITableViewController {
             self.Properties.append(Fuel)
         
             let image = codeJson["ImageUrl"].string!
-            SVProgressHUD.show()
+        
             self.imageOfCar.downloadedFrom(link: image){
+                print("image should be visible")
                 SVProgressHUD.dismiss()
             }
     }
@@ -162,8 +163,9 @@ class ResultsTableViewController: UITableViewController {
         
         
             let image = codeJson["ImageUrl"].string!
-            SVProgressHUD.show()
+        
             self.imageOfCar.downloadedFrom(link: image){
+                print("image should be visible")
                 SVProgressHUD.dismiss()
             }
     }
