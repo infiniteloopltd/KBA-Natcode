@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,7 @@
 		15CA09FC207FF57800DCE93B /* ImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CA09FB207FF57800DCE93B /* ImageViewExtension.swift */; };
 		1A1773F12081006B00244649 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A1773EF2081006B00244649 /* Localizable.strings */; };
 		1A2715D22088AD8500A3CBDC /* SearchHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2715D12088AD8500A3CBDC /* SearchHandler.swift */; };
+		1A2715D42088C07B00A3CBDC /* RecentSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2715D32088C07B00A3CBDC /* RecentSearch.swift */; };
 		1A4BABBC2080BF9100F3E7B6 /* secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4BABBB2080BF9100F3E7B6 /* secret.swift */; };
 		1A4BABBE2080C23200F3E7B6 /* MakesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4BABBD2080C23200F3E7B6 /* MakesTableViewController.swift */; };
 		1A4BABC02080C24300F3E7B6 /* ModelsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4BABBF2080C24300F3E7B6 /* ModelsTableViewController.swift */; };
@@ -46,6 +47,7 @@
 		1A1773F02081006B00244649 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1A1773F22081007000244649 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1A2715D12088AD8500A3CBDC /* SearchHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHandler.swift; sourceTree = "<group>"; };
+		1A2715D32088C07B00A3CBDC /* RecentSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSearch.swift; sourceTree = "<group>"; };
 		1A4BABBB2080BF9100F3E7B6 /* secret.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secret.swift; sourceTree = "<group>"; };
 		1A4BABBD2080C23200F3E7B6 /* MakesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakesTableViewController.swift; sourceTree = "<group>"; };
 		1A4BABBF2080C24300F3E7B6 /* ModelsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsTableViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				15CA09F9207FF19D00DCE93B /* CarProperty.swift */,
 				1A4BABC32080C2BC00F3E7B6 /* GlobalSettings.swift */,
 				1A2715D12088AD8500A3CBDC /* SearchHandler.swift */,
+				1A2715D32088C07B00A3CBDC /* RecentSearch.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -181,11 +184,12 @@
 				TargetAttributes = {
 					15CA09DD207FDCC500DCE93B = {
 						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
 			buildConfigurationList = 15CA09D9207FDCC500DCE93B /* Build configuration list for PBXProject "kba" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -244,14 +248,20 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-kba/Pods-kba-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -282,6 +292,7 @@
 			files = (
 				15CA09FA207FF19D00DCE93B /* CarProperty.swift in Sources */,
 				1A4BABC22080C25300F3E7B6 /* VariantsTableViewController.swift in Sources */,
+				1A2715D42088C07B00A3CBDC /* RecentSearch.swift in Sources */,
 				1A4BABBE2080C23200F3E7B6 /* MakesTableViewController.swift in Sources */,
 				1A4BABC82080D3D100F3E7B6 /* HelpViewController.swift in Sources */,
 				1A4BABC02080C24300F3E7B6 /* ModelsTableViewController.swift in Sources */,
@@ -440,8 +451,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -455,10 +465,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = XZQ8K36FD6;
 				INFOPLIST_FILE = kba/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fiach.fiach.kba;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "52423676-860a-4f27-839b-18c511b0fea3";
@@ -477,10 +484,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = XZQ8K36FD6;
 				INFOPLIST_FILE = kba/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fiach.fiach.kba;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "52423676-860a-4f27-839b-18c511b0fea3";

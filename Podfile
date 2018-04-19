@@ -9,4 +9,6 @@ target 'kba' do
   pod 'SwiftyJSON'
   pod 'Alamofire'
   pod 'SVProgressHUD'
+  pod 'RealmSwift'
+  pod 'SwipeCellKit'
 end

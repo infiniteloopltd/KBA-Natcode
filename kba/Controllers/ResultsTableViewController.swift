@@ -10,10 +10,11 @@ import UIKit
 import SVProgressHUD
 import Alamofire
 import SwiftyJSON
+import RealmSwift
 
 class ResultsTableViewController: UITableViewController {
 
-   
+    let realm = try! Realm()
     
     var Properties = [CarProperty]()
     
@@ -98,7 +99,28 @@ class ResultsTableViewController: UITableViewController {
                 print("image should be visible")
                 SVProgressHUD.dismiss()
             }
+        
+            let recentSearch = RecentSearch()
+            recentSearch.Code = GlobalSettings.SelectedCode
+            recentSearch.Country = GlobalSettings.SelectedCountry
+            recentSearch.Description = description.Value
+            recentSearch.Image = image
+            Save(search: recentSearch)
+        
     }
+    
+    func Save(search: RecentSearch)
+    {
+        do {
+            try realm.write {
+                realm.add(search)
+            }
+        }
+        catch{
+            print("Failed to save data")
+        }
+    }
+    
     
     func ProcessAustrianJson(with codeJson : JSON)
     {
@@ -161,13 +183,19 @@ class ResultsTableViewController: UITableViewController {
             DateRange.Value = codeJson["DateRange"].string!
             self.Properties.append(DateRange)
         
-        
             let image = codeJson["ImageUrl"].string!
         
             self.imageOfCar.downloadedFrom(link: image){
                 print("image should be visible")
                 SVProgressHUD.dismiss()
             }
+        
+            let recentSearch = RecentSearch()
+            recentSearch.Code = GlobalSettings.SelectedCode
+            recentSearch.Country = GlobalSettings.SelectedCountry
+            recentSearch.Description = description.Value
+            recentSearch.Image = image
+            Save(search: recentSearch)
     }
     
     

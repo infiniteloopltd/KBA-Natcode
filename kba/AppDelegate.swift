@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        var realm : Realm? = nil
+        do{
+            realm = try Realm()
+        }catch{
+            print("Failed to initialize Realm \(error)")
+        }
+        
+        print(Realm.Configuration.defaultConfiguration.fileURL!)
+        
+        
         return true
     }
 
