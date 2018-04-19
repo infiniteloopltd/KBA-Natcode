@@ -59,6 +59,7 @@
                     </navigationItem>
                     <connections>
                         <segue destination="Hej-UV-y4d" kind="show" identifier="goToModels" id="8f3-b9-AjH"/>
+                        <segue destination="I82-mT-qoe" kind="show" identifier="goToResultsFromMakes" id="B9Q-mB-U0f"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pOO-Q2-RQl" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -114,6 +115,7 @@
                     </navigationItem>
                     <connections>
                         <segue destination="rX0-R8-2v3" kind="show" identifier="goToVariants" id="F92-kq-yxz"/>
+                        <segue destination="I82-mT-qoe" kind="show" identifier="goToResultsFromModels" id="U3w-fn-zgO"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tqj-np-h88" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -336,12 +338,12 @@ website below.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VlD-B7-CyB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1196.25" y="1107.5"/>
+            <point key="canvasLocation" x="-255" y="-623"/>
         </scene>
         <!--Results Table View Controller-->
         <scene sceneID="IIO-F7-b0o">
             <objects>
-                <tableViewController id="I82-mT-qoe" customClass="ResultsTableViewController" customModule="kba" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ResultsTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="I82-mT-qoe" customClass="ResultsTableViewController" customModule="kba" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Jd1-cu-ODF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -394,7 +396,7 @@ website below.</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a4Z-ZF-rbA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="226" y="1135"/>
+            <point key="canvasLocation" x="1167.2" y="1134.9753694581282"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="eOD-Sd-Q4W">
@@ -407,28 +409,41 @@ website below.</string>
                     </tabBar>
                     <connections>
                         <segue destination="abi-Fs-YEM" kind="relationship" relationship="viewControllers" id="p9t-Hz-YeR"/>
-                        <segue destination="RMA-o3-Wg5" kind="relationship" relationship="viewControllers" id="GVM-Dj-ysj"/>
+                        <segue destination="xfa-OR-ESM" kind="relationship" relationship="viewControllers" id="GVM-Dj-ysj"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J7y-or-Epc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2719" y="98"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Recent Searches Table View Controller-->
         <scene sceneID="Naw-zJ-77G">
             <objects>
-                <tableViewController id="RMA-o3-Wg5" sceneMemberID="viewController">
+                <tableViewController id="RMA-o3-Wg5" customClass="RecentSearchesTableViewController" customModule="kba" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="a4a-Fg-gyO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="JlS-ar-Plg">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="Edi-wy-gpn" imageView="HCm-Do-qT0" style="IBUITableViewCellStyleDefault" id="JlS-ar-Plg">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JlS-ar-Plg" id="pV4-ds-D3B">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="43.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Edi-wy-gpn">
+                                            <rect key="frame" x="75" y="0.0" width="265" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="germany" id="HCm-Do-qT0">
+                                            <rect key="frame" x="16" y="0.0" width="44" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -437,11 +452,14 @@ website below.</string>
                             <outlet property="delegate" destination="RMA-o3-Wg5" id="LJd-ZR-jcv"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" systemItem="recents" id="xbq-Fr-jCL"/>
+                    <navigationItem key="navigationItem" id="duo-w8-dvl"/>
+                    <connections>
+                        <segue destination="I82-mT-qoe" kind="show" identifier="goToResultsFromRecents" id="yU1-A2-o2Q"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dIR-lG-dbF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2719" y="831"/>
+            <point key="canvasLocation" x="-1776.8" y="830.54187192118229"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ULq-vf-ecf">
@@ -462,6 +480,25 @@ website below.</string>
             </objects>
             <point key="canvasLocation" x="-1886" y="99"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mB5-6K-xGk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xfa-OR-ESM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="recents" id="xbq-Fr-jCL"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vXU-hO-XN8">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="RMA-o3-Wg5" kind="relationship" relationship="rootViewController" id="bpV-h1-6Mb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l7A-nY-4ho" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2719.1999999999998" y="830.54187192118229"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Header" width="750" height="500"/>
@@ -469,6 +506,6 @@ website below.</string>
         <image name="germany" width="112" height="112"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="QLJ-zW-bOq"/>
+        <segue reference="yU1-A2-o2Q"/>
     </inferredMetricsTieBreakers>
 </document>

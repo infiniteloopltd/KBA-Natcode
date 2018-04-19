@@ -19,6 +19,7 @@
 		1A1773F12081006B00244649 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A1773EF2081006B00244649 /* Localizable.strings */; };
 		1A2715D22088AD8500A3CBDC /* SearchHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2715D12088AD8500A3CBDC /* SearchHandler.swift */; };
 		1A2715D42088C07B00A3CBDC /* RecentSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2715D32088C07B00A3CBDC /* RecentSearch.swift */; };
+		1A2715D62088C48F00A3CBDC /* RecentSearchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2715D52088C48F00A3CBDC /* RecentSearchesTableViewController.swift */; };
 		1A4BABBC2080BF9100F3E7B6 /* secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4BABBB2080BF9100F3E7B6 /* secret.swift */; };
 		1A4BABBE2080C23200F3E7B6 /* MakesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4BABBD2080C23200F3E7B6 /* MakesTableViewController.swift */; };
 		1A4BABC02080C24300F3E7B6 /* ModelsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4BABBF2080C24300F3E7B6 /* ModelsTableViewController.swift */; };
@@ -48,6 +49,7 @@
 		1A1773F22081007000244649 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1A2715D12088AD8500A3CBDC /* SearchHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHandler.swift; sourceTree = "<group>"; };
 		1A2715D32088C07B00A3CBDC /* RecentSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSearch.swift; sourceTree = "<group>"; };
+		1A2715D52088C48F00A3CBDC /* RecentSearchesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSearchesTableViewController.swift; sourceTree = "<group>"; };
 		1A4BABBB2080BF9100F3E7B6 /* secret.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secret.swift; sourceTree = "<group>"; };
 		1A4BABBD2080C23200F3E7B6 /* MakesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakesTableViewController.swift; sourceTree = "<group>"; };
 		1A4BABBF2080C24300F3E7B6 /* ModelsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsTableViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				1A4BABBF2080C24300F3E7B6 /* ModelsTableViewController.swift */,
 				1A4BABC12080C25300F3E7B6 /* VariantsTableViewController.swift */,
 				1A4BABC72080D3D100F3E7B6 /* HelpViewController.swift */,
+				1A2715D52088C48F00A3CBDC /* RecentSearchesTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				1A4BABC02080C24300F3E7B6 /* ModelsTableViewController.swift in Sources */,
 				15CA09F6207FED9D00DCE93B /* ResultsTableViewController.swift in Sources */,
 				1A4BABBC2080BF9100F3E7B6 /* secret.swift in Sources */,
+				1A2715D62088C48F00A3CBDC /* RecentSearchesTableViewController.swift in Sources */,
 				15CA09E4207FDCC600DCE93B /* ViewController.swift in Sources */,
 				15CA09F4207FE8AD00DCE93B /* Countries.swift in Sources */,
 				15CA09FC207FF57800DCE93B /* ImageViewExtension.swift in Sources */,

@@ -46,7 +46,7 @@ class ViewController: UITableViewController {
    
 
     @IBAction func searchButtonPressed(_ sender: UIBarButtonItem) {
-        SearchHandler.Show(sender: self)
+        SearchHandler.Show(sender: self, segue: "goToResults")
     }
 }
 

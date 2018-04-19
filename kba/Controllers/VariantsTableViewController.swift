@@ -103,7 +103,7 @@ class VariantsTableViewController: UITableViewController {
 
    
     @IBAction func searchBarButtonPressed(_ sender: UIBarButtonItem) {
-        SearchHandler.Show(sender: self)
+        SearchHandler.Show(sender: self, segue: "goToResultsFromVariants")
     }
     
 

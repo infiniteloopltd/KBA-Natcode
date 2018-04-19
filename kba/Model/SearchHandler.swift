@@ -10,7 +10,7 @@ import UIKit
 
 class SearchHandler
 {
-    static func Show(sender: UIViewController)
+    static func Show(sender: UIViewController, segue: String)
     {
         let searchTitle = NSLocalizedString("Search", comment: "")
         let searchBy = NSLocalizedString("Search by", comment: "")
@@ -40,7 +40,7 @@ class SearchHandler
                 resultsViewController.viewDidLoad()
             }
             else {
-                sender.performSegue(withIdentifier: "goToResults", sender: self)
+                sender.performSegue(withIdentifier: segue, sender: self)
             }
             
         }
