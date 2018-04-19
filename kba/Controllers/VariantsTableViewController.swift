@@ -19,6 +19,8 @@ class VariantsTableViewController: UITableViewController {
         super.viewDidLoad()
         let sorry = NSLocalizedString("Sorry", comment: "")
         let fail = NSLocalizedString("Fail", comment: "")
+        let variants = NSLocalizedString("Variants", comment: "")
+        title = variants
         SVProgressHUD.show()
         CallWebservice(){ success in
             SVProgressHUD.dismiss()
@@ -98,6 +100,9 @@ class VariantsTableViewController: UITableViewController {
     }
 
    
-   
+    @IBAction func searchBarButtonPressed(_ sender: UIBarButtonItem) {
+        SearchHandler.Show(sender: self)
+    }
+    
 
 }

@@ -19,6 +19,8 @@ class ModelsTableViewController: UITableViewController {
         super.viewDidLoad()
         let sorry = NSLocalizedString("Sorry", comment: "")
         let fail = NSLocalizedString("Fail", comment: "")
+        let models = NSLocalizedString("Models", comment: "")
+        title = models
         SVProgressHUD.show()
         CallWebservice(){ success in
             SVProgressHUD.dismiss()
@@ -97,7 +99,10 @@ class ModelsTableViewController: UITableViewController {
     }
 
    
-
+    @IBAction func searchBarButtonPressed(_ sender: UIBarButtonItem) {
+        SearchHandler.Show(sender: self)
+    }
+    
    
   
  

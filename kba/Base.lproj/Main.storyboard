@@ -42,8 +42,15 @@
                             <outlet property="delegate" destination="1TB-oJ-CBY" id="cj4-uc-Gzw"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Makes" id="8yE-Z6-w1j">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="mNn-dd-MIJ">
+                            <connections>
+                                <action selector="searchBarButtonPressed:" destination="1TB-oJ-CBY" id="iHG-NS-b6H"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <segue destination="Hej-UV-y4d" kind="show" identifier="goToModels" id="8f3-b9-AjH"/>
+                        <segue destination="Hej-UV-y4d" kind="push" identifier="goToModels" id="8f3-b9-AjH"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pOO-Q2-RQl" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -82,8 +89,15 @@
                             <outlet property="delegate" destination="Hej-UV-y4d" id="diB-Up-qGV"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Models" id="eSx-yJ-2QO">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="xY4-Nz-qVE">
+                            <connections>
+                                <action selector="searchBarButtonPressed:" destination="Hej-UV-y4d" id="ANW-mu-evj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <segue destination="rX0-R8-2v3" kind="show" identifier="goToVariants" id="F92-kq-yxz"/>
+                        <segue destination="rX0-R8-2v3" kind="push" identifier="goToVariants" id="F92-kq-yxz"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tqj-np-h88" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -122,6 +136,13 @@
                             <outlet property="delegate" destination="rX0-R8-2v3" id="m8l-Va-KLG"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Variants" id="QQy-2U-BT6">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="6Co-he-A36">
+                            <connections>
+                                <action selector="searchBarButtonPressed:" destination="rX0-R8-2v3" id="sHG-iB-97P"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="I82-mT-qoe" kind="show" identifier="goToResultsFromVariants" id="p1V-Xj-Rur"/>
                     </connections>
@@ -336,6 +357,13 @@ website below.</string>
                             <outlet property="delegate" destination="I82-mT-qoe" id="tPd-FJ-mWk"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="fzh-Bv-1LL">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="Ev3-29-yj6">
+                            <connections>
+                                <action selector="searchBarButtonPressed:" destination="I82-mT-qoe" id="Ln7-ib-mOS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="imageOfCar" destination="afV-ak-77n" id="ix3-ys-9AD"/>
                     </connections>
@@ -369,6 +397,6 @@ website below.</string>
         <image name="germany" width="112" height="112"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="QLJ-zW-bOq"/>
+        <segue reference="p1V-Xj-Rur"/>
     </inferredMetricsTieBreakers>
 </document>

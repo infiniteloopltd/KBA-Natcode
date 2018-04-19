@@ -20,6 +20,8 @@ class MakesTableViewController: UITableViewController {
 
         let sorry = NSLocalizedString("Sorry", comment: "")
         let fail = NSLocalizedString("Fail", comment: "")
+        let makes = NSLocalizedString("Makes", comment: "")
+        title = makes
         SVProgressHUD.show()
         CallWebservice(){ success in
             SVProgressHUD.dismiss()
@@ -94,7 +96,10 @@ class MakesTableViewController: UITableViewController {
     }
 
 
-   
+    @IBAction func searchBarButtonPressed(_ sender: UIBarButtonItem) {
+        SearchHandler.Show(sender: self)
+    }
+    
 
    
 

@@ -46,45 +46,7 @@ class ViewController: UITableViewController {
    
 
     @IBAction func searchButtonPressed(_ sender: UIBarButtonItem) {
-    
-         let searchTitle = NSLocalizedString("Search", comment: "")
-         let searchBy = NSLocalizedString("Search by", comment: "")
-         let cancelText = NSLocalizedString("Cancel", comment: "")
-        
-         var code = ""
-         if GlobalSettings.SelectedCountry == .Germany
-         {
-            code = "KBA"
-         }
-         if GlobalSettings.SelectedCountry == .Austria
-         {
-            code = "Nat Code"
-         }
-    
-         var alertText : UITextField = UITextField()
-        
-        let alert = UIAlertController(title: searchBy + " " + code, message: "", preferredStyle: .alert)
-        
-        let action = UIAlertAction(title: searchTitle, style: UIAlertActionStyle.default) { (alertAction) in
-            print(alertText.text!)
-            GlobalSettings.SelectedCode = alertText.text!
-            // Perform segue
-            self.performSegue(withIdentifier: "goToResults", sender: self)
-            
-        }
-        
-        let cancel = UIAlertAction(title: cancelText, style: UIAlertActionStyle.cancel)
-        
-        alert.addTextField { (textField) in
-            textField.placeholder = code
-            alertText = textField
-        }
-        
-        alert.addAction(action)
-        alert.addAction(cancel)
-        
-        present(alert, animated: true, completion: nil)
-    
+        SearchHandler.Show(sender: self)
     }
 }
 
