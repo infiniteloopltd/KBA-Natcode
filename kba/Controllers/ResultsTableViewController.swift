@@ -93,19 +93,23 @@ class ResultsTableViewController: UITableViewController {
             Fuel.Value = codeJson["Fuel"].string!
             self.Properties.append(Fuel)
         
-            let image = codeJson["ImageUrl"].string!
         
-            self.imageOfCar.downloadedFrom(link: image){
-                print("image should be visible")
+            BingImageSearch.Search(keyword: description.Value) { (image, imageurl) in
+                self.imageOfCar.image = image
+                self.imageOfCar.autoresizingMask = [.flexibleWidth, .flexibleHeight, .flexibleBottomMargin, .flexibleRightMargin, .flexibleLeftMargin, .flexibleTopMargin]
+                self.imageOfCar.contentMode = .scaleAspectFit // OR .scaleAspectFill
+                self.imageOfCar.clipsToBounds = true
                 SVProgressHUD.dismiss()
+                
+                let recentSearch = RecentSearch()
+                recentSearch.Code = GlobalSettings.SelectedCode
+                recentSearch.Country = GlobalSettings.SelectedCountry
+                recentSearch.Description = description.Value
+                recentSearch.Image = imageurl
+                self.Save(search: recentSearch)
             }
         
-            let recentSearch = RecentSearch()
-            recentSearch.Code = GlobalSettings.SelectedCode
-            recentSearch.Country = GlobalSettings.SelectedCountry
-            recentSearch.Description = description.Value
-            recentSearch.Image = image
-            Save(search: recentSearch)
+        
         
     }
     
@@ -183,19 +187,21 @@ class ResultsTableViewController: UITableViewController {
             DateRange.Value = codeJson["DateRange"].string!
             self.Properties.append(DateRange)
         
-            let image = codeJson["ImageUrl"].string!
-        
-            self.imageOfCar.downloadedFrom(link: image){
-                print("image should be visible")
+            BingImageSearch.Search(keyword: description.Value) { (image, imageurl) in
+                self.imageOfCar.image = image
+                self.imageOfCar.autoresizingMask = [.flexibleWidth, .flexibleHeight, .flexibleBottomMargin, .flexibleRightMargin, .flexibleLeftMargin, .flexibleTopMargin]
+                self.imageOfCar.contentMode = .scaleAspectFit // OR .scaleAspectFill
+                self.imageOfCar.clipsToBounds = true
+                
                 SVProgressHUD.dismiss()
+                
+                let recentSearch = RecentSearch()
+                recentSearch.Code = GlobalSettings.SelectedCode
+                recentSearch.Country = GlobalSettings.SelectedCountry
+                recentSearch.Description = description.Value
+                recentSearch.Image = imageurl
+                self.Save(search: recentSearch)
             }
-        
-            let recentSearch = RecentSearch()
-            recentSearch.Code = GlobalSettings.SelectedCode
-            recentSearch.Country = GlobalSettings.SelectedCountry
-            recentSearch.Description = description.Value
-            recentSearch.Image = image
-            Save(search: recentSearch)
     }
     
     
