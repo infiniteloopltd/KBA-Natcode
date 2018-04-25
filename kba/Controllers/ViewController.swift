@@ -17,9 +17,24 @@ class ViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+   
         
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        GermanCell.MakeFunky()
+        AustrianCell.MakeFunky()
+    }
+    
+    func gradient(frame:CGRect) -> CAGradientLayer {
+        let layer = CAGradientLayer()
+        layer.frame = frame
+        layer.startPoint = CGPoint(x: 0, y: 0.5)
+        layer.endPoint = CGPoint(x: 1, y: 0.5)
+        layer.colors = [
+            UIColor.white.cgColor,UIColor.flatMint.cgColor]
+        return layer
+    }
   
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

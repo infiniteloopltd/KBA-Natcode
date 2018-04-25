@@ -84,11 +84,13 @@ class MakesTableViewController: UITableViewController {
     }
 
     
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MakesCell", for: indexPath)
 
         cell.textLabel?.text = filteredMakes[indexPath.row]
-
+        cell.MakeFunky()
+        
         return cell
     }
     

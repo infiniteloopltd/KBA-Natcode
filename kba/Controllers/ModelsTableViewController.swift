@@ -91,7 +91,7 @@ class ModelsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ModelsCell", for: indexPath)
 
         cell.textLabel?.text = filteredModels[indexPath.row]
-        
+        cell.MakeFunky()
         return cell
     }
     

@@ -273,22 +273,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="rCN-Fp-xlZ">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rCN-Fp-xlZ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="493.66666666666669"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A2e-JW-MgQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="110.33333333333333"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="70.333333333333329"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Header" translatesAutoresizingMaskIntoConstraints="NO" id="Vng-9h-188">
-                                        <rect key="frame" x="0.0" y="110.33333333333331" width="375" height="100"/>
+                                        <rect key="frame" x="0.0" y="80.333333333333314" width="375" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="GXh-IC-pMu"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="oPp-vH-OGh"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ek-SW-nGi">
-                                        <rect key="frame" x="0.0" y="210.33333333333331" width="333.33333333333331" height="223.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="190.33333333333331" width="333.33333333333331" height="223.33333333333331"/>
                                         <string key="text">This app allows you search for German KBA
 ("Kraftfahrt-Bundesamt") codes, and 
 Austrian NatCode ("Nationaler Code") by 
@@ -305,7 +305,7 @@ website below.</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZe-u5-1tB">
-                                        <rect key="frame" x="0.0" y="433.66666666666669" width="112" height="30"/>
+                                        <rect key="frame" x="0.0" y="423.66666666666669" width="112" height="30"/>
                                         <state key="normal" title="Visit NatCode.at"/>
                                         <connections>
                                             <action selector="natCodeButtonPressed:" destination="5Cs-6Y-JLp" eventType="touchUpInside" id="lHY-KK-YQv"/>
@@ -483,6 +483,12 @@ website below.</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="UTc-Dy-Shr">
                         <rect key="frame" x="0.0" y="44" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -516,9 +522,9 @@ website below.</string>
     <resources>
         <image name="Header" width="750" height="500"/>
         <image name="austria" width="128" height="128"/>
-        <image name="germany" width="112" height="112"/>
+        <image name="germany" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="yU1-A2-o2Q"/>
+        <segue reference="QLJ-zW-bOq"/>
     </inferredMetricsTieBreakers>
 </document>

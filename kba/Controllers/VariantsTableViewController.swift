@@ -92,7 +92,7 @@ class VariantsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "VariantsCell", for: indexPath)
 
         cell.textLabel?.text = filteredVariants[indexPath.row].Property
-        
+        cell.MakeFunky()
         return cell
     }
     

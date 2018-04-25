@@ -28,6 +28,7 @@
 		1A4BABC42080C2BC00F3E7B6 /* GlobalSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4BABC32080C2BC00F3E7B6 /* GlobalSettings.swift */; };
 		1A4BABC62080C89A00F3E7B6 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4BABC52080C89A00F3E7B6 /* Utils.swift */; };
 		1A4BABC82080D3D100F3E7B6 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4BABC72080D3D100F3E7B6 /* HelpViewController.swift */; };
+		1A810EFB2090E95A00B4A680 /* ExtensionUiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A810EFA2090E95A00B4A680 /* ExtensionUiTableViewCell.swift */; };
 		D18049DB069CFD1CB865FB97 /* Pods_kba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D1744E5929B79A3F7779374 /* Pods_kba.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		1A4BABC32080C2BC00F3E7B6 /* GlobalSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalSettings.swift; sourceTree = "<group>"; };
 		1A4BABC52080C89A00F3E7B6 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		1A4BABC72080D3D100F3E7B6 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		1A810EFA2090E95A00B4A680 /* ExtensionUiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUiTableViewCell.swift; sourceTree = "<group>"; };
 		3D1744E5929B79A3F7779374 /* Pods_kba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C29D1C7EA2A2683F86091089 /* Pods-kba.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kba.release.xcconfig"; path = "Pods/Target Support Files/Pods-kba/Pods-kba.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,6 +136,7 @@
 				1A2715D12088AD8500A3CBDC /* SearchHandler.swift */,
 				1A2715D32088C07B00A3CBDC /* RecentSearch.swift */,
 				15E7B30A208D05E50071DC8C /* BingImageSearch.swift */,
+				1A810EFA2090E95A00B4A680 /* ExtensionUiTableViewCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-kba/Pods-kba-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
@@ -263,6 +267,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
@@ -311,6 +316,7 @@
 				15CA09FC207FF57800DCE93B /* ImageViewExtension.swift in Sources */,
 				1A4BABC42080C2BC00F3E7B6 /* GlobalSettings.swift in Sources */,
 				15CA09E2207FDCC600DCE93B /* AppDelegate.swift in Sources */,
+				1A810EFB2090E95A00B4A680 /* ExtensionUiTableViewCell.swift in Sources */,
 				1A2715D22088AD8500A3CBDC /* SearchHandler.swift in Sources */,
 				1A4BABC62080C89A00F3E7B6 /* Utils.swift in Sources */,
 			);
