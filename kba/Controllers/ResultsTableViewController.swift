@@ -102,7 +102,7 @@ class ResultsTableViewController: UITableViewController {
             BingImageSearch.Search(keyword: description.Value) { (image, imageurl) in
                 self.imageOfCar.image = image
                 self.imageOfCar.autoresizingMask = [.flexibleWidth, .flexibleHeight, .flexibleBottomMargin, .flexibleRightMargin, .flexibleLeftMargin, .flexibleTopMargin]
-                self.imageOfCar.contentMode = .scaleAspectFit // OR .scaleAspectFill
+                self.imageOfCar.contentMode = .scaleAspectFill
                 self.imageOfCar.clipsToBounds = true
                 SVProgressHUD.dismiss()
                 
@@ -195,7 +195,7 @@ class ResultsTableViewController: UITableViewController {
             BingImageSearch.Search(keyword: description.Value) { (image, imageurl) in
                 self.imageOfCar.image = image
                 self.imageOfCar.autoresizingMask = [.flexibleWidth, .flexibleHeight, .flexibleBottomMargin, .flexibleRightMargin, .flexibleLeftMargin, .flexibleTopMargin]
-                self.imageOfCar.contentMode = .scaleAspectFit // OR .scaleAspectFill
+                self.imageOfCar.contentMode = .scaleAspectFill
                 self.imageOfCar.clipsToBounds = true
                 
                 SVProgressHUD.dismiss()
