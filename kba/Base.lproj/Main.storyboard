@@ -352,6 +352,18 @@ website below.</string>
                             <rect key="frame" x="0.0" y="0.0" width="375" height="238"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Zu2-oP-5fi">
+                            <rect key="frame" x="0.0" y="310" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.20862308139999999" green="0.65374672410000001" blue="0.94710081820000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="Share">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="shareButtonClicked:" destination="I82-mT-qoe" eventType="touchUpInside" id="IKw-4G-Gbt"/>
+                            </connections>
+                        </button>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ResultsCell" textLabel="79s-kI-kqJ" detailTextLabel="IBN-dv-ubQ" style="IBUITableViewCellStyleValue1" id="HGY-yG-mWG">
                                 <rect key="frame" x="0.0" y="266" width="375" height="44"/>
@@ -392,6 +404,7 @@ website below.</string>
                     </navigationItem>
                     <connections>
                         <outlet property="imageOfCar" destination="afV-ak-77n" id="ix3-ys-9AD"/>
+                        <outlet property="shareButton" destination="Zu2-oP-5fi" id="Wpy-5f-AWH"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a4Z-ZF-rbA" userLabel="First Responder" sceneMemberID="firstResponder"/>

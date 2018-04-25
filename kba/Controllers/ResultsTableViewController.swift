@@ -20,6 +20,9 @@ class ResultsTableViewController: UITableViewController {
     
     @IBOutlet weak var imageOfCar: UIImageView!
     
+    
+    @IBOutlet weak var shareButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let sorry = NSLocalizedString("Sorry", comment: "")
@@ -33,6 +36,8 @@ class ResultsTableViewController: UITableViewController {
             }
         }
         
+        let share = NSLocalizedString("Share", comment: "")
+        shareButton.setTitle(share, for: .normal)
      
     }
     
@@ -276,5 +281,17 @@ class ResultsTableViewController: UITableViewController {
     }
     
     
-
+    @IBAction func shareButtonClicked(_ sender: UIButton) {
+        let textToShare = self.title!
+        
+        if let myWebsite = NSURL(string: "http://www.kbaapi.de/") {
+            let objectsToShare = [textToShare, myWebsite] as [Any]
+            let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
+            
+            activityVC.popoverPresentationController?.sourceView = sender
+            self.present(activityVC, animated: true, completion: nil)
+        }
+        
+    }
+    
 }
