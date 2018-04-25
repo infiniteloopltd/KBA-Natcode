@@ -57,6 +57,7 @@ class RecentSearchesTableViewController: UITableViewController, SwipeTableViewCe
         cell.textLabel?.text = search.Description
         cell.imageView?.downloadedFrom(url: URL(string: search.Image)!){}
         cell.detailTextLabel?.text = search.Code
+      
         return cell
     }
     
