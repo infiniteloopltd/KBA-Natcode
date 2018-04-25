@@ -20,6 +20,15 @@ DEPENDENCIES:
   - SwiftyJSON
   - SwipeCellKit
 
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - Realm
+    - RealmSwift
+    - SVProgressHUD
+    - SwiftyJSON
+    - SwipeCellKit
+
 EXTERNAL SOURCES:
   ChameleonFramework:
     :git: https://github.com/ViccAlexander/Chameleon.git
@@ -40,4 +49,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 4bb2ca7859e38c6cf7466becd2af24a2dad8b8ed
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.0

@@ -32,6 +32,7 @@ class ResultsTableViewController: UITableViewController {
             //SVProgressHUD.dismiss() // Will be dismissed when image loads
             if !success
             {
+                SVProgressHUD.dismiss()
                 Utils.ShowMessage(title: sorry, message: fail, controller: self)
             }
         }
