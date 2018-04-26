@@ -17,8 +17,9 @@ extension UITableViewCell
     }
     
     private func gradient(frame:CGRect) -> CAGradientLayer {
-        var adjustedFrame = frame // Hack for iPhone 6s
-        adjustedFrame.size.width = adjustedFrame.size.width + 50
+        var adjustedFrame = frame 
+        adjustedFrame.size.width = UIScreen.main.bounds.size.width
+        adjustedFrame.size.height = adjustedFrame.size.height + 10
         
         let layer = CAGradientLayer()
         layer.frame = adjustedFrame
