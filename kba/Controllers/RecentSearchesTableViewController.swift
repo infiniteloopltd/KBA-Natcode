@@ -28,7 +28,7 @@ class RecentSearchesTableViewController: UITableViewController, SwipeTableViewCe
         if (recentSearches?.count == 0)
         {
             let sorry = NSLocalizedString("Sorry", comment: "")
-            let fail = NSLocalizedString("Fail", comment: "")
+            let fail = NSLocalizedString("No Recents", comment: "")
             Utils.ShowMessage(title: sorry, message: fail, controller: self)
         }
         tableView.reloadData()
