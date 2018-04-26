@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '498A3D49C53FE1099F8ACEB9B46D376E'
-               BlueprintName = 'Pods-kba'
+               BlueprintIdentifier = '76BD4592010354D6C23D6ECCA20D83A8'
+               BlueprintName = 'ChameleonFramework'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Pods-kba.framework'>
+               BuildableName = 'ChameleonFramework.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
