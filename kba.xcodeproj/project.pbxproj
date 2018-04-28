@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		156CA5D120948EA500B00E3E /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156CA5D020948EA500B00E3E /* Logging.swift */; };
 		15CA09E2207FDCC600DCE93B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CA09E1207FDCC600DCE93B /* AppDelegate.swift */; };
 		15CA09E4207FDCC600DCE93B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CA09E3207FDCC600DCE93B /* ViewController.swift */; };
 		15CA09E7207FDCC600DCE93B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15CA09E5207FDCC600DCE93B /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		156CA5D020948EA500B00E3E /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
 		15CA09DE207FDCC600DCE93B /* kba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15CA09E1207FDCC600DCE93B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15CA09E3207FDCC600DCE93B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				1A2715D32088C07B00A3CBDC /* RecentSearch.swift */,
 				15E7B30A208D05E50071DC8C /* BingImageSearch.swift */,
 				1A810EFA2090E95A00B4A680 /* ExtensionUiTableViewCell.swift */,
+				156CA5D020948EA500B00E3E /* Logging.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -193,7 +196,7 @@
 				TargetAttributes = {
 					15CA09DD207FDCC500DCE93B = {
 						CreatedOnToolsVersion = 9.3;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -303,6 +306,7 @@
 			files = (
 				15CA09FA207FF19D00DCE93B /* CarProperty.swift in Sources */,
 				1A4BABC22080C25300F3E7B6 /* VariantsTableViewController.swift in Sources */,
+				156CA5D120948EA500B00E3E /* Logging.swift in Sources */,
 				1A2715D42088C07B00A3CBDC /* RecentSearch.swift in Sources */,
 				1A4BABBE2080C23200F3E7B6 /* MakesTableViewController.swift in Sources */,
 				1A4BABC82080D3D100F3E7B6 /* HelpViewController.swift in Sources */,
@@ -475,15 +479,15 @@
 			baseConfigurationReference = 17BF78CCA463975319588B04 /* Pods-kba.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XZQ8K36FD6;
 				INFOPLIST_FILE = kba/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fiach.fiach.kba;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "52423676-860a-4f27-839b-18c511b0fea3";
-				PROVISIONING_PROFILE_SPECIFIER = "Fiach Wildcard Distribution 2018";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -494,15 +498,15 @@
 			baseConfigurationReference = C29D1C7EA2A2683F86091089 /* Pods-kba.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XZQ8K36FD6;
 				INFOPLIST_FILE = kba/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fiach.fiach.kba;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "52423676-860a-4f27-839b-18c511b0fea3";
-				PROVISIONING_PROFILE_SPECIFIER = "Fiach Wildcard Distribution 2018";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -13,7 +13,7 @@ class HelpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = NSLocalizedString("Help", comment: "")
-
+        Logging.Log(Channel: "kba", Log: "Loaded help screen")
         // Do any additional setup after loading the view.
     }
 

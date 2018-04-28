@@ -17,13 +17,18 @@ class ViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-   
-        
     }
 
     override func viewWillAppear(_ animated: Bool) {
+        let w = self.view.layer.bounds.width;
+        let h = self.view.layer.bounds.height;
+        Logging.Log(Channel: "kba", Log: "Started with \(w)x\(h)")
+        
         GermanCell.MakeFunky()
         AustrianCell.MakeFunky()
+        
+        
+        
     }
     
     func gradient(frame:CGRect) -> CAGradientLayer {
@@ -39,12 +44,12 @@ class ViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(tableView.indexPathForSelectedRow?.section ?? "?")
-        
         if (indexPath.section == 0)
         {
             GlobalSettings.SelectedCountry = .Germany
             GermanCell.accessoryType = .checkmark
             AustrianCell.accessoryType = .none
+            Logging.Log(Channel: "kba", Log: "Selected Germany")
         }
         
         if (indexPath.section == 1)
@@ -52,6 +57,7 @@ class ViewController: UITableViewController {
             GlobalSettings.SelectedCountry = .Austria
             GermanCell.accessoryType = .none
             AustrianCell.accessoryType = .checkmark
+            Logging.Log(Channel: "kba", Log: "Selected Austria")
         }
         
         tableView.deselectRow(at: indexPath, animated: true)

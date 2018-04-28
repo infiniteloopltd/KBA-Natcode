@@ -19,7 +19,7 @@ class RecentSearchesTableViewController: UITableViewController, SwipeTableViewCe
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 80
-        
+        Logging.Log(Channel: "kba", Log: "Loaded recent searches")
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -30,6 +30,7 @@ class RecentSearchesTableViewController: UITableViewController, SwipeTableViewCe
             let sorry = NSLocalizedString("Sorry", comment: "")
             let fail = NSLocalizedString("No Recents", comment: "")
             Utils.ShowMessage(title: sorry, message: fail, controller: self)
+            Logging.Log(Channel: "kba", Log: "No recent searches")
         }
         tableView.reloadData()
     }
@@ -81,6 +82,7 @@ class RecentSearchesTableViewController: UITableViewController, SwipeTableViewCe
                 }
                 catch{
                     print("Failed to save data")
+                    Logging.Log(Channel: "kba", Log: "Recent search delete fail \(error)")
                 }
         }
 

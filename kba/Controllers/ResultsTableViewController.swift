@@ -29,9 +29,9 @@ class ResultsTableViewController: UITableViewController {
         let fail = NSLocalizedString("Fail", comment: "")
         SVProgressHUD.show()
         CallWebservice(){ success in
-            //SVProgressHUD.dismiss() // Will be dismissed when image loads
             if !success
             {
+                Logging.Log(Channel: "kba", Log: "Failed on ResultsTableViewController.viewDidLoad")
                 SVProgressHUD.dismiss()
                 Utils.ShowMessage(title: sorry, message: fail, controller: self)
             }
@@ -113,6 +113,7 @@ class ResultsTableViewController: UITableViewController {
                 recentSearch.Description = description.Value
                 recentSearch.Image = imageurl
                 self.Save(search: recentSearch)
+                Logging.Log(Channel: "kba", Log: "Showing image \(imageurl)")
             }
         
         
@@ -128,6 +129,7 @@ class ResultsTableViewController: UITableViewController {
         }
         catch{
             print("Failed to save data")
+            Logging.Log(Channel: "kba", Log: "Failed to save data \(error)")
         }
     }
     
@@ -226,7 +228,7 @@ class ResultsTableViewController: UITableViewController {
             // 128740
             url = "https://www.regcheck.org.uk/api/json.aspx/CheckAustria/" + GlobalSettings.SelectedCode;
         }
-     
+        Logging.Log(Channel: "kba", Log: url)
         Alamofire.request(url, method: .get)
         .authenticate(user: Secret.username , password: Secret.password).responseJSON {
             response in

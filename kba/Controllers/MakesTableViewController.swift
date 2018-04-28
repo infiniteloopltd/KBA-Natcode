@@ -50,6 +50,7 @@ class MakesTableViewController: UITableViewController {
             // 128740
             url = "https://www.regcheck.org.uk/api/kba.aspx/AT/ListOfMakes"
         }
+        Logging.Log(Channel: "kba", Log: url)
         Alamofire.request(url, method: .get)
             .responseJSON {
                 response in               

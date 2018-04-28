@@ -50,6 +50,7 @@ class VariantsTableViewController: UITableViewController {
                 GlobalSettings.SelectedMake + "/" + GlobalSettings.SelectedModel
         }
         print(url)
+        Logging.Log(Channel: "kba", Log: url)
         Alamofire.request(url , method: .get)
             .responseJSON {
                 response in
