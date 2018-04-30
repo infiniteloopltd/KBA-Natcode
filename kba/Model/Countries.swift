@@ -11,4 +11,5 @@ import Foundation
 @objc enum Countries : Int {
     case Germany // 0005/ALQ
     case Austria
+    case International // VIN
 }

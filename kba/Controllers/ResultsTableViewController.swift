@@ -20,21 +20,29 @@ class ResultsTableViewController: UITableViewController {
     
     @IBOutlet weak var imageOfCar: UIImageView!
     
-    
     @IBOutlet weak var shareButton: UIButton!
+    
+    var preloadedData : JSON? // Used in VIN searches
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let sorry = NSLocalizedString("Sorry", comment: "")
         let fail = NSLocalizedString("Fail", comment: "")
         SVProgressHUD.show()
-        CallWebservice(){ success in
-            if !success
-            {
-                Logging.Log(Channel: "kba", Log: "Failed on ResultsTableViewController.viewDidLoad")
-                SVProgressHUD.dismiss()
-                Utils.ShowMessage(title: sorry, message: fail, controller: self)
+        if (GlobalSettings.SelectedCountry != .International)
+        {
+            CallWebservice(){ success in
+                if !success
+                {
+                    Logging.Log(Channel: "kba", Log: "Failed on ResultsTableViewController.viewDidLoad")
+                    SVProgressHUD.dismiss()
+                    Utils.ShowMessage(title: sorry, message: fail, controller: self)
+                }
             }
+        }
+        else
+        {
+            ProcessVinJson(with: GlobalSettings.Data!)
         }
         
         let share = NSLocalizedString("Share", comment: "")
@@ -42,6 +50,55 @@ class ResultsTableViewController: UITableViewController {
      
     }
     
+    func ProcessVinJson(with codeJson : JSON)
+    {
+        /*{
+          "Transmission" : "",
+          "BodyStyle" : "Hatchback\/Liftback\/Notchback",
+          "Country" : "Canada",
+          "Cnit" : null,
+          "Year" : "2005",
+          "Engine" : "3500.0",
+          "Make" : "CHRYSLER",
+          "ImageUrl" : "http:\/\/vehicleregistrationapi.com\/image.aspx\/@Q0hSWVNMRVIgUGFjaWZpY2E=",
+          "Model" : "Pacifica"
+        }*/
+        let descriptionText = NSLocalizedString("Description", comment: "")
+        let description = CarProperty(with: descriptionText)
+        description.Value = codeJson["Make"].string! + " " + codeJson["Model"].string!
+        self.Properties.append(description)
+        title = description.Value
+        
+        let bodyStyleText = "Body Style"
+        let bodyStyle = CarProperty(with: bodyStyleText)
+        bodyStyle.Value = codeJson["BodyStyle"].string!
+        self.Properties.append(bodyStyle)
+        
+        let countryText = "Country"
+        let country = CarProperty(with: countryText)
+        country.Value = codeJson["Country"].string!
+        self.Properties.append(country)
+        
+        let yearText = "Year"
+        let year = CarProperty(with: yearText)
+        year.Value = codeJson["Year"].string!
+        self.Properties.append(year)
+   
+        let engineText = "Engine"
+        let engine = CarProperty(with: engineText)
+        engine.Value = codeJson["Engine"].string!
+        self.Properties.append(engine)
+        
+        
+        BingImageSearch.Search(keyword: description.Value) { (image, imageurl) in
+                self.imageOfCar.image = image
+                self.imageOfCar.autoresizingMask = [.flexibleWidth, .flexibleHeight, .flexibleBottomMargin, .flexibleRightMargin, .flexibleLeftMargin, .flexibleTopMargin]
+                self.imageOfCar.contentMode = .scaleAspectFill
+                self.imageOfCar.clipsToBounds = true
+                SVProgressHUD.dismiss()
+         }
+        
+    }
 
     
     func ProcessGermanJson(with codeJson : JSON)

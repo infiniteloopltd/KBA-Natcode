@@ -338,7 +338,7 @@ website below.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VlD-B7-CyB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-255" y="-623"/>
+            <point key="canvasLocation" x="687.20000000000005" y="-623.64532019704438"/>
         </scene>
         <!--Results Table View Controller-->
         <scene sceneID="IIO-F7-b0o">
@@ -411,24 +411,44 @@ website below.</string>
             </objects>
             <point key="canvasLocation" x="1167.2" y="1134.9753694581282"/>
         </scene>
-        <!--VIN-->
+        <!--Vin Search View Controller-->
         <scene sceneID="oPs-g8-gso">
             <objects>
                 <viewController id="J9H-RZ-DX7" customClass="VinSearchViewController" customModule="kba" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xfa-sL-KmY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LtW-JV-3Pf" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                <rect key="frame" x="16" y="144" width="343" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3r-kN-J3F" customClass="TransitionButton" customModule="TransitionButton">
+                                <rect key="frame" x="59" y="273" width="257" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="searchButtonPressed:" destination="J9H-RZ-DX7" eventType="touchUpInside" id="w7U-FC-p8u"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Fk9-sU-ZUI"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="VIN" selectedImage="car" id="PI4-9N-X0M"/>
+                    <navigationItem key="navigationItem" id="w69-QH-u6n"/>
                     <connections>
+                        <outlet property="SearchButton" destination="v3r-kN-J3F" id="HHY-2F-ojH"/>
+                        <outlet property="VinSearchTextBox" destination="LtW-JV-3Pf" id="AlD-Af-tpe"/>
                         <outlet property="tabButton" destination="PI4-9N-X0M" id="N66-27-MXA"/>
+                        <segue destination="I82-mT-qoe" kind="show" identifier="goToResultsFromVinSearch" id="QmN-QB-ztr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2F0-r4-da5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2743" y="-573"/>
+            <point key="canvasLocation" x="-1887" y="-813"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="eOD-Sd-Q4W">
@@ -442,7 +462,7 @@ website below.</string>
                     <connections>
                         <segue destination="abi-Fs-YEM" kind="relationship" relationship="viewControllers" id="p9t-Hz-YeR"/>
                         <segue destination="xfa-OR-ESM" kind="relationship" relationship="viewControllers" id="GVM-Dj-ysj"/>
-                        <segue destination="J9H-RZ-DX7" kind="relationship" relationship="viewControllers" id="UdD-i4-YVv"/>
+                        <segue destination="IkX-io-Ix4" kind="relationship" relationship="viewControllers" id="UdD-i4-YVv"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J7y-or-Epc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -538,6 +558,26 @@ website below.</string>
             </objects>
             <point key="canvasLocation" x="-2719.1999999999998" y="830.54187192118229"/>
         </scene>
+        <!--VIN-->
+        <scene sceneID="Z0N-8L-iLy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IkX-io-Ix4" customClass="VInNavigationController" customModule="kba" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="VIN" image="car" selectedImage="car" id="PI4-9N-X0M"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="431-P2-Hvj">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <outlet property="tabButton" destination="PI4-9N-X0M" id="8W3-HD-IGH"/>
+                        <segue destination="J9H-RZ-DX7" kind="relationship" relationship="rootViewController" id="t3h-9Q-ve8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L11-MN-xOU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2701" y="-868"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Header" width="750" height="500"/>
@@ -546,6 +586,6 @@ website below.</string>
         <image name="germany" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="yU1-A2-o2Q"/>
+        <segue reference="QmN-QB-ztr"/>
     </inferredMetricsTieBreakers>
 </document>

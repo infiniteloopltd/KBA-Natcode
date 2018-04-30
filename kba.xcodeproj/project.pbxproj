@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		156CA5D120948EA500B00E3E /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156CA5D020948EA500B00E3E /* Logging.swift */; };
+		156CA5D32097AA5A00B00E3E /* VInNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156CA5D22097AA5A00B00E3E /* VInNavigationController.swift */; };
 		15CA09E2207FDCC600DCE93B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CA09E1207FDCC600DCE93B /* AppDelegate.swift */; };
 		15CA09E4207FDCC600DCE93B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CA09E3207FDCC600DCE93B /* ViewController.swift */; };
 		15CA09E7207FDCC600DCE93B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15CA09E5207FDCC600DCE93B /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		156CA5D020948EA500B00E3E /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		156CA5D22097AA5A00B00E3E /* VInNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VInNavigationController.swift; sourceTree = "<group>"; };
 		15CA09DE207FDCC600DCE93B /* kba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15CA09E1207FDCC600DCE93B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15CA09E3207FDCC600DCE93B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				1A4BABC72080D3D100F3E7B6 /* HelpViewController.swift */,
 				1A2715D52088C48F00A3CBDC /* RecentSearchesTableViewController.swift */,
 				1A38B6A82097828F00E2A2FE /* VinSearchViewController.swift */,
+				156CA5D22097AA5A00B00E3E /* VInNavigationController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 				1A4BABC42080C2BC00F3E7B6 /* GlobalSettings.swift in Sources */,
 				15CA09E2207FDCC600DCE93B /* AppDelegate.swift in Sources */,
 				1A810EFB2090E95A00B4A680 /* ExtensionUiTableViewCell.swift in Sources */,
+				156CA5D32097AA5A00B00E3E /* VInNavigationController.swift in Sources */,
 				1A2715D22088AD8500A3CBDC /* SearchHandler.swift in Sources */,
 				1A4BABC62080C89A00F3E7B6 /* Utils.swift in Sources */,
 			);

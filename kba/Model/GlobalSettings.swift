@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 class GlobalSettings
 {
@@ -17,5 +18,7 @@ class GlobalSettings
     static var SelectedMake : String = ""
     
     static var SelectedModel : String = ""
+    
+    static var Data : JSON?
 
 }
