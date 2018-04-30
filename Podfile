@@ -12,4 +12,6 @@ target 'kba' do
   pod 'RealmSwift'
   pod 'SwipeCellKit'
   pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git'
+  pod 'SkyFloatingLabelTextField', '~> 3.0'
+  pod 'TransitionButton'
 end
