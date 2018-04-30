@@ -69,22 +69,22 @@ class ResultsTableViewController: UITableViewController {
         self.Properties.append(description)
         title = description.Value
         
-        let bodyStyleText = "Body Style"
+        let bodyStyleText = NSLocalizedString("Body Style", comment: "")
         let bodyStyle = CarProperty(with: bodyStyleText)
         bodyStyle.Value = codeJson["BodyStyle"].string!
         self.Properties.append(bodyStyle)
         
-        let countryText = "Country"
+        let countryText = NSLocalizedString("Country", comment: "")
         let country = CarProperty(with: countryText)
         country.Value = codeJson["Country"].string!
         self.Properties.append(country)
         
-        let yearText = "Year"
+        let yearText = NSLocalizedString("Year", comment: "")
         let year = CarProperty(with: yearText)
         year.Value = codeJson["Year"].string!
         self.Properties.append(year)
    
-        let engineText = "Engine"
+        let engineText = NSLocalizedString("Engine", comment: "")
         let engine = CarProperty(with: engineText)
         engine.Value = codeJson["Engine"].string!
         self.Properties.append(engine)

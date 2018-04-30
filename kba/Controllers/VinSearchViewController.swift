@@ -25,9 +25,11 @@ class VinSearchViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      
-        VinSearchTextBox.placeholder = "VIN number"
-        VinSearchTextBox.title = "Enter a VIN number"
+        let vinPlaceholder = NSLocalizedString("VIN number", comment: "")
+        let vinTitle = NSLocalizedString("Enter a VIN number", comment: "")
+        let searchText = NSLocalizedString("Search", comment: "")
+        VinSearchTextBox.placeholder = vinPlaceholder
+        VinSearchTextBox.title = vinTitle
        
         VinSearchTextBox.tintColor = UIColor.flatMint // the color of the blinking cursor
         VinSearchTextBox.textColor = UIColor.gray
@@ -38,7 +40,7 @@ class VinSearchViewController: UIViewController {
         VinSearchTextBox.selectedLineHeight = 2.0
         
         SearchButton.backgroundColor = UIColor.flatMint
-        SearchButton.setTitle("Search", for: .normal)
+        SearchButton.setTitle(searchText, for: .normal)
         SearchButton.cornerRadius = 20
         SearchButton.spinnerColor = .white
     }
@@ -48,6 +50,7 @@ class VinSearchViewController: UIViewController {
     func DoVinSearch(vin:String,completion: @escaping (JSON?) -> Void)
     {
         let strUrl = "https://www.regcheck.org.uk/api/json.aspx/VinCheck/\(vin)"
+        Logging.Log(Channel: "kba", Log: strUrl)
         Alamofire.request(strUrl, method: .get)
         .authenticate(user: Secret.username , password: Secret.password).responseJSON {
             response in

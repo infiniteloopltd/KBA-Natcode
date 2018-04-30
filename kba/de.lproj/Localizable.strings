@@ -25,3 +25,9 @@
 "Delete" = "Löschen";
 "No Recents" = "Sie haben keine kürzlich durchgeführten Suchanfragen, bitte führen Sie zuerst eine Suche durch.";
 "VIN" = "FIN";
+"VIN number" = "Fahrgestellnummer";
+"Enter a VIN number" = "Geben Sie FIN";
+"Body Style" = "Körperstil";
+"Country" = "Land";
+"Year" = "Jahr";
+"Engine" = "Motor";
