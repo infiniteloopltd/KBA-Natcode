@@ -419,16 +419,22 @@ website below.</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LtW-JV-3Pf" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LtW-JV-3Pf" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
                                 <rect key="frame" x="16" y="144" width="343" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Trb-9e-FP3"/>
+                                    <constraint firstAttribute="width" constant="343" id="iyD-yd-gr0"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3r-kN-J3F" customClass="TransitionButton" customModule="TransitionButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3r-kN-J3F" customClass="TransitionButton" customModule="TransitionButton">
                                 <rect key="frame" x="59" y="273" width="257" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="LFA-qz-WZ0"/>
+                                    <constraint firstAttribute="width" constant="257" id="W1R-Qs-NZF"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="searchButtonPressed:" destination="J9H-RZ-DX7" eventType="touchUpInside" id="w7U-FC-p8u"/>
@@ -436,6 +442,12 @@ website below.</string>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="v3r-kN-J3F" firstAttribute="top" secondItem="LtW-JV-3Pf" secondAttribute="bottom" constant="79" id="9OD-Wt-mfw"/>
+                            <constraint firstItem="LtW-JV-3Pf" firstAttribute="centerX" secondItem="xfa-sL-KmY" secondAttribute="centerX" id="Gbz-1G-wTd"/>
+                            <constraint firstItem="v3r-kN-J3F" firstAttribute="centerX" secondItem="xfa-sL-KmY" secondAttribute="centerX" id="lQd-VN-ZbU"/>
+                            <constraint firstItem="LtW-JV-3Pf" firstAttribute="top" secondItem="Fk9-sU-ZUI" secondAttribute="top" constant="56" id="s1b-TL-KpD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Fk9-sU-ZUI"/>
                     </view>
                     <navigationItem key="navigationItem" id="w69-QH-u6n"/>
