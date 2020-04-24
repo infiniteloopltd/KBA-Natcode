@@ -24,6 +24,7 @@ class VinSearchViewController: UIViewController {
 
     
     override func viewDidLoad() {
+        let flatMint = UIColor(red: 26/255, green: 189/255, blue: 156/255, alpha: 1)
         super.viewDidLoad()
         let vinPlaceholder = NSLocalizedString("VIN number", comment: "")
         let vinTitle = NSLocalizedString("Enter a VIN number", comment: "")
@@ -31,15 +32,15 @@ class VinSearchViewController: UIViewController {
         VinSearchTextBox.placeholder = vinPlaceholder
         VinSearchTextBox.title = vinTitle
        
-        VinSearchTextBox.tintColor = UIColor.green // .flatMint // the color of the blinking cursor
+        VinSearchTextBox.tintColor = flatMint // .flatMint // the color of the blinking cursor
         VinSearchTextBox.textColor = UIColor.gray
         VinSearchTextBox.lineColor = UIColor.gray
-        VinSearchTextBox.selectedTitleColor = UIColor.green //flatMint
-        VinSearchTextBox.selectedLineColor = UIColor.green //flatMint
+        VinSearchTextBox.selectedTitleColor = flatMint //flatMint
+        VinSearchTextBox.selectedLineColor = flatMint//flatMint
         VinSearchTextBox.lineHeight = 1.0 // bottom line height in points
         VinSearchTextBox.selectedLineHeight = 2.0
         
-        SearchButton.backgroundColor = UIColor.green //flatMint
+        SearchButton.backgroundColor = flatMint //flatMint
         SearchButton.setTitle(searchText, for: .normal)
         SearchButton.cornerRadius = 20
         SearchButton.spinnerColor = .white

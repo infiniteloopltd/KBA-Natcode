@@ -26,7 +26,11 @@ extension UITableViewCell
         layer.startPoint = CGPoint(x: 0, y: 0.5)
         layer.endPoint = CGPoint(x: 1, y: 0.5)
         layer.colors = [
-            UIColor.white.cgColor,UIColor.green.cgColor]
+            UIColor.white.cgColor,UITableViewCell.flatMint().cgColor]
         return layer
+    }
+    
+    class func flatMint() -> UIColor {
+              return UIColor(red: 26/255, green: 189/255, blue: 156/255, alpha: 1)
     }
 }

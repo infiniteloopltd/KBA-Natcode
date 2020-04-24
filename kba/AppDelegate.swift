@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //[Chameleon setGlobalThemeUsingPrimaryColor:(UIColor *)color withContentStyle:(UIContentStyle)contentStyle];
         //Chameleon.setGlobalThemeUsingPrimaryColor(UIColor.flatMint, with: UIContentStyle.contrast)
-        
+       
         return true
     }
 

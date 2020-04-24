@@ -17,9 +17,15 @@ class ViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.backgroundColor = ViewController.flatMint()
+    }
+    
+    class func flatMint() -> UIColor {
+           return UIColor(red: 26/255, green: 189/255, blue: 156/255, alpha: 1)
     }
 
     override func viewWillAppear(_ animated: Bool) {
+        
         let w = self.view.layer.bounds.width;
         let h = self.view.layer.bounds.height;
         Logging.Log(Channel: "kba", Log: "Started with \(w)x\(h)")
@@ -32,14 +38,18 @@ class ViewController: UITableViewController {
     }
     
     func gradient(frame:CGRect) -> CAGradientLayer {
+        let flatMint = UIColor(red: 26/255, green: 189/255, blue: 156/255, alpha: 1)
         let layer = CAGradientLayer()
         layer.frame = frame
         layer.startPoint = CGPoint(x: 0, y: 0.5)
         layer.endPoint = CGPoint(x: 1, y: 0.5)
+        
         layer.colors = [
-            UIColor.white.cgColor,UIColor.green.cgColor]
+            UIColor.white.cgColor,flatMint.cgColor]
         return layer
     }
+    
+  
   
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
