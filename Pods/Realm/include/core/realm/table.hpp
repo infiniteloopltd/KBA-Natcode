@@ -41,6 +41,8 @@
 namespace realm {
 
 class BacklinkColumn;
+template <class>
+class BacklinkCount;
 class BinaryColumy;
 class ConstTableView;
 class Group;
@@ -338,6 +340,9 @@ public:
     Columns<T> column(size_t column); // FIXME: Should this one have been declared noexcept?
     template <class T>
     Columns<T> column(const Table& origin, size_t origin_column_ndx);
+    // BacklinkCount is a total count per row and therefore not attached to a specific column
+    template <class T>
+    BacklinkCount<T> get_backlink_count();
 
     template <class T>
     SubQuery<T> column(size_t column, Query subquery);
@@ -389,7 +394,8 @@ public:
 
     size_t add_empty_row(size_t num_rows = 1);
     void insert_empty_row(size_t row_ndx, size_t num_rows = 1);
-    size_t add_row_with_key(size_t col_ndx, int64_t key);
+    size_t add_row_with_key(size_t col_ndx, util::Optional<int64_t> key);
+    size_t add_row_with_keys(size_t col_1_ndx, int64_t key1, size_t col_2_ndx, StringData key2);
     void remove(size_t row_ndx);
     void remove_recursive(size_t row_ndx);
     void remove_last();
@@ -1264,6 +1270,7 @@ private:
 
     void bind_ptr() const noexcept;
     void unbind_ptr() const noexcept;
+    bool has_references() const noexcept;
 
     void register_view(const TableViewBase* view);
     void unregister_view(const TableViewBase* view) noexcept;
@@ -1734,6 +1741,11 @@ inline void Table::unbind_ptr() const noexcept
     }
 }
 
+inline bool Table::has_references() const noexcept
+{
+    return m_ref_count.load() > 0;
+}
+
 inline void Table::register_view(const TableViewBase* view)
 {
     util::LockGuard lock(m_accessor_mutex);
@@ -1980,6 +1992,14 @@ inline Columns<T> Table::column(const Table& origin, size_t origin_col_ndx)
     link_chain.push_back(backlink_col_ndx);
 
     return Columns<T>(backlink_col_ndx, this, std::move(link_chain));
+}
+
+template <class T>
+inline BacklinkCount<T> Table::get_backlink_count()
+{
+    std::vector<size_t> link_chain = std::move(m_link_chain);
+    m_link_chain.clear();
+    return BacklinkCount<T>(this, std::move(link_chain));
 }
 
 template <class T>
@@ -2773,6 +2793,11 @@ public:
     static void unregister_view(Table& table, const TableViewBase* view) noexcept
     {
         table.unregister_view(view);
+    }
+
+    static bool has_references(const Table& table) noexcept
+    {
+        return table.has_references();
     }
 };
 

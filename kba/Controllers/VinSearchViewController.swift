@@ -31,15 +31,15 @@ class VinSearchViewController: UIViewController {
         VinSearchTextBox.placeholder = vinPlaceholder
         VinSearchTextBox.title = vinTitle
        
-        VinSearchTextBox.tintColor = UIColor.flatMint // the color of the blinking cursor
+        VinSearchTextBox.tintColor = UIColor.green // .flatMint // the color of the blinking cursor
         VinSearchTextBox.textColor = UIColor.gray
         VinSearchTextBox.lineColor = UIColor.gray
-        VinSearchTextBox.selectedTitleColor = UIColor.flatMint
-        VinSearchTextBox.selectedLineColor = UIColor.flatMint
+        VinSearchTextBox.selectedTitleColor = UIColor.green //flatMint
+        VinSearchTextBox.selectedLineColor = UIColor.green //flatMint
         VinSearchTextBox.lineHeight = 1.0 // bottom line height in points
         VinSearchTextBox.selectedLineHeight = 2.0
         
-        SearchButton.backgroundColor = UIColor.flatMint
+        SearchButton.backgroundColor = UIColor.green //flatMint
         SearchButton.setTitle(searchText, for: .normal)
         SearchButton.cornerRadius = 20
         SearchButton.spinnerColor = .white

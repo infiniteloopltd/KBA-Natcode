@@ -179,7 +179,6 @@
 				15CA09DB207FDCC500DCE93B /* Frameworks */,
 				15CA09DC207FDCC500DCE93B /* Resources */,
 				92B2C4B688661F677594DE04 /* [CP] Embed Pods Frameworks */,
-				5076900F1EF790BAC823757B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -258,21 +257,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5076900F1EF790BAC823757B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kba/Pods-kba-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		92B2C4B688661F677594DE04 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -281,7 +265,6 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-kba/Pods-kba-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
@@ -293,7 +276,6 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
@@ -499,7 +481,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ie.infiniteloop.kba;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "429f4866-8a02-4f08-942b-bbd10466e7a4";
-				PROVISIONING_PROFILE_SPECIFIER = "iOS Distribution 2017 Wildcard";
+				PROVISIONING_PROFILE_SPECIFIER = "2020 IOS Wildcard distribution";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -518,7 +500,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ie.infiniteloop.kba;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "429f4866-8a02-4f08-942b-bbd10466e7a4";
-				PROVISIONING_PROFILE_SPECIFIER = "iOS Distribution 2017 Wildcard";
+				PROVISIONING_PROFILE_SPECIFIER = "2020 IOS Wildcard distribution";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

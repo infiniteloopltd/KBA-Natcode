@@ -37,7 +37,7 @@ class ViewController: UITableViewController {
         layer.startPoint = CGPoint(x: 0, y: 0.5)
         layer.endPoint = CGPoint(x: 1, y: 0.5)
         layer.colors = [
-            UIColor.white.cgColor,UIColor.flatMint.cgColor]
+            UIColor.white.cgColor,UIColor.green.cgColor]
         return layer
     }
   

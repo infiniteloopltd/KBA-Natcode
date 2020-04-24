@@ -1,0 +1,1834 @@
+2018-05-01 09:45:24 +0000  Initial pipeline context: <IDEDistributionProcessingPipelineContext: 0x7fa491f15880; archive(resolved)='<IDEArchive: 0x7fa491385470>', distributionTask(resolved)='1', distributionMethod(resolved)='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fa48d0d48e0>', team(resolved)='<IDEProvisioningBasicTeam: 0x7fa491e42560; teamID='7HWLS3RAU9', teamName='Infinite Loop Development Ltd'>'>
+	Chain (11, self inclusive):
+	<IDEDistributionProcessingPipelineContext: 0x7fa491f15880; archive = '<IDEArchive: 0x7fa491385470>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fa48d0d48e0>', team='<IDEProvisioningBasicTeam: 0x7fa491e42560; teamID='7HWLS3RAU9', teamName='Infinite Loop Development Ltd'>'>
+	<IDEDistributionProcessingPipelineContext: 0x7fa49290f860; archive = '<IDEArchive: 0x7fa491385470>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fa48d0d48e0>', team='<IDEProvisioningBasicTeam: 0x7fa491e42560; teamID='7HWLS3RAU9', teamName='Infinite Loop Development Ltd'>'>
+	<IDEDistributionContext: 0x7fa492851460; archive = '<IDEArchive: 0x7fa491385470>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fa48d0d48e0>', team='<IDEProvisioningBasicTeam: 0x7fa491e42560; teamID='7HWLS3RAU9', teamName='Infinite Loop Development Ltd'>'>
+	<IDEDistributionContext: 0x7fa491237140; archive = '<IDEArchive: 0x7fa491385470>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fa48d0d48e0>', team='<IDEProvisioningBasicTeam: 0x7fa491e42560; teamID='7HWLS3RAU9', teamName='Infinite Loop Development Ltd'>'>
+	<IDEDistributionContext: 0x7fa491b0b7a0; archive = '<IDEArchive: 0x7fa491385470>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fa48d0d48e0>', team='<IDEProvisioningBasicTeam: 0x7fa491e42560; teamID='7HWLS3RAU9', teamName='Infinite Loop Development Ltd'>'>
+	<IDEDistributionContext: 0x7fa491b10b70; archive = '<IDEArchive: 0x7fa491385470>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fa48d0d48e0>', team='<IDEProvisioningBasicTeam: 0x7fa491e42560; teamID='7HWLS3RAU9', teamName='Infinite Loop Development Ltd'>'>
+	<IDEDistributionContext: 0x7fa491c0efb0; archive = '<IDEArchive: 0x7fa491385470>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fa48d0d48e0>', team='<IDEProvisioningBasicTeam: 0x7fa491e42560; teamID='7HWLS3RAU9', teamName='Infinite Loop Development Ltd'>'>
+	<IDEDistributionContext: 0x7fa4917a1df0; archive = '<IDEArchive: 0x7fa491385470>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fa48d0d48e0>', team='<IDEProvisioningBasicTeam: 0x7fa491e42560; teamID='7HWLS3RAU9', teamName='Infinite Loop Development Ltd'>'>
+	<IDEDistributionContext: 0x7fa4917bb730; archive = '<IDEArchive: 0x7fa491385470>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fa48d0d48e0>', team='<IDEProvisioningBasicTeam: 0x7fa491e42560; teamID='7HWLS3RAU9', teamName='Infinite Loop Development Ltd'>'>
+	<IDEDistributionContext: 0x7fa491174720; archive = '<IDEArchive: 0x7fa491385470>', distributionMethod='<IDEDistributionMethodiOSAppStoreDistribution: 0x7fa48d0d48e0>', team='<IDEProvisioningBasicTeam: 0x7fa491e42560; teamID='7HWLS3RAU9', teamName='Infinite Loop Development Ltd'>'>
+	<IDEDistributionContext: 0x7fa491d06f40; archive = '<IDEArchive: 0x7fa491385470>', distributionMethod='(null)', team='(null)'>
+</IDEDistributionProcessingPipelineContext: 0x7fa491f15880>
+2018-05-01 09:45:24 +0000  Processing step: IDEDistributionCreateDestRootStep
+2018-05-01 09:45:24 +0000  Processing step: IDEDistributionCopyItemStep
+2018-05-01 09:45:24 +0000  Running /usr/bin/ditto '-V' '/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app'
+2018-05-01 09:45:24 +0000  >>> Copying /Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app 
+2018-05-01 09:45:24 +0000  copying file ./de.lproj/LaunchScreen.strings ... 
+2018-05-01 09:45:24 +0000  1 bytes for ./de.lproj/LaunchScreen.strings
+copying file ./de.lproj/Main.strings ... 
+2018-05-01 09:45:24 +0000  1493 bytes for ./de.lproj/Main.strings
+2018-05-01 09:45:24 +0000  copying file ./de.lproj/Localizable.strings ... 
+2018-05-01 09:45:24 +0000  961 bytes for ./de.lproj/Localizable.strings
+2018-05-01 09:45:24 +0000  copying file ./_CodeSignature/CodeResources ... 
+2018-05-01 09:45:24 +0000  30196 bytes for ./_CodeSignature/CodeResources
+2018-05-01 09:45:24 +0000  copying file ./AppIcon60x60@2x.png ... 
+2018-05-01 09:45:24 +0000  17264 bytes for ./AppIcon60x60@2x.png
+2018-05-01 09:45:24 +0000  copying file ./Base.lproj/Localizable.strings ... 
+2018-05-01 09:45:24 +0000  471 bytes for ./Base.lproj/Localizable.strings
+2018-05-01 09:45:24 +0000  copying file ./Base.lproj/Main.storyboardc/n5h-E9-nOx-view-OyU-I9-Wh7.nib ... 
+2018-05-01 09:45:24 +0000  4334 bytes for ./Base.lproj/Main.storyboardc/n5h-E9-nOx-view-OyU-I9-Wh7.nib
+2018-05-01 09:45:24 +0000  copying file ./Base.lproj/Main.storyboardc/ResultsTableViewController.nib ... 
+2018-05-01 09:45:24 +0000  1392 bytes for ./Base.lproj/Main.storyboardc/ResultsTableViewController.nib
+2018-05-01 09:45:24 +0000  copying file ./Base.lproj/Main.storyboardc/rX0-R8-2v3-view-Syl-uf-n11.nib ... 
+2018-05-01 09:45:24 +0000  4406 bytes for ./Base.lproj/Main.storyboardc/rX0-R8-2v3-view-Syl-uf-n11.nib
+2018-05-01 09:45:24 +0000  copying file ./Base.lproj/Main.storyboardc/I82-mT-qoe-view-Jd1-cu-ODF.nib ... 
+2018-05-01 09:45:24 +0000  5590 bytes for ./Base.lproj/Main.storyboardc/I82-mT-qoe-view-Jd1-cu-ODF.nib
+2018-05-01 09:45:24 +0000  copying file ./Base.lproj/Main.storyboardc/1TB-oJ-CBY-view-Ys3-tP-GzZ.nib ... 
+2018-05-01 09:45:24 +0000  4400 bytes for ./Base.lproj/Main.storyboardc/1TB-oJ-CBY-view-Ys3-tP-GzZ.nib
+2018-05-01 09:45:24 +0000  copying file ./Base.lproj/Main.storyboardc/5Cs-6Y-JLp-view-Z4p-Dy-Etf.nib ... 
+2018-05-01 09:45:24 +0000  5683 bytes for ./Base.lproj/Main.storyboardc/5Cs-6Y-JLp-view-Z4p-Dy-Etf.nib
+2018-05-01 09:45:24 +0000  copying file ./Base.lproj/Main.storyboardc/UITabBarController-gOX-Xh-t5h.nib ... 
+2018-05-01 09:45:24 +0000  5167 bytes for ./Base.lproj/Main.storyboardc/UITabBarController-gOX-Xh-t5h.nib
+2018-05-01 09:45:24 +0000  copying file ./Base.lproj/Main.storyboardc/Hej-UV-y4d-view-H74-TF-Fbq.nib ... 
+2018-05-01 09:45:24 +0000  4402 bytes for ./Base.lproj/Main.storyboardc/Hej-UV-y4d-view-H74-TF-Fbq.nib
+copying file ./Base.lproj/Main.storyboardc/UITableViewController-1TB-oJ-CBY.nib ... 
+2018-05-01 09:45:24 +0000  1872 bytes for ./Base.lproj/Main.storyboardc/UITableViewController-1TB-oJ-CBY.nib
+copying file ./Base.lproj/Main.storyboardc/RMA-o3-Wg5-view-a4a-Fg-gyO.nib ... 
+2018-05-01 09:45:24 +0000  4309 bytes for ./Base.lproj/Main.storyboardc/RMA-o3-Wg5-view-a4a-Fg-gyO.nib
+2018-05-01 09:45:24 +0000  copying file ./Base.lproj/Main.storyboardc/UIViewController-5Cs-6Y-JLp.nib ... 
+2018-05-01 09:45:24 +0000  978 bytes for ./Base.lproj/Main.storyboardc/UIViewController-5Cs-6Y-JLp.nib
+2018-05-01 09:45:24 +0000  copying file ./Base.lproj/Main.storyboardc/UITableViewController-Hej-UV-y4d.nib ... 
+2018-05-01 09:45:24 +0000  1879 bytes for ./Base.lproj/Main.storyboardc/UITableViewController-Hej-UV-y4d.nib
+2018-05-01 09:45:24 +0000  copying file ./Base.lproj/Main.storyboardc/J9H-RZ-DX7-view-xfa-sL-KmY.nib ... 
+2018-05-01 09:45:24 +0000  4169 bytes for ./Base.lproj/Main.storyboardc/J9H-RZ-DX7-view-xfa-sL-KmY.nib
+2018-05-01 09:45:24 +0000  copying file ./Base.lproj/Main.storyboardc/UITableViewController-rX0-R8-2v3.nib ... 
+2018-05-01 09:45:24 +0000  1773 bytes for ./Base.lproj/Main.storyboardc/UITableViewController-rX0-R8-2v3.nib
+2018-05-01 09:45:24 +0000  copying file ./Base.lproj/Main.storyboardc/Info.plist ... 
+2018-05-01 09:45:24 +0000  631 bytes for ./Base.lproj/Main.storyboardc/Info.plist
+2018-05-01 09:45:24 +0000  copying file ./Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib ... 
+2018-05-01 09:45:24 +0000  2328 bytes for ./Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib
+2018-05-01 09:45:24 +0000  copying file ./Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib ... 
+2018-05-01 09:45:24 +0000  832 bytes for ./Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib
+2018-05-01 09:45:24 +0000  copying file ./Base.lproj/LaunchScreen.storyboardc/Info.plist ... 
+2018-05-01 09:45:24 +0000  258 bytes for ./Base.lproj/LaunchScreen.storyboardc/Info.plist
+2018-05-01 09:45:24 +0000  copying file ./kba ... 
+2018-05-01 09:45:24 +0000  1187456 bytes for ./kba
+copying file ./Assets.car ... 
+2018-05-01 09:45:24 +0000  1326792 bytes for ./Assets.car
+2018-05-01 09:45:24 +0000  copying file ./AppIcon76x76@2x~ipad.png ... 
+24836 bytes for ./AppIcon76x76@2x~ipad.png
+2018-05-01 09:45:24 +0000  copying file ./Frameworks/TransitionButton.framework/_CodeSignature/CodeResources ... 
+2018-05-01 09:45:24 +0000  2202 bytes for ./Frameworks/TransitionButton.framework/_CodeSignature/CodeResources
+2018-05-01 09:45:24 +0000  copying file ./Frameworks/TransitionButton.framework/TransitionButton ... 
+2018-05-01 09:45:24 +0000  486304 bytes for ./Frameworks/TransitionButton.framework/TransitionButton
+2018-05-01 09:45:24 +0000  copying file ./Frameworks/TransitionButton.framework/Info.plist ... 
+756 bytes for ./Frameworks/TransitionButton.framework/Info.plist
+2018-05-01 09:45:24 +0000  copying file ./Frameworks/SwiftyJSON.framework/_CodeSignature/CodeResources ... 
+2018-05-01 09:45:24 +0000  2202 bytes for ./Frameworks/SwiftyJSON.framework/_CodeSignature/CodeResources
+2018-05-01 09:45:24 +0000  copying file ./Frameworks/SwiftyJSON.framework/SwiftyJSON ... 
+2018-05-01 09:45:24 +0000  1247680 bytes for ./Frameworks/SwiftyJSON.framework/SwiftyJSON
+copying file ./Frameworks/SwiftyJSON.framework/Info.plist ... 
+2018-05-01 09:45:24 +0000  742 bytes for ./Frameworks/SwiftyJSON.framework/Info.plist
+copying file ./Frameworks/libswiftCoreImage.dylib ... 
+307648 bytes for ./Frameworks/libswiftCoreImage.dylib
+2018-05-01 09:45:24 +0000  copying file ./Frameworks/RealmSwift.framework/_CodeSignature/CodeResources ... 
+2018-05-01 09:45:24 +0000  2202 bytes for ./Frameworks/RealmSwift.framework/_CodeSignature/CodeResources
+2018-05-01 09:45:24 +0000  copying file ./Frameworks/RealmSwift.framework/RealmSwift ... 
+2018-05-01 09:45:24 +0000  3354704 bytes for ./Frameworks/RealmSwift.framework/RealmSwift
+copying file ./Frameworks/RealmSwift.framework/Info.plist ... 
+2018-05-01 09:45:24 +0000  742 bytes for ./Frameworks/RealmSwift.framework/Info.plist
+copying file ./Frameworks/libswiftObjectiveC.dylib ... 
+554112 bytes for ./Frameworks/libswiftObjectiveC.dylib
+copying file ./Frameworks/libswiftCore.dylib ... 
+2018-05-01 09:45:24 +0000  66629584 bytes for ./Frameworks/libswiftCore.dylib
+copying file ./Frameworks/libswiftCoreGraphics.dylib ... 
+2018-05-01 09:45:24 +0000  1628576 bytes for ./Frameworks/libswiftCoreGraphics.dylib
+copying file ./Frameworks/libswiftUIKit.dylib ... 
+2018-05-01 09:45:24 +0000  1043040 bytes for ./Frameworks/libswiftUIKit.dylib
+2018-05-01 09:45:24 +0000  copying file ./Frameworks/SVProgressHUD.framework/_CodeSignature/CodeResources ... 
+2018-05-01 09:45:24 +0000  6110 bytes for ./Frameworks/SVProgressHUD.framework/_CodeSignature/CodeResources
+2018-05-01 09:45:24 +0000  copying file ./Frameworks/SVProgressHUD.framework/SVProgressHUD ... 
+2018-05-01 09:45:24 +0000  601536 bytes for ./Frameworks/SVProgressHUD.framework/SVProgressHUD
+2018-05-01 09:45:24 +0000  copying file ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/info.png ... 
+2018-05-01 09:45:24 +0000  365 bytes for ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/info.png
+2018-05-01 09:45:24 +0000  copying file ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/error@3x.png ... 
+2018-05-01 09:45:24 +0000  398 bytes for ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/error@3x.png
+2018-05-01 09:45:24 +0000  copying file ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/angle-mask@3x.png ... 
+2018-05-01 09:45:24 +0000  8319 bytes for ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/angle-mask@3x.png
+2018-05-01 09:45:24 +0000  copying file ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/angle-mask@2x.png ... 
+2018-05-01 09:45:24 +0000  4893 bytes for ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/angle-mask@2x.png
+copying file ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/error@2x.png ... 
+2018-05-01 09:45:24 +0000  306 bytes for ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/error@2x.png
+2018-05-01 09:45:24 +0000  copying file ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/info@3x.png ... 
+2018-05-01 09:45:24 +0000  1200 bytes for ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/info@3x.png
+2018-05-01 09:45:24 +0000  copying file ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/success@2x.png ... 
+2018-05-01 09:45:24 +0000  462 bytes for ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/success@2x.png
+2018-05-01 09:45:24 +0000  copying file ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/success@3x.png ... 
+2018-05-01 09:45:24 +0000  714 bytes for ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/success@3x.png
+copying file ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/info@2x.png ... 
+2018-05-01 09:45:24 +0000  816 bytes for ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/info@2x.png
+2018-05-01 09:45:24 +0000  copying file ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/error.png ... 
+2018-05-01 09:45:24 +0000  184 bytes for ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/error.png
+2018-05-01 09:45:24 +0000  copying file ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/success.png ... 
+2018-05-01 09:45:24 +0000  262 bytes for ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/success.png
+2018-05-01 09:45:24 +0000  copying file ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/angle-mask.png ... 
+2018-05-01 09:45:24 +0000  1845 bytes for ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/angle-mask.png
+2018-05-01 09:45:24 +0000  copying file ./Frameworks/SVProgressHUD.framework/Info.plist ... 
+2018-05-01 09:45:24 +0000  748 bytes for ./Frameworks/SVProgressHUD.framework/Info.plist
+2018-05-01 09:45:24 +0000  copying file ./Frameworks/libswiftMetal.dylib ... 
+2018-05-01 09:45:24 +0000  448912 bytes for ./Frameworks/libswiftMetal.dylib
+2018-05-01 09:45:24 +0000  copying file ./Frameworks/libswiftDispatch.dylib ... 
+2018-05-01 09:45:24 +0000  2722304 bytes for ./Frameworks/libswiftDispatch.dylib
+2018-05-01 09:45:24 +0000  copying file ./Frameworks/libswiftos.dylib ... 
+497168 bytes for ./Frameworks/libswiftos.dylib
+copying file ./Frameworks/Realm.framework/_CodeSignature/CodeResources ... 
+2202 bytes for ./Frameworks/Realm.framework/_CodeSignature/CodeResources
+copying file ./Frameworks/Realm.framework/Info.plist ... 
+732 bytes for ./Frameworks/Realm.framework/Info.plist
+copying file ./Frameworks/Realm.framework/Realm ... 
+2018-05-01 09:45:24 +0000  31741952 bytes for ./Frameworks/Realm.framework/Realm
+2018-05-01 09:45:24 +0000  copying file ./Frameworks/libswiftCoreFoundation.dylib ... 
+2018-05-01 09:45:24 +0000  257760 bytes for ./Frameworks/libswiftCoreFoundation.dylib
+2018-05-01 09:45:24 +0000  copying file ./Frameworks/SwipeCellKit.framework/_CodeSignature/CodeResources ... 
+2018-05-01 09:45:24 +0000  2202 bytes for ./Frameworks/SwipeCellKit.framework/_CodeSignature/CodeResources
+2018-05-01 09:45:24 +0000  copying file ./Frameworks/SwipeCellKit.framework/SwipeCellKit ... 
+2018-05-01 09:45:24 +0000  1527232 bytes for ./Frameworks/SwipeCellKit.framework/SwipeCellKit
+2018-05-01 09:45:24 +0000  copying file ./Frameworks/SwipeCellKit.framework/Info.plist ... 
+746 bytes for ./Frameworks/SwipeCellKit.framework/Info.plist
+copying file ./Frameworks/ChameleonFramework.framework/_CodeSignature/CodeResources ... 
+2018-05-01 09:45:24 +0000  2202 bytes for ./Frameworks/ChameleonFramework.framework/_CodeSignature/CodeResources
+copying file ./Frameworks/ChameleonFramework.framework/ChameleonFramework ... 
+2018-05-01 09:45:24 +0000  793440 bytes for ./Frameworks/ChameleonFramework.framework/ChameleonFramework
+copying file ./Frameworks/ChameleonFramework.framework/Info.plist ... 
+2018-05-01 09:45:24 +0000  760 bytes for ./Frameworks/ChameleonFramework.framework/Info.plist
+2018-05-01 09:45:24 +0000  copying file ./Frameworks/libswiftDarwin.dylib ... 
+2018-05-01 09:45:24 +0000  838736 bytes for ./Frameworks/libswiftDarwin.dylib
+2018-05-01 09:45:24 +0000  copying file ./Frameworks/libswiftQuartzCore.dylib ... 
+2018-05-01 09:45:24 +0000  310624 bytes for ./Frameworks/libswiftQuartzCore.dylib
+2018-05-01 09:45:24 +0000  copying file ./Frameworks/Alamofire.framework/_CodeSignature/CodeResources ... 
+2018-05-01 09:45:24 +0000  2202 bytes for ./Frameworks/Alamofire.framework/_CodeSignature/CodeResources
+2018-05-01 09:45:24 +0000  copying file ./Frameworks/Alamofire.framework/Alamofire ... 
+2018-05-01 09:45:24 +0000  3899008 bytes for ./Frameworks/Alamofire.framework/Alamofire
+2018-05-01 09:45:24 +0000  copying file ./Frameworks/Alamofire.framework/Info.plist ... 
+740 bytes for ./Frameworks/Alamofire.framework/Info.plist
+copying file ./Frameworks/SkyFloatingLabelTextField.framework/_CodeSignature/CodeResources ... 
+2202 bytes for ./Frameworks/SkyFloatingLabelTextField.framework/_CodeSignature/CodeResources
+copying file ./Frameworks/SkyFloatingLabelTextField.framework/SkyFloatingLabelTextField ... 
+786832 bytes for ./Frameworks/SkyFloatingLabelTextField.framework/SkyFloatingLabelTextField
+copying file ./Frameworks/SkyFloatingLabelTextField.framework/Info.plist ... 
+774 bytes for ./Frameworks/SkyFloatingLabelTextField.framework/Info.plist
+copying file ./Frameworks/libswiftFoundation.dylib ... 
+2018-05-01 09:45:25 +0000  30131408 bytes for ./Frameworks/libswiftFoundation.dylib
+2018-05-01 09:45:25 +0000  2018-05-01 09:45:25 +0000  /usr/bin/ditto exited with 0
+
+2018-05-01 09:45:25 +0000  copying file ./embedded.mobileprovision ... 
+7474 bytes for ./embedded.mobileprovision
+copying file ./Info.plist ... 
+1376 bytes for ./Info.plist
+copying file ./PkgInfo ... 
+8 bytes for ./PkgInfo
+2018-05-01 09:45:25 +0000  2018-05-01 09:45:25 +0000  Processing step: IDEDistributionEmbedProfileStep
+
+2018-05-01 09:45:25 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fa492826800 'org.cocoapods.Alamofire' '<DVTFilePath:0x7fa48a716e60:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/Alamofire.framework'>'>
+2018-05-01 09:45:25 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fa491e888d0 'org.cocoapods.ChameleonFramework' '<DVTFilePath:0x7fa49280c770:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/ChameleonFramework.framework'>'>
+2018-05-01 09:45:25 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fa492840940 'org.cocoapods.Realm' '<DVTFilePath:0x7fa491e720a0:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/Realm.framework'>'>
+2018-05-01 09:45:25 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fa49280d5e0 'org.cocoapods.RealmSwift' '<DVTFilePath:0x7fa491e57750:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/RealmSwift.framework'>'>
+2018-05-01 09:45:25 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fa491e89400 'org.cocoapods.SVProgressHUD' '<DVTFilePath:0x7fa491bf94a0:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/SVProgressHUD.framework'>'>
+2018-05-01 09:45:25 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fa492824cb0 'org.cocoapods.SkyFloatingLabelTextField' '<DVTFilePath:0x7fa4917abd30:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/SkyFloatingLabelTextField.framework'>'>
+2018-05-01 09:45:25 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fa491e89820 'org.cocoapods.SwiftyJSON' '<DVTFilePath:0x7fa491e4bd40:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/SwiftyJSON.framework'>'>
+2018-05-01 09:45:25 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fa491e83890 'org.cocoapods.SwipeCellKit' '<DVTFilePath:0x7fa48a70bb40:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/SwipeCellKit.framework'>'>
+2018-05-01 09:45:25 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fa491e7b930 'org.cocoapods.TransitionButton' '<DVTFilePath:0x7fa491e4bfc0:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/TransitionButton.framework'>'>
+2018-05-01 09:45:25 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fa48a71b7f0 'com.apple.dt.runtime.swiftCore' '<DVTFilePath:0x7fa491bf5f80:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftCore.dylib'>'>
+2018-05-01 09:45:25 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fa49283dd90 'com.apple.dt.runtime.swiftCoreFoundation' '<DVTFilePath:0x7fa48a70a8c0:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftCoreFoundation.dylib'>'>
+2018-05-01 09:45:25 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fa4928266e0 'com.apple.dt.runtime.swiftCoreGraphics' '<DVTFilePath:0x7fa491bf6b00:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftCoreGraphics.dylib'>'>
+2018-05-01 09:45:25 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fa492832e60 'com.apple.dt.runtime.swiftCoreImage' '<DVTFilePath:0x7fa491e54c50:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftCoreImage.dylib'>'>
+2018-05-01 09:45:25 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fa491be7c70 'com.apple.dt.runtime.swiftDarwin' '<DVTFilePath:0x7fa48a714b80:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftDarwin.dylib'>'>
+2018-05-01 09:45:25 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fa48d693ea0 'com.apple.dt.runtime.swiftDispatch' '<DVTFilePath:0x7fa491e708f0:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftDispatch.dylib'>'>
+2018-05-01 09:45:25 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fa4911f7fb0 'com.apple.dt.runtime.swiftFoundation' '<DVTFilePath:0x7fa491e76a10:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftFoundation.dylib'>'>
+2018-05-01 09:45:25 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fa49281aac0 'com.apple.dt.runtime.swiftMetal' '<DVTFilePath:0x7fa491e6ef90:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftMetal.dylib'>'>
+2018-05-01 09:45:25 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fa491777050 'com.apple.dt.runtime.swiftObjectiveC' '<DVTFilePath:0x7fa491bf5060:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftObjectiveC.dylib'>'>
+2018-05-01 09:45:25 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fa49283d170 'com.apple.dt.runtime.swiftQuartzCore' '<DVTFilePath:0x7fa48a715c70:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftQuartzCore.dylib'>'>
+2018-05-01 09:45:25 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fa491e9b000 'com.apple.dt.runtime.swiftUIKit' '<DVTFilePath:0x7fa491bf8210:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftUIKit.dylib'>'>
+2018-05-01 09:45:25 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fa491e9d440 'com.apple.dt.runtime.swiftos' '<DVTFilePath:0x7fa491e71de0:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftos.dylib'>'>
+2018-05-01 09:45:25 +0000  Processing step: IDEDistributionItemRemovalStep
+2018-05-01 09:45:25 +0000  Processing step: IDEDistributionAppThinningPlistStep
+2018-05-01 09:45:25 +0000  Skipping step: IDEDistributionAppThinningPlistStep because it said so
+2018-05-01 09:45:25 +0000  Processing step: IDEDistributionCompileBitcodeStep
+2018-05-01 09:45:25 +0000  Skipping step: IDEDistributionCompileBitcodeStep because it said so
+2018-05-01 09:45:25 +0000  Processing step: IDEDistributionCodeSlimmingStep
+2018-05-01 09:45:25 +0000  Processing step: IDEDistributionCopyBCSymbolMapsStep
+2018-05-01 09:45:25 +0000  Running /usr/bin/ditto '-V' '/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/BCSymbolMaps/6D7A9AC3-AF56-3682-8D0E-47901332207E.bcsymbolmap' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/BCSymbolMaps/6D7A9AC3-AF56-3682-8D0E-47901332207E.bcsymbolmap'
+2018-05-01 09:45:25 +0000  >>> Copying /Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/BCSymbolMaps/6D7A9AC3-AF56-3682-8D0E-47901332207E.bcsymbolmap 
+2018-05-01 09:45:25 +0000  copying file ./6D7A9AC3-AF56-3682-8D0E-47901332207E.bcsymbolmap ... 
+2018-05-01 09:45:25 +0000  309097 bytes for ./6D7A9AC3-AF56-3682-8D0E-47901332207E.bcsymbolmap
+2018-05-01 09:45:25 +0000  
+2018-05-01 09:45:25 +0000  
+2018-05-01 09:45:25 +0000  2018-05-01 09:45:25 +0000  /usr/bin/ditto exited with 02018-05-01 09:45:25 +0000  
+
+
+2018-05-01 09:45:25 +0000  2018-05-01 09:45:25 +0000  
+
+2018-05-01 09:45:25 +0000  Running /usr/bin/ditto '-V' '/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/BCSymbolMaps/D4CD18B9-E258-363D-A90A-D3574517E0BD.bcsymbolmap' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/BCSymbolMaps/D4CD18B9-E258-363D-A90A-D3574517E0BD.bcsymbolmap'
+2018-05-01 09:45:25 +0000  >>> Copying /Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/BCSymbolMaps/D4CD18B9-E258-363D-A90A-D3574517E0BD.bcsymbolmap 
+2018-05-01 09:45:25 +0000  copying file ./D4CD18B9-E258-363D-A90A-D3574517E0BD.bcsymbolmap ... 
+2018-05-01 09:45:25 +0000  29213 bytes for ./D4CD18B9-E258-363D-A90A-D3574517E0BD.bcsymbolmap
+2018-05-01 09:45:25 +0000  2018-05-01 09:45:25 +0000  
+
+2018-05-01 09:45:25 +0000  /usr/bin/ditto exited with 0
+2018-05-01 09:45:25 +0000  
+2018-05-01 09:45:25 +0000  
+2018-05-01 09:45:25 +0000  Running /usr/bin/ditto '-V' '/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/BCSymbolMaps/ACD7D03C-C873-3915-A13D-D455130CF7C4.bcsymbolmap' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/BCSymbolMaps/ACD7D03C-C873-3915-A13D-D455130CF7C4.bcsymbolmap'
+2018-05-01 09:45:25 +0000  >>> Copying /Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/BCSymbolMaps/ACD7D03C-C873-3915-A13D-D455130CF7C4.bcsymbolmap 
+2018-05-01 09:45:25 +0000  copying file ./ACD7D03C-C873-3915-A13D-D455130CF7C4.bcsymbolmap ... 
+2018-05-01 09:45:25 +0000  967305 bytes for ./ACD7D03C-C873-3915-A13D-D455130CF7C4.bcsymbolmap
+2018-05-01 09:45:25 +0000  2018-05-01 09:45:25 +0000  /usr/bin/ditto exited with 0
+
+2018-05-01 09:45:25 +0000  2018-05-01 09:45:25 +0000  
+
+2018-05-01 09:45:25 +0000  Running /usr/bin/ditto '-V' '/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/BCSymbolMaps/F57286F0-AC48-3EBD-A431-7CA95774E01A.bcsymbolmap' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/BCSymbolMaps/F57286F0-AC48-3EBD-A431-7CA95774E01A.bcsymbolmap'
+2018-05-01 09:45:25 +0000  >>> Copying /Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/BCSymbolMaps/F57286F0-AC48-3EBD-A431-7CA95774E01A.bcsymbolmap 
+2018-05-01 09:45:25 +0000  copying file ./F57286F0-AC48-3EBD-A431-7CA95774E01A.bcsymbolmap ... 
+2018-05-01 09:45:25 +0000  292773 bytes for ./F57286F0-AC48-3EBD-A431-7CA95774E01A.bcsymbolmap
+2018-05-01 09:45:25 +0000  2018-05-01 09:45:25 +0000  
+
+2018-05-01 09:45:25 +0000  /usr/bin/ditto exited with 02018-05-01 09:45:25 +0000  
+
+2018-05-01 09:45:25 +0000  
+2018-05-01 09:45:25 +0000  Running /usr/bin/ditto '-V' '/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/BCSymbolMaps/5E92796F-4092-32E9-9A02-2221E781198D.bcsymbolmap' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/BCSymbolMaps/5E92796F-4092-32E9-9A02-2221E781198D.bcsymbolmap'
+2018-05-01 09:45:25 +0000  >>> Copying /Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/BCSymbolMaps/5E92796F-4092-32E9-9A02-2221E781198D.bcsymbolmap 
+2018-05-01 09:45:25 +0000  copying file ./5E92796F-4092-32E9-9A02-2221E781198D.bcsymbolmap ... 
+2018-05-01 09:45:25 +0000  23922 bytes for ./5E92796F-4092-32E9-9A02-2221E781198D.bcsymbolmap
+2018-05-01 09:45:25 +0000  2018-05-01 09:45:25 +0000  
+
+2018-05-01 09:45:25 +0000  /usr/bin/ditto exited with 02018-05-01 09:45:25 +0000  
+
+2018-05-01 09:45:25 +0000  
+2018-05-01 09:45:25 +0000  Running /usr/bin/ditto '-V' '/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/BCSymbolMaps/225DEE1A-643B-34CC-85F7-C1E418A7D168.bcsymbolmap' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/BCSymbolMaps/225DEE1A-643B-34CC-85F7-C1E418A7D168.bcsymbolmap'
+2018-05-01 09:45:25 +0000  >>> Copying /Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/BCSymbolMaps/225DEE1A-643B-34CC-85F7-C1E418A7D168.bcsymbolmap 
+2018-05-01 09:45:25 +0000  copying file ./225DEE1A-643B-34CC-85F7-C1E418A7D168.bcsymbolmap ... 
+2018-05-01 09:45:25 +0000  51971 bytes for ./225DEE1A-643B-34CC-85F7-C1E418A7D168.bcsymbolmap
+2018-05-01 09:45:25 +0000  2018-05-01 09:45:25 +0000  
+
+2018-05-01 09:45:25 +0000  /usr/bin/ditto exited with 02018-05-01 09:45:25 +0000  2018-05-01 09:45:25 +0000  
+
+
+2018-05-01 09:45:25 +0000  Running /usr/bin/ditto '-V' '/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/BCSymbolMaps/6D82E300-856C-38E1-8B6D-E727D551FFE5.bcsymbolmap' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/BCSymbolMaps/6D82E300-856C-38E1-8B6D-E727D551FFE5.bcsymbolmap'
+2018-05-01 09:45:25 +0000  >>> Copying /Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/BCSymbolMaps/6D82E300-856C-38E1-8B6D-E727D551FFE5.bcsymbolmap 
+2018-05-01 09:45:25 +0000  copying file ./6D82E300-856C-38E1-8B6D-E727D551FFE5.bcsymbolmap ... 
+2018-05-01 09:45:25 +0000  93192 bytes for ./6D82E300-856C-38E1-8B6D-E727D551FFE5.bcsymbolmap
+2018-05-01 09:45:25 +0000  2018-05-01 09:45:25 +0000  
+
+2018-05-01 09:45:25 +0000  /usr/bin/ditto exited with 02018-05-01 09:45:25 +0000  2018-05-01 09:45:25 +0000  
+
+
+2018-05-01 09:45:25 +0000  Running /usr/bin/ditto '-V' '/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/BCSymbolMaps/07102257-717F-3D28-B0C5-0409B56D59EC.bcsymbolmap' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/BCSymbolMaps/07102257-717F-3D28-B0C5-0409B56D59EC.bcsymbolmap'
+2018-05-01 09:45:25 +0000  >>> Copying /Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/BCSymbolMaps/07102257-717F-3D28-B0C5-0409B56D59EC.bcsymbolmap 
+2018-05-01 09:45:25 +0000  copying file ./07102257-717F-3D28-B0C5-0409B56D59EC.bcsymbolmap ... 
+2018-05-01 09:45:25 +0000  144873 bytes for ./07102257-717F-3D28-B0C5-0409B56D59EC.bcsymbolmap
+2018-05-01 09:45:25 +0000  2018-05-01 09:45:25 +0000  
+
+2018-05-01 09:45:25 +0000  /usr/bin/ditto exited with 0
+2018-05-01 09:45:25 +0000  2018-05-01 09:45:25 +0000  
+
+2018-05-01 09:45:25 +0000  Running /usr/bin/ditto '-V' '/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/BCSymbolMaps/943A2B1A-213D-3358-BAD3-F1D7BA71CD6D.bcsymbolmap' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/BCSymbolMaps/943A2B1A-213D-3358-BAD3-F1D7BA71CD6D.bcsymbolmap'
+2018-05-01 09:45:25 +0000  >>> Copying /Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/BCSymbolMaps/943A2B1A-213D-3358-BAD3-F1D7BA71CD6D.bcsymbolmap 
+2018-05-01 09:45:25 +0000  copying file ./943A2B1A-213D-3358-BAD3-F1D7BA71CD6D.bcsymbolmap ... 
+2018-05-01 09:45:25 +0000  32136 bytes for ./943A2B1A-213D-3358-BAD3-F1D7BA71CD6D.bcsymbolmap
+2018-05-01 09:45:25 +0000  2018-05-01 09:45:25 +0000  
+
+2018-05-01 09:45:25 +0000  /usr/bin/ditto exited with 0
+2018-05-01 09:45:25 +0000  2018-05-01 09:45:25 +0000  
+
+2018-05-01 09:45:25 +0000  Running /usr/bin/ditto '-V' '/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/BCSymbolMaps/16D573EC-8AB0-3BC4-9A99-A8AC6B3C4904.bcsymbolmap' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/BCSymbolMaps/16D573EC-8AB0-3BC4-9A99-A8AC6B3C4904.bcsymbolmap'
+2018-05-01 09:45:25 +0000  >>> Copying /Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/BCSymbolMaps/16D573EC-8AB0-3BC4-9A99-A8AC6B3C4904.bcsymbolmap 
+2018-05-01 09:45:25 +0000  copying file ./16D573EC-8AB0-3BC4-9A99-A8AC6B3C4904.bcsymbolmap ... 
+2018-05-01 09:45:25 +0000  92289 bytes for ./16D573EC-8AB0-3BC4-9A99-A8AC6B3C4904.bcsymbolmap
+2018-05-01 09:45:25 +0000  2018-05-01 09:45:25 +0000  
+
+2018-05-01 09:45:25 +0000  /usr/bin/ditto exited with 0
+2018-05-01 09:45:25 +0000  2018-05-01 09:45:25 +0000  
+
+2018-05-01 09:45:25 +0000  Processing step: IDEDistributionSymbolsStep
+2018-05-01 09:45:25 +0000  Excluding symbols for Alamofire.framework
+2018-05-01 09:45:25 +0000  Excluding symbols for ChameleonFramework.framework
+2018-05-01 09:45:26 +0000  Excluding symbols for Realm.framework
+2018-05-01 09:45:26 +0000  Excluding symbols for RealmSwift.framework
+2018-05-01 09:45:26 +0000  Excluding symbols for SVProgressHUD.framework
+2018-05-01 09:45:26 +0000  Excluding symbols for SkyFloatingLabelTextField.framework
+2018-05-01 09:45:26 +0000  Excluding symbols for SwiftyJSON.framework
+2018-05-01 09:45:26 +0000  Excluding symbols for SwipeCellKit.framework
+2018-05-01 09:45:26 +0000  Excluding symbols for TransitionButton.framework
+2018-05-01 09:45:26 +0000  Processing symbols for libswiftCore.dylib
+2018-05-01 09:45:26 +0000  Running /usr/bin/rsync '-8aPhhE' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftCore.dylib' '--link-dest' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR'
+2018-05-01 09:45:26 +0000  building file list ... 
+2018-05-01 09:45:26 +0000   0 files...2018-05-01 09:45:26 +0000  1 file to consider
+2018-05-01 09:45:26 +0000  
+sent 94 bytes  received 20 bytes  228.00 bytes/sec
+2018-05-01 09:45:26 +0000  total size is 63.54M  speedup is 584470.04
+2018-05-01 09:45:26 +0000  
+2018-05-01 09:45:26 +0000  2018-05-01 09:45:26 +0000  /usr/bin/rsync exited with 0
+2018-05-01 09:45:26 +0000  
+
+2018-05-01 09:45:26 +0000  
+2018-05-01 09:45:26 +0000  Running /usr/bin/rsync '-8aPhhE' '/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/dSYMs/' '--link-dest' '/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/dSYMs/' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR'
+2018-05-01 09:45:26 +0000  building file list ... 
+2018-05-01 09:45:26 +0000   0 files...2018-05-01 09:45:26 +0000  61 files to consider
+2018-05-01 09:45:26 +0000  ./
+2018-05-01 09:45:26 +0000  Alamofire.framework.dSYM/
+Alamofire.framework.dSYM/Contents/
+Alamofire.framework.dSYM/Contents/Resources/
+Alamofire.framework.dSYM/Contents/Resources/DWARF/
+ChameleonFramework.framework.dSYM/
+ChameleonFramework.framework.dSYM/Contents/
+ChameleonFramework.framework.dSYM/Contents/Resources/
+ChameleonFramework.framework.dSYM/Contents/Resources/DWARF/
+Realm.framework.dSYM/
+Realm.framework.dSYM/Contents/
+Realm.framework.dSYM/Contents/Resources/
+Realm.framework.dSYM/Contents/Resources/DWARF/
+RealmSwift.framework.dSYM/
+RealmSwift.framework.dSYM/Contents/
+RealmSwift.framework.dSYM/Contents/Resources/
+RealmSwift.framework.dSYM/Contents/Resources/DWARF/
+SVProgressHUD.framework.dSYM/
+SVProgressHUD.framework.dSYM/Contents/
+SVProgressHUD.framework.dSYM/Contents/Resources/
+SVProgressHUD.framework.dSYM/Contents/Resources/DWARF/
+SkyFloatingLabelTextField.framework.dSYM/
+SkyFloatingLabelTextField.framework.dSYM/Contents/
+SkyFloatingLabelTextField.framework.dSYM/Contents/Resources/
+SkyFloatingLabelTextField.framework.dSYM/Contents/Resources/DWARF/
+SwiftyJSON.framework.dSYM/
+SwiftyJSON.framework.dSYM/Contents/
+2018-05-01 09:45:26 +0000  SwiftyJSON.framework.dSYM/Contents/Resources/
+SwiftyJSON.framework.dSYM/Contents/Resources/DWARF/
+SwipeCellKit.framework.dSYM/
+SwipeCellKit.framework.dSYM/Contents/
+SwipeCellKit.framework.dSYM/Contents/Resources/
+SwipeCellKit.framework.dSYM/Contents/Resources/DWARF/
+TransitionButton.framework.dSYM/
+TransitionButton.framework.dSYM/Contents/
+TransitionButton.framework.dSYM/Contents/Resources/
+TransitionButton.framework.dSYM/Contents/Resources/DWARF/
+kba.app.dSYM/
+kba.app.dSYM/Contents/
+kba.app.dSYM/Contents/Resources/
+kba.app.dSYM/Contents/Resources/DWARF/
+2018-05-01 09:45:26 +0000  
+sent 2.08K bytes  received 266 bytes  4.68K bytes/sec
+total size is 90.22M  speedup is 39517.69
+2018-05-01 09:45:26 +0000  2018-05-01 09:45:26 +0000  
+
+2018-05-01 09:45:26 +0000  
+2018-05-01 09:45:26 +0000  2018-05-01 09:45:26 +0000  /usr/bin/rsync exited with 0
+
+2018-05-01 09:45:26 +0000  2018-05-01 09:45:26 +0000  
+
+2018-05-01 09:45:26 +0000  Running /Applications/Xcode.app/Contents/Developer/usr/bin/symbols '-noTextInSOD' '-noDaemon' '-arch' 'all' '-symbolsPackageDir' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Symbols' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftCore.dylib'
+2018-05-01 09:45:26 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftCore.dylib [armv7, 0.403910 seconds]:
+/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftCore.dylib [armv7s, 0.403910 seconds]:
+/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftCore.dylib [arm64, 0.403910 seconds]:
+2018-05-01 09:45:26 +0000  
+2018-05-01 09:45:26 +0000  
+2018-05-01 09:45:26 +0000  2018-05-01 09:45:26 +0000  /Applications/Xcode.app/Contents/Developer/usr/bin/symbols exited with 0
+
+2018-05-01 09:45:26 +0000  2018-05-01 09:45:26 +0000  
+
+2018-05-01 09:45:26 +0000  Processing symbols for libswiftCoreFoundation.dylib
+2018-05-01 09:45:26 +0000  Running /usr/bin/rsync '-8aPhhE' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftCoreFoundation.dylib' '--link-dest' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR'
+2018-05-01 09:45:26 +0000  building file list ... 
+2018-05-01 09:45:26 +0000   0 files...2018-05-01 09:45:26 +0000  1 file to consider
+2018-05-01 09:45:26 +0000  
+sent 104 bytes  received 20 bytes  248.00 bytes/sec
+total size is 251.72K  speedup is 2078.71
+2018-05-01 09:45:26 +0000  
+2018-05-01 09:45:26 +0000  2018-05-01 09:45:26 +0000  /usr/bin/rsync exited with 0
+
+2018-05-01 09:45:26 +0000  2018-05-01 09:45:26 +0000  
+
+2018-05-01 09:45:26 +0000  Running /usr/bin/rsync '-8aPhhE' '/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/dSYMs/' '--link-dest' '/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/dSYMs/' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR'
+2018-05-01 09:45:26 +0000  building file list ... 
+2018-05-01 09:45:26 +0000   0 files...2018-05-01 09:45:26 +0000  61 files to consider
+2018-05-01 09:45:26 +0000  ./
+2018-05-01 09:45:26 +0000  Alamofire.framework.dSYM/
+2018-05-01 09:45:26 +0000  Alamofire.framework.dSYM/Contents/
+Alamofire.framework.dSYM/Contents/Resources/
+Alamofire.framework.dSYM/Contents/Resources/DWARF/
+ChameleonFramework.framework.dSYM/
+ChameleonFramework.framework.dSYM/Contents/
+ChameleonFramework.framework.dSYM/Contents/Resources/
+ChameleonFramework.framework.dSYM/Contents/Resources/DWARF/
+Realm.framework.dSYM/
+Realm.framework.dSYM/Contents/
+Realm.framework.dSYM/Contents/Resources/
+Realm.framework.dSYM/Contents/Resources/DWARF/
+2018-05-01 09:45:26 +0000  RealmSwift.framework.dSYM/
+RealmSwift.framework.dSYM/Contents/
+RealmSwift.framework.dSYM/Contents/Resources/
+RealmSwift.framework.dSYM/Contents/Resources/DWARF/
+SVProgressHUD.framework.dSYM/
+SVProgressHUD.framework.dSYM/Contents/
+2018-05-01 09:45:26 +0000  SVProgressHUD.framework.dSYM/Contents/Resources/
+SVProgressHUD.framework.dSYM/Contents/Resources/DWARF/
+SkyFloatingLabelTextField.framework.dSYM/
+SkyFloatingLabelTextField.framework.dSYM/Contents/
+SkyFloatingLabelTextField.framework.dSYM/Contents/Resources/
+SkyFloatingLabelTextField.framework.dSYM/Contents/Resources/DWARF/
+SwiftyJSON.framework.dSYM/
+SwiftyJSON.framework.dSYM/Contents/
+2018-05-01 09:45:26 +0000  SwiftyJSON.framework.dSYM/Contents/Resources/
+SwiftyJSON.framework.dSYM/Contents/Resources/DWARF/
+SwipeCellKit.framework.dSYM/
+SwipeCellKit.framework.dSYM/Contents/
+SwipeCellKit.framework.dSYM/Contents/Resources/
+SwipeCellKit.framework.dSYM/Contents/Resources/DWARF/
+TransitionButton.framework.dSYM/
+TransitionButton.framework.dSYM/Contents/
+TransitionButton.framework.dSYM/Contents/Resources/
+2018-05-01 09:45:26 +0000  TransitionButton.framework.dSYM/Contents/Resources/DWARF/
+kba.app.dSYM/
+kba.app.dSYM/Contents/
+kba.app.dSYM/Contents/Resources/
+kba.app.dSYM/Contents/Resources/DWARF/
+2018-05-01 09:45:26 +0000  
+2018-05-01 09:45:26 +0000  
+2018-05-01 09:45:26 +0000  sent 2.20K bytes  received 386 bytes  5.14K bytes/sec
+total size is 90.22M  speedup is 35916.99
+2018-05-01 09:45:26 +0000  2018-05-01 09:45:26 +0000  /usr/bin/rsync exited with 0
+2018-05-01 09:45:26 +0000  
+
+2018-05-01 09:45:26 +0000  
+2018-05-01 09:45:26 +0000  Running /Applications/Xcode.app/Contents/Developer/usr/bin/symbols '-noTextInSOD' '-noDaemon' '-arch' 'all' '-symbolsPackageDir' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Symbols' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftCoreFoundation.dylib'
+2018-05-01 09:45:27 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftCoreFoundation.dylib [armv7, 0.001947 seconds]:
+/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftCoreFoundation.dylib [armv7s, 0.001947 seconds]:
+/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftCoreFoundation.dylib [arm64, 0.001947 seconds]:
+2018-05-01 09:45:27 +0000  
+2018-05-01 09:45:27 +0000  2018-05-01 09:45:27 +0000  /Applications/Xcode.app/Contents/Developer/usr/bin/symbols exited with 0
+
+2018-05-01 09:45:27 +0000  
+2018-05-01 09:45:27 +0000  Processing symbols for libswiftCoreGraphics.dylib
+2018-05-01 09:45:27 +0000  Running /usr/bin/rsync '-8aPhhE' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftCoreGraphics.dylib' '--link-dest' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR'
+2018-05-01 09:45:27 +0000  building file list ... 
+2018-05-01 09:45:27 +0000   0 files...2018-05-01 09:45:27 +0000  1 file to consider
+2018-05-01 09:45:27 +0000  
+sent 102 bytes  received 20 bytes  244.00 bytes/sec
+2018-05-01 09:45:27 +0000  total size is 1.55M  speedup is 13348.98
+2018-05-01 09:45:27 +0000  
+2018-05-01 09:45:27 +0000  2018-05-01 09:45:27 +0000  /usr/bin/rsync exited with 0
+
+2018-05-01 09:45:27 +0000  
+2018-05-01 09:45:27 +0000  Running /usr/bin/rsync '-8aPhhE' '/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/dSYMs/' '--link-dest' '/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/dSYMs/' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR'
+2018-05-01 09:45:27 +0000  building file list ... 
+2018-05-01 09:45:27 +0000   0 files...2018-05-01 09:45:27 +0000  61 files to consider
+2018-05-01 09:45:27 +0000  ./
+2018-05-01 09:45:27 +0000  Alamofire.framework.dSYM/
+Alamofire.framework.dSYM/Contents/
+Alamofire.framework.dSYM/Contents/Resources/
+Alamofire.framework.dSYM/Contents/Resources/DWARF/
+ChameleonFramework.framework.dSYM/
+ChameleonFramework.framework.dSYM/Contents/
+ChameleonFramework.framework.dSYM/Contents/Resources/
+ChameleonFramework.framework.dSYM/Contents/Resources/DWARF/
+Realm.framework.dSYM/
+Realm.framework.dSYM/Contents/
+Realm.framework.dSYM/Contents/Resources/
+Realm.framework.dSYM/Contents/Resources/DWARF/
+RealmSwift.framework.dSYM/
+RealmSwift.framework.dSYM/Contents/
+RealmSwift.framework.dSYM/Contents/Resources/
+RealmSwift.framework.dSYM/Contents/Resources/DWARF/
+SVProgressHUD.framework.dSYM/
+SVProgressHUD.framework.dSYM/Contents/
+SVProgressHUD.framework.dSYM/Contents/Resources/
+SVProgressHUD.framework.dSYM/Contents/Resources/DWARF/
+SkyFloatingLabelTextField.framework.dSYM/
+SkyFloatingLabelTextField.framework.dSYM/Contents/
+SkyFloatingLabelTextField.framework.dSYM/Contents/Resources/
+SkyFloatingLabelTextField.framework.dSYM/Contents/Resources/DWARF/
+SwiftyJSON.framework.dSYM/
+SwiftyJSON.framework.dSYM/Contents/
+SwiftyJSON.framework.dSYM/Contents/Resources/
+SwiftyJSON.framework.dSYM/Contents/Resources/DWARF/
+SwipeCellKit.framework.dSYM/
+2018-05-01 09:45:27 +0000  SwipeCellKit.framework.dSYM/Contents/
+SwipeCellKit.framework.dSYM/Contents/Resources/
+SwipeCellKit.framework.dSYM/Contents/Resources/DWARF/
+TransitionButton.framework.dSYM/
+TransitionButton.framework.dSYM/Contents/
+TransitionButton.framework.dSYM/Contents/Resources/
+TransitionButton.framework.dSYM/Contents/Resources/DWARF/
+kba.app.dSYM/
+kba.app.dSYM/Contents/
+kba.app.dSYM/Contents/Resources/
+kba.app.dSYM/Contents/Resources/DWARF/
+2018-05-01 09:45:27 +0000  
+sent 2.20K bytes  received 386 bytes  5.14K bytes/sec
+2018-05-01 09:45:27 +0000  total size is 90.22M  speedup is 35916.99
+2018-05-01 09:45:27 +0000  
+2018-05-01 09:45:27 +0000  /usr/bin/rsync exited with 02018-05-01 09:45:27 +0000  
+
+2018-05-01 09:45:27 +0000  
+2018-05-01 09:45:27 +0000  Running /Applications/Xcode.app/Contents/Developer/usr/bin/symbols '-noTextInSOD' '-noDaemon' '-arch' 'all' '-symbolsPackageDir' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Symbols' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftCoreGraphics.dylib'
+2018-05-01 09:45:27 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftCoreGraphics.dylib [armv7, 0.012716 seconds]:
+/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftCoreGraphics.dylib [armv7s, 0.012716 seconds]:
+/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftCoreGraphics.dylib [arm64, 0.012716 seconds]:
+2018-05-01 09:45:27 +0000  
+2018-05-01 09:45:27 +0000  
+2018-05-01 09:45:27 +0000  2018-05-01 09:45:27 +0000  /Applications/Xcode.app/Contents/Developer/usr/bin/symbols exited with 02018-05-01 09:45:27 +0000  
+
+
+2018-05-01 09:45:27 +0000  2018-05-01 09:45:27 +0000  
+
+2018-05-01 09:45:27 +0000  Processing symbols for libswiftCoreImage.dylib
+2018-05-01 09:45:27 +0000  Running /usr/bin/rsync '-8aPhhE' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftCoreImage.dylib' '--link-dest' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR'
+2018-05-01 09:45:27 +0000  building file list ... 
+2018-05-01 09:45:27 +0000   0 files...2018-05-01 09:45:27 +0000  1 file to consider
+2018-05-01 09:45:27 +0000  
+2018-05-01 09:45:27 +0000  sent 99 bytes  received 20 bytes  238.00 bytes/sec
+total size is 300.44K  speedup is 2585.28
+2018-05-01 09:45:27 +0000  
+2018-05-01 09:45:27 +0000  
+2018-05-01 09:45:27 +0000  2018-05-01 09:45:27 +0000  /usr/bin/rsync exited with 0
+2018-05-01 09:45:27 +0000  
+
+2018-05-01 09:45:27 +0000  
+2018-05-01 09:45:27 +0000  Running /usr/bin/rsync '-8aPhhE' '/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/dSYMs/' '--link-dest' '/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/dSYMs/' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR'
+2018-05-01 09:45:27 +0000  building file list ... 
+2018-05-01 09:45:27 +0000   0 files...2018-05-01 09:45:27 +0000  61 files to consider
+2018-05-01 09:45:27 +0000  ./
+2018-05-01 09:45:27 +0000  Alamofire.framework.dSYM/
+Alamofire.framework.dSYM/Contents/
+2018-05-01 09:45:27 +0000  Alamofire.framework.dSYM/Contents/Resources/
+Alamofire.framework.dSYM/Contents/Resources/DWARF/
+ChameleonFramework.framework.dSYM/
+ChameleonFramework.framework.dSYM/Contents/
+ChameleonFramework.framework.dSYM/Contents/Resources/
+ChameleonFramework.framework.dSYM/Contents/Resources/DWARF/
+Realm.framework.dSYM/
+Realm.framework.dSYM/Contents/
+2018-05-01 09:45:27 +0000  Realm.framework.dSYM/Contents/Resources/
+Realm.framework.dSYM/Contents/Resources/DWARF/
+RealmSwift.framework.dSYM/
+RealmSwift.framework.dSYM/Contents/
+RealmSwift.framework.dSYM/Contents/Resources/
+RealmSwift.framework.dSYM/Contents/Resources/DWARF/
+SVProgressHUD.framework.dSYM/
+SVProgressHUD.framework.dSYM/Contents/
+2018-05-01 09:45:27 +0000  SVProgressHUD.framework.dSYM/Contents/Resources/
+SVProgressHUD.framework.dSYM/Contents/Resources/DWARF/
+SkyFloatingLabelTextField.framework.dSYM/
+SkyFloatingLabelTextField.framework.dSYM/Contents/
+SkyFloatingLabelTextField.framework.dSYM/Contents/Resources/
+SkyFloatingLabelTextField.framework.dSYM/Contents/Resources/DWARF/
+SwiftyJSON.framework.dSYM/
+SwiftyJSON.framework.dSYM/Contents/
+SwiftyJSON.framework.dSYM/Contents/Resources/
+SwiftyJSON.framework.dSYM/Contents/Resources/DWARF/
+SwipeCellKit.framework.dSYM/
+SwipeCellKit.framework.dSYM/Contents/
+2018-05-01 09:45:27 +0000  SwipeCellKit.framework.dSYM/Contents/Resources/
+SwipeCellKit.framework.dSYM/Contents/Resources/DWARF/
+TransitionButton.framework.dSYM/
+TransitionButton.framework.dSYM/Contents/
+TransitionButton.framework.dSYM/Contents/Resources/
+TransitionButton.framework.dSYM/Contents/Resources/DWARF/
+kba.app.dSYM/
+kba.app.dSYM/Contents/
+2018-05-01 09:45:27 +0000  kba.app.dSYM/Contents/Resources/
+kba.app.dSYM/Contents/Resources/DWARF/
+2018-05-01 09:45:27 +0000  
+2018-05-01 09:45:27 +0000  
+2018-05-01 09:45:27 +0000  sent 2.20K bytes  received 386 bytes  5.14K bytes/sec
+total size is 90.22M  speedup is 35916.99
+2018-05-01 09:45:27 +0000  /usr/bin/rsync exited with 02018-05-01 09:45:27 +0000  
+
+2018-05-01 09:45:27 +0000  
+2018-05-01 09:45:27 +0000  Running /Applications/Xcode.app/Contents/Developer/usr/bin/symbols '-noTextInSOD' '-noDaemon' '-arch' 'all' '-symbolsPackageDir' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Symbols' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftCoreImage.dylib'
+2018-05-01 09:45:27 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftCoreImage.dylib [armv7, 0.001595 seconds]:
+/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftCoreImage.dylib [armv7s, 0.001595 seconds]:
+/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftCoreImage.dylib [arm64, 0.001595 seconds]:
+2018-05-01 09:45:27 +0000  
+2018-05-01 09:45:27 +0000  
+2018-05-01 09:45:27 +0000  /Applications/Xcode.app/Contents/Developer/usr/bin/symbols exited with 0
+2018-05-01 09:45:27 +0000  
+2018-05-01 09:45:27 +0000  
+2018-05-01 09:45:27 +0000  Processing symbols for libswiftDarwin.dylib
+2018-05-01 09:45:27 +0000  Running /usr/bin/rsync '-8aPhhE' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftDarwin.dylib' '--link-dest' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR'
+2018-05-01 09:45:27 +0000  building file list ... 
+2018-05-01 09:45:27 +0000   0 files...2018-05-01 09:45:27 +0000  1 file to consider
+2018-05-01 09:45:27 +0000  
+sent 96 bytes  received 20 bytes  232.00 bytes/sec
+2018-05-01 09:45:27 +0000  
+2018-05-01 09:45:27 +0000  total size is 819.08K  speedup is 7230.48
+2018-05-01 09:45:27 +0000  /usr/bin/rsync exited with 0
+2018-05-01 09:45:27 +0000  2018-05-01 09:45:27 +0000  
+
+2018-05-01 09:45:27 +0000  Running /usr/bin/rsync '-8aPhhE' '/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/dSYMs/' '--link-dest' '/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/dSYMs/' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR'
+2018-05-01 09:45:27 +0000  building file list ... 
+2018-05-01 09:45:27 +0000   0 files...2018-05-01 09:45:27 +0000  61 files to consider
+2018-05-01 09:45:27 +0000  ./
+2018-05-01 09:45:27 +0000  Alamofire.framework.dSYM/
+2018-05-01 09:45:27 +0000  Alamofire.framework.dSYM/Contents/
+Alamofire.framework.dSYM/Contents/Resources/
+Alamofire.framework.dSYM/Contents/Resources/DWARF/
+ChameleonFramework.framework.dSYM/
+ChameleonFramework.framework.dSYM/Contents/
+ChameleonFramework.framework.dSYM/Contents/Resources/
+ChameleonFramework.framework.dSYM/Contents/Resources/DWARF/
+Realm.framework.dSYM/
+2018-05-01 09:45:27 +0000  Realm.framework.dSYM/Contents/
+Realm.framework.dSYM/Contents/Resources/
+Realm.framework.dSYM/Contents/Resources/DWARF/
+RealmSwift.framework.dSYM/
+RealmSwift.framework.dSYM/Contents/
+2018-05-01 09:45:27 +0000  RealmSwift.framework.dSYM/Contents/Resources/
+RealmSwift.framework.dSYM/Contents/Resources/DWARF/
+SVProgressHUD.framework.dSYM/
+SVProgressHUD.framework.dSYM/Contents/
+SVProgressHUD.framework.dSYM/Contents/Resources/
+SVProgressHUD.framework.dSYM/Contents/Resources/DWARF/
+SkyFloatingLabelTextField.framework.dSYM/
+SkyFloatingLabelTextField.framework.dSYM/Contents/
+SkyFloatingLabelTextField.framework.dSYM/Contents/Resources/
+2018-05-01 09:45:27 +0000  SkyFloatingLabelTextField.framework.dSYM/Contents/Resources/DWARF/
+SwiftyJSON.framework.dSYM/
+SwiftyJSON.framework.dSYM/Contents/
+SwiftyJSON.framework.dSYM/Contents/Resources/
+SwiftyJSON.framework.dSYM/Contents/Resources/DWARF/
+SwipeCellKit.framework.dSYM/
+SwipeCellKit.framework.dSYM/Contents/
+SwipeCellKit.framework.dSYM/Contents/Resources/
+SwipeCellKit.framework.dSYM/Contents/Resources/DWARF/
+TransitionButton.framework.dSYM/
+TransitionButton.framework.dSYM/Contents/
+TransitionButton.framework.dSYM/Contents/Resources/
+TransitionButton.framework.dSYM/Contents/Resources/DWARF/
+2018-05-01 09:45:27 +0000  kba.app.dSYM/
+kba.app.dSYM/Contents/
+kba.app.dSYM/Contents/Resources/
+kba.app.dSYM/Contents/Resources/DWARF/
+2018-05-01 09:45:27 +0000  
+2018-05-01 09:45:27 +0000  2018-05-01 09:45:27 +0000  sent 2.20K bytes  received 386 bytes  5.14K bytes/sec
+total size is 90.22M  speedup is 35916.99
+
+2018-05-01 09:45:27 +0000  /usr/bin/rsync exited with 02018-05-01 09:45:27 +0000  2018-05-01 09:45:27 +0000  
+
+
+2018-05-01 09:45:27 +0000  Running /Applications/Xcode.app/Contents/Developer/usr/bin/symbols '-noTextInSOD' '-noDaemon' '-arch' 'all' '-symbolsPackageDir' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Symbols' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftDarwin.dylib'
+2018-05-01 09:45:27 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftDarwin.dylib [armv7, 0.007199 seconds]:
+/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftDarwin.dylib [armv7s, 0.007199 seconds]:
+/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftDarwin.dylib [arm64, 0.007199 seconds]:
+2018-05-01 09:45:27 +0000  
+2018-05-01 09:45:27 +0000  
+2018-05-01 09:45:27 +0000  2018-05-01 09:45:27 +0000  /Applications/Xcode.app/Contents/Developer/usr/bin/symbols exited with 0
+2018-05-01 09:45:27 +0000  
+2018-05-01 09:45:27 +0000  
+
+2018-05-01 09:45:27 +0000  Processing symbols for libswiftDispatch.dylib
+2018-05-01 09:45:27 +0000  Running /usr/bin/rsync '-8aPhhE' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftDispatch.dylib' '--link-dest' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR'
+2018-05-01 09:45:27 +0000  building file list ... 
+2018-05-01 09:45:27 +0000   0 files...2018-05-01 09:45:27 +0000  1 file to consider
+2018-05-01 09:45:27 +0000  
+2018-05-01 09:45:27 +0000  sent 98 bytes  received 20 bytes  236.00 bytes/sec
+total size is 2.60M  speedup is 23070.37
+2018-05-01 09:45:27 +0000  
+2018-05-01 09:45:27 +0000  2018-05-01 09:45:27 +0000  /usr/bin/rsync exited with 0
+2018-05-01 09:45:27 +0000  
+
+2018-05-01 09:45:27 +0000  
+2018-05-01 09:45:27 +0000  
+2018-05-01 09:45:27 +0000  Running /usr/bin/rsync '-8aPhhE' '/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/dSYMs/' '--link-dest' '/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/dSYMs/' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR'
+2018-05-01 09:45:27 +0000  building file list ... 
+2018-05-01 09:45:27 +0000   0 files...2018-05-01 09:45:27 +0000  61 files to consider
+2018-05-01 09:45:27 +0000  ./
+2018-05-01 09:45:27 +0000  Alamofire.framework.dSYM/
+2018-05-01 09:45:27 +0000  Alamofire.framework.dSYM/Contents/
+Alamofire.framework.dSYM/Contents/Resources/
+Alamofire.framework.dSYM/Contents/Resources/DWARF/
+ChameleonFramework.framework.dSYM/
+ChameleonFramework.framework.dSYM/Contents/
+ChameleonFramework.framework.dSYM/Contents/Resources/
+ChameleonFramework.framework.dSYM/Contents/Resources/DWARF/
+Realm.framework.dSYM/
+Realm.framework.dSYM/Contents/
+Realm.framework.dSYM/Contents/Resources/
+2018-05-01 09:45:27 +0000  Realm.framework.dSYM/Contents/Resources/DWARF/
+RealmSwift.framework.dSYM/
+RealmSwift.framework.dSYM/Contents/
+RealmSwift.framework.dSYM/Contents/Resources/
+RealmSwift.framework.dSYM/Contents/Resources/DWARF/
+SVProgressHUD.framework.dSYM/
+SVProgressHUD.framework.dSYM/Contents/
+SVProgressHUD.framework.dSYM/Contents/Resources/
+SVProgressHUD.framework.dSYM/Contents/Resources/DWARF/
+SkyFloatingLabelTextField.framework.dSYM/
+2018-05-01 09:45:27 +0000  SkyFloatingLabelTextField.framework.dSYM/Contents/
+SkyFloatingLabelTextField.framework.dSYM/Contents/Resources/
+SkyFloatingLabelTextField.framework.dSYM/Contents/Resources/DWARF/
+SwiftyJSON.framework.dSYM/
+SwiftyJSON.framework.dSYM/Contents/
+SwiftyJSON.framework.dSYM/Contents/Resources/
+SwiftyJSON.framework.dSYM/Contents/Resources/DWARF/
+SwipeCellKit.framework.dSYM/
+2018-05-01 09:45:27 +0000  SwipeCellKit.framework.dSYM/Contents/
+SwipeCellKit.framework.dSYM/Contents/Resources/
+SwipeCellKit.framework.dSYM/Contents/Resources/DWARF/
+TransitionButton.framework.dSYM/
+TransitionButton.framework.dSYM/Contents/
+TransitionButton.framework.dSYM/Contents/Resources/
+TransitionButton.framework.dSYM/Contents/Resources/DWARF/
+2018-05-01 09:45:27 +0000  kba.app.dSYM/
+kba.app.dSYM/Contents/
+kba.app.dSYM/Contents/Resources/
+kba.app.dSYM/Contents/Resources/DWARF/
+2018-05-01 09:45:27 +0000  
+2018-05-01 09:45:27 +0000  sent 2.20K bytes  received 386 bytes  5.14K bytes/sec
+total size is 90.22M  speedup is 35916.99
+2018-05-01 09:45:27 +0000  
+2018-05-01 09:45:27 +0000  2018-05-01 09:45:27 +0000  2018-05-01 09:45:27 +0000  /usr/bin/rsync exited with 0
+
+
+2018-05-01 09:45:27 +0000  2018-05-01 09:45:27 +0000  
+
+2018-05-01 09:45:27 +0000  Running /Applications/Xcode.app/Contents/Developer/usr/bin/symbols '-noTextInSOD' '-noDaemon' '-arch' 'all' '-symbolsPackageDir' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Symbols' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftDispatch.dylib'
+2018-05-01 09:45:28 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftDispatch.dylib [armv7, 0.023259 seconds]:
+/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftDispatch.dylib [armv7s, 0.023259 seconds]:
+/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftDispatch.dylib [arm64, 0.023259 seconds]:
+2018-05-01 09:45:28 +0000  
+2018-05-01 09:45:28 +0000  
+2018-05-01 09:45:28 +0000  /Applications/Xcode.app/Contents/Developer/usr/bin/symbols exited with 02018-05-01 09:45:28 +0000  
+2018-05-01 09:45:28 +0000  
+
+2018-05-01 09:45:28 +0000  Processing symbols for libswiftFoundation.dylib
+2018-05-01 09:45:28 +0000  Running /usr/bin/rsync '-8aPhhE' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftFoundation.dylib' '--link-dest' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR'
+2018-05-01 09:45:28 +0000  building file list ... 
+2018-05-01 09:45:28 +0000   0 files...2018-05-01 09:45:28 +0000  1 file to consider
+2018-05-01 09:45:28 +0000  
+sent 100 bytes  received 20 bytes  240.00 bytes/sec
+2018-05-01 09:45:28 +0000  total size is 28.74M  speedup is 251095.07
+2018-05-01 09:45:28 +0000  
+2018-05-01 09:45:28 +0000  2018-05-01 09:45:28 +0000  /usr/bin/rsync exited with 0
+2018-05-01 09:45:28 +0000  
+
+2018-05-01 09:45:28 +0000  
+2018-05-01 09:45:28 +0000  Running /usr/bin/rsync '-8aPhhE' '/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/dSYMs/' '--link-dest' '/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/dSYMs/' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR'
+2018-05-01 09:45:28 +0000  building file list ... 
+2018-05-01 09:45:28 +0000   0 files...2018-05-01 09:45:28 +0000  61 files to consider
+2018-05-01 09:45:28 +0000  ./
+2018-05-01 09:45:28 +0000  Alamofire.framework.dSYM/
+2018-05-01 09:45:28 +0000  Alamofire.framework.dSYM/Contents/
+Alamofire.framework.dSYM/Contents/Resources/
+Alamofire.framework.dSYM/Contents/Resources/DWARF/
+ChameleonFramework.framework.dSYM/
+ChameleonFramework.framework.dSYM/Contents/
+ChameleonFramework.framework.dSYM/Contents/Resources/
+ChameleonFramework.framework.dSYM/Contents/Resources/DWARF/
+2018-05-01 09:45:28 +0000  Realm.framework.dSYM/
+Realm.framework.dSYM/Contents/
+Realm.framework.dSYM/Contents/Resources/
+Realm.framework.dSYM/Contents/Resources/DWARF/
+RealmSwift.framework.dSYM/
+RealmSwift.framework.dSYM/Contents/
+2018-05-01 09:45:28 +0000  RealmSwift.framework.dSYM/Contents/Resources/
+RealmSwift.framework.dSYM/Contents/Resources/DWARF/
+SVProgressHUD.framework.dSYM/
+SVProgressHUD.framework.dSYM/Contents/
+SVProgressHUD.framework.dSYM/Contents/Resources/
+SVProgressHUD.framework.dSYM/Contents/Resources/DWARF/
+SkyFloatingLabelTextField.framework.dSYM/
+SkyFloatingLabelTextField.framework.dSYM/Contents/
+SkyFloatingLabelTextField.framework.dSYM/Contents/Resources/
+SkyFloatingLabelTextField.framework.dSYM/Contents/Resources/DWARF/
+2018-05-01 09:45:28 +0000  SwiftyJSON.framework.dSYM/
+SwiftyJSON.framework.dSYM/Contents/
+SwiftyJSON.framework.dSYM/Contents/Resources/
+SwiftyJSON.framework.dSYM/Contents/Resources/DWARF/
+SwipeCellKit.framework.dSYM/
+SwipeCellKit.framework.dSYM/Contents/
+SwipeCellKit.framework.dSYM/Contents/Resources/
+SwipeCellKit.framework.dSYM/Contents/Resources/DWARF/
+2018-05-01 09:45:28 +0000  TransitionButton.framework.dSYM/
+TransitionButton.framework.dSYM/Contents/
+TransitionButton.framework.dSYM/Contents/Resources/
+TransitionButton.framework.dSYM/Contents/Resources/DWARF/
+kba.app.dSYM/
+kba.app.dSYM/Contents/
+kba.app.dSYM/Contents/Resources/
+kba.app.dSYM/Contents/Resources/DWARF/
+2018-05-01 09:45:28 +0000  
+sent 2.20K bytes  received 386 bytes  5.14K bytes/sec
+2018-05-01 09:45:28 +0000  total size is 90.22M  speedup is 35916.99
+2018-05-01 09:45:28 +0000  2018-05-01 09:45:28 +0000  /usr/bin/rsync exited with 0
+2018-05-01 09:45:28 +0000  
+
+2018-05-01 09:45:28 +0000  
+2018-05-01 09:45:28 +0000  Running /Applications/Xcode.app/Contents/Developer/usr/bin/symbols '-noTextInSOD' '-noDaemon' '-arch' 'all' '-symbolsPackageDir' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Symbols' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftFoundation.dylib'
+2018-05-01 09:45:28 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftFoundation.dylib [armv7, 0.154568 seconds]:
+/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftFoundation.dylib [armv7s, 0.154568 seconds]:
+/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftFoundation.dylib [arm64, 0.154568 seconds]:
+2018-05-01 09:45:28 +0000  
+2018-05-01 09:45:28 +0000  
+2018-05-01 09:45:28 +0000  2018-05-01 09:45:28 +0000  /Applications/Xcode.app/Contents/Developer/usr/bin/symbols exited with 0
+
+2018-05-01 09:45:28 +0000  
+2018-05-01 09:45:28 +0000  
+2018-05-01 09:45:28 +0000  Processing symbols for libswiftMetal.dylib
+2018-05-01 09:45:28 +0000  Running /usr/bin/rsync '-8aPhhE' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftMetal.dylib' '--link-dest' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR'
+2018-05-01 09:45:28 +0000  building file list ... 
+2018-05-01 09:45:28 +0000   0 files...2018-05-01 09:45:28 +0000  1 file to consider
+2018-05-01 09:45:28 +0000  
+sent 95 bytes  received 20 bytes  230.00 bytes/sec
+2018-05-01 09:45:28 +0000  
+2018-05-01 09:45:28 +0000  total size is 438.39K  speedup is 3903.58
+2018-05-01 09:45:28 +0000  /usr/bin/rsync exited with 0
+2018-05-01 09:45:28 +0000  2018-05-01 09:45:28 +0000  
+
+2018-05-01 09:45:28 +0000  Running /usr/bin/rsync '-8aPhhE' '/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/dSYMs/' '--link-dest' '/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/dSYMs/' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR'
+2018-05-01 09:45:28 +0000  building file list ... 
+2018-05-01 09:45:28 +0000   0 files...2018-05-01 09:45:28 +0000  61 files to consider
+2018-05-01 09:45:28 +0000  ./
+2018-05-01 09:45:28 +0000  Alamofire.framework.dSYM/
+2018-05-01 09:45:28 +0000  Alamofire.framework.dSYM/Contents/
+Alamofire.framework.dSYM/Contents/Resources/
+Alamofire.framework.dSYM/Contents/Resources/DWARF/
+ChameleonFramework.framework.dSYM/
+ChameleonFramework.framework.dSYM/Contents/
+ChameleonFramework.framework.dSYM/Contents/Resources/
+ChameleonFramework.framework.dSYM/Contents/Resources/DWARF/
+Realm.framework.dSYM/
+Realm.framework.dSYM/Contents/
+Realm.framework.dSYM/Contents/Resources/
+Realm.framework.dSYM/Contents/Resources/DWARF/
+2018-05-01 09:45:28 +0000  RealmSwift.framework.dSYM/
+RealmSwift.framework.dSYM/Contents/
+RealmSwift.framework.dSYM/Contents/Resources/
+RealmSwift.framework.dSYM/Contents/Resources/DWARF/
+SVProgressHUD.framework.dSYM/
+SVProgressHUD.framework.dSYM/Contents/
+SVProgressHUD.framework.dSYM/Contents/Resources/
+SVProgressHUD.framework.dSYM/Contents/Resources/DWARF/
+SkyFloatingLabelTextField.framework.dSYM/
+SkyFloatingLabelTextField.framework.dSYM/Contents/
+2018-05-01 09:45:28 +0000  SkyFloatingLabelTextField.framework.dSYM/Contents/Resources/
+SkyFloatingLabelTextField.framework.dSYM/Contents/Resources/DWARF/
+SwiftyJSON.framework.dSYM/
+SwiftyJSON.framework.dSYM/Contents/
+SwiftyJSON.framework.dSYM/Contents/Resources/
+SwiftyJSON.framework.dSYM/Contents/Resources/DWARF/
+SwipeCellKit.framework.dSYM/
+SwipeCellKit.framework.dSYM/Contents/
+SwipeCellKit.framework.dSYM/Contents/Resources/
+2018-05-01 09:45:28 +0000  SwipeCellKit.framework.dSYM/Contents/Resources/DWARF/
+TransitionButton.framework.dSYM/
+TransitionButton.framework.dSYM/Contents/
+TransitionButton.framework.dSYM/Contents/Resources/
+TransitionButton.framework.dSYM/Contents/Resources/DWARF/
+kba.app.dSYM/
+kba.app.dSYM/Contents/
+kba.app.dSYM/Contents/Resources/
+kba.app.dSYM/Contents/Resources/DWARF/
+2018-05-01 09:45:28 +0000  
+2018-05-01 09:45:28 +0000  2018-05-01 09:45:28 +0000  sent 2.20K bytes  received 386 bytes  5.14K bytes/sec
+total size is 90.22M  speedup is 35916.99
+
+2018-05-01 09:45:28 +0000  /usr/bin/rsync exited with 0
+2018-05-01 09:45:28 +0000  2018-05-01 09:45:28 +0000  
+
+2018-05-01 09:45:28 +0000  Running /Applications/Xcode.app/Contents/Developer/usr/bin/symbols '-noTextInSOD' '-noDaemon' '-arch' 'all' '-symbolsPackageDir' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Symbols' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftMetal.dylib'
+2018-05-01 09:45:28 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftMetal.dylib [armv7, 0.002584 seconds]:
+/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftMetal.dylib [armv7s, 0.002584 seconds]:
+/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftMetal.dylib [arm64, 0.002584 seconds]:
+2018-05-01 09:45:28 +0000  2018-05-01 09:45:28 +0000  
+
+2018-05-01 09:45:28 +0000  /Applications/Xcode.app/Contents/Developer/usr/bin/symbols exited with 0
+2018-05-01 09:45:28 +0000  2018-05-01 09:45:28 +0000  
+
+2018-05-01 09:45:28 +0000  Processing symbols for libswiftObjectiveC.dylib
+2018-05-01 09:45:28 +0000  Running /usr/bin/rsync '-8aPhhE' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftObjectiveC.dylib' '--link-dest' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR'
+2018-05-01 09:45:28 +0000  building file list ... 
+2018-05-01 09:45:28 +0000   0 files...2018-05-01 09:45:28 +0000  1 file to consider
+2018-05-01 09:45:28 +0000  
+sent 100 bytes  received 20 bytes  240.00 bytes/sec
+2018-05-01 09:45:28 +0000  
+2018-05-01 09:45:28 +0000  total size is 541.12K  speedup is 4617.60
+2018-05-01 09:45:28 +0000  /usr/bin/rsync exited with 02018-05-01 09:45:28 +0000  
+
+2018-05-01 09:45:28 +0000  
+2018-05-01 09:45:28 +0000  Running /usr/bin/rsync '-8aPhhE' '/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/dSYMs/' '--link-dest' '/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/dSYMs/' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR'
+2018-05-01 09:45:28 +0000  building file list ... 
+2018-05-01 09:45:28 +0000   0 files...2018-05-01 09:45:28 +0000  61 files to consider
+2018-05-01 09:45:28 +0000  ./
+2018-05-01 09:45:28 +0000  Alamofire.framework.dSYM/
+2018-05-01 09:45:28 +0000  Alamofire.framework.dSYM/Contents/
+Alamofire.framework.dSYM/Contents/Resources/
+Alamofire.framework.dSYM/Contents/Resources/DWARF/
+ChameleonFramework.framework.dSYM/
+ChameleonFramework.framework.dSYM/Contents/
+ChameleonFramework.framework.dSYM/Contents/Resources/
+ChameleonFramework.framework.dSYM/Contents/Resources/DWARF/
+Realm.framework.dSYM/
+Realm.framework.dSYM/Contents/
+2018-05-01 09:45:28 +0000  Realm.framework.dSYM/Contents/Resources/
+Realm.framework.dSYM/Contents/Resources/DWARF/
+RealmSwift.framework.dSYM/
+RealmSwift.framework.dSYM/Contents/
+RealmSwift.framework.dSYM/Contents/Resources/
+RealmSwift.framework.dSYM/Contents/Resources/DWARF/
+SVProgressHUD.framework.dSYM/
+SVProgressHUD.framework.dSYM/Contents/
+2018-05-01 09:45:28 +0000  SVProgressHUD.framework.dSYM/Contents/Resources/
+SVProgressHUD.framework.dSYM/Contents/Resources/DWARF/
+SkyFloatingLabelTextField.framework.dSYM/
+SkyFloatingLabelTextField.framework.dSYM/Contents/
+SkyFloatingLabelTextField.framework.dSYM/Contents/Resources/
+2018-05-01 09:45:28 +0000  SkyFloatingLabelTextField.framework.dSYM/Contents/Resources/DWARF/
+SwiftyJSON.framework.dSYM/
+SwiftyJSON.framework.dSYM/Contents/
+SwiftyJSON.framework.dSYM/Contents/Resources/
+SwiftyJSON.framework.dSYM/Contents/Resources/DWARF/
+SwipeCellKit.framework.dSYM/
+SwipeCellKit.framework.dSYM/Contents/
+SwipeCellKit.framework.dSYM/Contents/Resources/
+SwipeCellKit.framework.dSYM/Contents/Resources/DWARF/
+TransitionButton.framework.dSYM/
+TransitionButton.framework.dSYM/Contents/
+TransitionButton.framework.dSYM/Contents/Resources/
+2018-05-01 09:45:28 +0000  TransitionButton.framework.dSYM/Contents/Resources/DWARF/
+kba.app.dSYM/
+kba.app.dSYM/Contents/
+kba.app.dSYM/Contents/Resources/
+kba.app.dSYM/Contents/Resources/DWARF/
+2018-05-01 09:45:28 +0000  
+sent 2.20K bytes  received 386 bytes  5.14K bytes/sec
+total size is 90.22M  speedup is 35916.99
+2018-05-01 09:45:28 +0000  
+2018-05-01 09:45:28 +0000  
+2018-05-01 09:45:28 +0000  /usr/bin/rsync exited with 02018-05-01 09:45:28 +0000  
+
+2018-05-01 09:45:28 +0000  
+2018-05-01 09:45:28 +0000  Running /Applications/Xcode.app/Contents/Developer/usr/bin/symbols '-noTextInSOD' '-noDaemon' '-arch' 'all' '-symbolsPackageDir' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Symbols' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftObjectiveC.dylib'
+2018-05-01 09:45:28 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftObjectiveC.dylib [armv7, 0.004956 seconds]:
+/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftObjectiveC.dylib [armv7s, 0.004956 seconds]:
+/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftObjectiveC.dylib [arm64, 0.004956 seconds]:
+2018-05-01 09:45:28 +0000  
+2018-05-01 09:45:28 +0000  
+2018-05-01 09:45:28 +0000  2018-05-01 09:45:28 +0000  /Applications/Xcode.app/Contents/Developer/usr/bin/symbols exited with 0
+2018-05-01 09:45:28 +0000  
+
+2018-05-01 09:45:28 +0000  
+2018-05-01 09:45:28 +0000  Processing symbols for libswiftQuartzCore.dylib
+2018-05-01 09:45:28 +0000  Running /usr/bin/rsync '-8aPhhE' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftQuartzCore.dylib' '--link-dest' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR'
+2018-05-01 09:45:28 +0000  building file list ... 
+2018-05-01 09:45:28 +0000   0 files...2018-05-01 09:45:28 +0000  1 file to consider
+2018-05-01 09:45:28 +0000  
+sent 100 bytes  received 20 bytes  240.00 bytes/sec
+2018-05-01 09:45:28 +0000  total size is 303.34K  speedup is 2588.53
+2018-05-01 09:45:28 +0000  
+2018-05-01 09:45:28 +0000  
+2018-05-01 09:45:28 +0000  2018-05-01 09:45:28 +0000  /usr/bin/rsync exited with 0
+2018-05-01 09:45:28 +0000  
+
+2018-05-01 09:45:28 +0000  
+2018-05-01 09:45:28 +0000  Running /usr/bin/rsync '-8aPhhE' '/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/dSYMs/' '--link-dest' '/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/dSYMs/' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR'
+2018-05-01 09:45:28 +0000  building file list ... 
+2018-05-01 09:45:28 +0000   0 files...2018-05-01 09:45:28 +0000  61 files to consider
+2018-05-01 09:45:28 +0000  ./
+2018-05-01 09:45:28 +0000  Alamofire.framework.dSYM/
+2018-05-01 09:45:28 +0000  Alamofire.framework.dSYM/Contents/
+Alamofire.framework.dSYM/Contents/Resources/
+Alamofire.framework.dSYM/Contents/Resources/DWARF/
+ChameleonFramework.framework.dSYM/
+ChameleonFramework.framework.dSYM/Contents/
+ChameleonFramework.framework.dSYM/Contents/Resources/
+ChameleonFramework.framework.dSYM/Contents/Resources/DWARF/
+Realm.framework.dSYM/
+Realm.framework.dSYM/Contents/
+Realm.framework.dSYM/Contents/Resources/
+Realm.framework.dSYM/Contents/Resources/DWARF/
+2018-05-01 09:45:28 +0000  RealmSwift.framework.dSYM/
+RealmSwift.framework.dSYM/Contents/
+RealmSwift.framework.dSYM/Contents/Resources/
+RealmSwift.framework.dSYM/Contents/Resources/DWARF/
+SVProgressHUD.framework.dSYM/
+SVProgressHUD.framework.dSYM/Contents/
+SVProgressHUD.framework.dSYM/Contents/Resources/
+SVProgressHUD.framework.dSYM/Contents/Resources/DWARF/
+SkyFloatingLabelTextField.framework.dSYM/
+SkyFloatingLabelTextField.framework.dSYM/Contents/
+2018-05-01 09:45:28 +0000  SkyFloatingLabelTextField.framework.dSYM/Contents/Resources/
+SkyFloatingLabelTextField.framework.dSYM/Contents/Resources/DWARF/
+SwiftyJSON.framework.dSYM/
+SwiftyJSON.framework.dSYM/Contents/
+SwiftyJSON.framework.dSYM/Contents/Resources/
+SwiftyJSON.framework.dSYM/Contents/Resources/DWARF/
+SwipeCellKit.framework.dSYM/
+SwipeCellKit.framework.dSYM/Contents/
+2018-05-01 09:45:28 +0000  SwipeCellKit.framework.dSYM/Contents/Resources/
+SwipeCellKit.framework.dSYM/Contents/Resources/DWARF/
+TransitionButton.framework.dSYM/
+TransitionButton.framework.dSYM/Contents/
+TransitionButton.framework.dSYM/Contents/Resources/
+TransitionButton.framework.dSYM/Contents/Resources/DWARF/
+kba.app.dSYM/
+kba.app.dSYM/Contents/
+2018-05-01 09:45:28 +0000  kba.app.dSYM/Contents/Resources/
+kba.app.dSYM/Contents/Resources/DWARF/
+2018-05-01 09:45:28 +0000  
+2018-05-01 09:45:28 +0000  sent 2.20K bytes  received 386 bytes  5.14K bytes/sec
+total size is 90.22M  speedup is 35916.99
+2018-05-01 09:45:28 +0000  
+2018-05-01 09:45:28 +0000  2018-05-01 09:45:28 +0000  /usr/bin/rsync exited with 0
+
+2018-05-01 09:45:28 +0000  2018-05-01 09:45:28 +0000  
+
+2018-05-01 09:45:28 +0000  Running /Applications/Xcode.app/Contents/Developer/usr/bin/symbols '-noTextInSOD' '-noDaemon' '-arch' 'all' '-symbolsPackageDir' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Symbols' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftQuartzCore.dylib'
+2018-05-01 09:45:29 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftQuartzCore.dylib [armv7, 0.003267 seconds]:
+/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftQuartzCore.dylib [armv7s, 0.003267 seconds]:
+/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftQuartzCore.dylib [arm64, 0.003267 seconds]:
+2018-05-01 09:45:29 +0000  
+2018-05-01 09:45:29 +0000  
+2018-05-01 09:45:29 +0000  /Applications/Xcode.app/Contents/Developer/usr/bin/symbols exited with 02018-05-01 09:45:29 +0000  2018-05-01 09:45:29 +0000  
+
+
+2018-05-01 09:45:29 +0000  Processing symbols for libswiftUIKit.dylib
+2018-05-01 09:45:29 +0000  Running /usr/bin/rsync '-8aPhhE' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftUIKit.dylib' '--link-dest' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR'
+2018-05-01 09:45:29 +0000  building file list ... 
+2018-05-01 09:45:29 +0000   0 files...2018-05-01 09:45:29 +0000  1 file to consider
+2018-05-01 09:45:29 +0000  
+sent 95 bytes  received 20 bytes  230.00 bytes/sec
+2018-05-01 09:45:29 +0000  total size is 1018.59K  speedup is 9069.91
+2018-05-01 09:45:29 +0000  
+2018-05-01 09:45:29 +0000  2018-05-01 09:45:29 +0000  /usr/bin/rsync exited with 02018-05-01 09:45:29 +0000  
+
+
+2018-05-01 09:45:29 +0000  2018-05-01 09:45:29 +0000  
+
+2018-05-01 09:45:29 +0000  Running /usr/bin/rsync '-8aPhhE' '/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/dSYMs/' '--link-dest' '/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/dSYMs/' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR'
+2018-05-01 09:45:29 +0000  building file list ... 
+2018-05-01 09:45:29 +0000   0 files...2018-05-01 09:45:29 +0000  61 files to consider
+2018-05-01 09:45:29 +0000  ./
+2018-05-01 09:45:29 +0000  Alamofire.framework.dSYM/
+2018-05-01 09:45:29 +0000  Alamofire.framework.dSYM/Contents/
+Alamofire.framework.dSYM/Contents/Resources/
+Alamofire.framework.dSYM/Contents/Resources/DWARF/
+ChameleonFramework.framework.dSYM/
+ChameleonFramework.framework.dSYM/Contents/
+ChameleonFramework.framework.dSYM/Contents/Resources/
+ChameleonFramework.framework.dSYM/Contents/Resources/DWARF/
+Realm.framework.dSYM/
+Realm.framework.dSYM/Contents/
+Realm.framework.dSYM/Contents/Resources/
+Realm.framework.dSYM/Contents/Resources/DWARF/
+2018-05-01 09:45:29 +0000  RealmSwift.framework.dSYM/
+RealmSwift.framework.dSYM/Contents/
+RealmSwift.framework.dSYM/Contents/Resources/
+RealmSwift.framework.dSYM/Contents/Resources/DWARF/
+SVProgressHUD.framework.dSYM/
+SVProgressHUD.framework.dSYM/Contents/
+SVProgressHUD.framework.dSYM/Contents/Resources/
+SVProgressHUD.framework.dSYM/Contents/Resources/DWARF/
+SkyFloatingLabelTextField.framework.dSYM/
+SkyFloatingLabelTextField.framework.dSYM/Contents/
+SkyFloatingLabelTextField.framework.dSYM/Contents/Resources/
+SkyFloatingLabelTextField.framework.dSYM/Contents/Resources/DWARF/
+2018-05-01 09:45:29 +0000  SwiftyJSON.framework.dSYM/
+SwiftyJSON.framework.dSYM/Contents/
+SwiftyJSON.framework.dSYM/Contents/Resources/
+SwiftyJSON.framework.dSYM/Contents/Resources/DWARF/
+SwipeCellKit.framework.dSYM/
+SwipeCellKit.framework.dSYM/Contents/
+SwipeCellKit.framework.dSYM/Contents/Resources/
+SwipeCellKit.framework.dSYM/Contents/Resources/DWARF/
+TransitionButton.framework.dSYM/
+TransitionButton.framework.dSYM/Contents/
+TransitionButton.framework.dSYM/Contents/Resources/
+TransitionButton.framework.dSYM/Contents/Resources/DWARF/
+kba.app.dSYM/
+kba.app.dSYM/Contents/
+kba.app.dSYM/Contents/Resources/
+kba.app.dSYM/Contents/Resources/DWARF/
+2018-05-01 09:45:29 +0000  
+2018-05-01 09:45:29 +0000  sent 2.20K bytes  received 386 bytes  5.14K bytes/sec
+total size is 90.22M  speedup is 35916.99
+2018-05-01 09:45:29 +0000  
+2018-05-01 09:45:29 +0000  2018-05-01 09:45:29 +0000  /usr/bin/rsync exited with 0
+2018-05-01 09:45:29 +0000  
+
+2018-05-01 09:45:29 +0000  
+2018-05-01 09:45:29 +0000  Running /Applications/Xcode.app/Contents/Developer/usr/bin/symbols '-noTextInSOD' '-noDaemon' '-arch' 'all' '-symbolsPackageDir' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Symbols' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftUIKit.dylib'
+2018-05-01 09:45:29 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftUIKit.dylib [armv7, 0.006653 seconds]:
+/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftUIKit.dylib [armv7s, 0.006653 seconds]:
+/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftUIKit.dylib [arm64, 0.006653 seconds]:
+2018-05-01 09:45:29 +0000  
+2018-05-01 09:45:29 +0000  
+2018-05-01 09:45:29 +0000  2018-05-01 09:45:29 +0000  /Applications/Xcode.app/Contents/Developer/usr/bin/symbols exited with 0
+2018-05-01 09:45:29 +0000  
+
+2018-05-01 09:45:29 +0000  2018-05-01 09:45:29 +0000  
+
+2018-05-01 09:45:29 +0000  Processing symbols for libswiftos.dylib
+2018-05-01 09:45:29 +0000  Running /usr/bin/rsync '-8aPhhE' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftos.dylib' '--link-dest' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR'
+2018-05-01 09:45:29 +0000  building file list ... 
+2018-05-01 09:45:29 +0000   0 files...2018-05-01 09:45:29 +0000  1 file to consider
+2018-05-01 09:45:29 +0000  
+sent 92 bytes  received 20 bytes  224.00 bytes/sec
+2018-05-01 09:45:29 +0000  total size is 485.52K  speedup is 4439.00
+2018-05-01 09:45:29 +0000  
+2018-05-01 09:45:29 +0000  2018-05-01 09:45:29 +0000  /usr/bin/rsync exited with 0
+
+2018-05-01 09:45:29 +0000  2018-05-01 09:45:29 +0000  
+
+2018-05-01 09:45:29 +0000  Running /usr/bin/rsync '-8aPhhE' '/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/dSYMs/' '--link-dest' '/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/dSYMs/' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR'
+2018-05-01 09:45:29 +0000  building file list ... 
+2018-05-01 09:45:29 +0000   0 files...2018-05-01 09:45:29 +0000  61 files to consider
+2018-05-01 09:45:29 +0000  ./
+2018-05-01 09:45:29 +0000  Alamofire.framework.dSYM/
+Alamofire.framework.dSYM/Contents/
+2018-05-01 09:45:29 +0000  Alamofire.framework.dSYM/Contents/Resources/
+Alamofire.framework.dSYM/Contents/Resources/DWARF/
+ChameleonFramework.framework.dSYM/
+ChameleonFramework.framework.dSYM/Contents/
+ChameleonFramework.framework.dSYM/Contents/Resources/
+ChameleonFramework.framework.dSYM/Contents/Resources/DWARF/
+Realm.framework.dSYM/
+Realm.framework.dSYM/Contents/
+2018-05-01 09:45:29 +0000  Realm.framework.dSYM/Contents/Resources/
+Realm.framework.dSYM/Contents/Resources/DWARF/
+RealmSwift.framework.dSYM/
+RealmSwift.framework.dSYM/Contents/
+RealmSwift.framework.dSYM/Contents/Resources/
+RealmSwift.framework.dSYM/Contents/Resources/DWARF/
+SVProgressHUD.framework.dSYM/
+SVProgressHUD.framework.dSYM/Contents/
+SVProgressHUD.framework.dSYM/Contents/Resources/
+SVProgressHUD.framework.dSYM/Contents/Resources/DWARF/
+SkyFloatingLabelTextField.framework.dSYM/
+SkyFloatingLabelTextField.framework.dSYM/Contents/
+2018-05-01 09:45:29 +0000  SkyFloatingLabelTextField.framework.dSYM/Contents/Resources/
+SkyFloatingLabelTextField.framework.dSYM/Contents/Resources/DWARF/
+SwiftyJSON.framework.dSYM/
+SwiftyJSON.framework.dSYM/Contents/
+SwiftyJSON.framework.dSYM/Contents/Resources/
+SwiftyJSON.framework.dSYM/Contents/Resources/DWARF/
+SwipeCellKit.framework.dSYM/
+SwipeCellKit.framework.dSYM/Contents/
+SwipeCellKit.framework.dSYM/Contents/Resources/
+SwipeCellKit.framework.dSYM/Contents/Resources/DWARF/
+TransitionButton.framework.dSYM/
+TransitionButton.framework.dSYM/Contents/
+2018-05-01 09:45:29 +0000  TransitionButton.framework.dSYM/Contents/Resources/
+TransitionButton.framework.dSYM/Contents/Resources/DWARF/
+kba.app.dSYM/
+kba.app.dSYM/Contents/
+kba.app.dSYM/Contents/Resources/
+kba.app.dSYM/Contents/Resources/DWARF/
+2018-05-01 09:45:29 +0000  
+2018-05-01 09:45:29 +0000  sent 2.20K bytes  received 386 bytes  5.14K bytes/sec
+total size is 90.22M  speedup is 35916.99
+2018-05-01 09:45:29 +0000  
+2018-05-01 09:45:29 +0000  2018-05-01 09:45:29 +0000  /usr/bin/rsync exited with 0
+
+2018-05-01 09:45:29 +0000  2018-05-01 09:45:29 +0000  
+
+2018-05-01 09:45:29 +0000  Running /Applications/Xcode.app/Contents/Developer/usr/bin/symbols '-noTextInSOD' '-noDaemon' '-arch' 'all' '-symbolsPackageDir' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Symbols' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftos.dylib'
+2018-05-01 09:45:29 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftos.dylib [armv7, 0.002609 seconds]:
+/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftos.dylib [armv7s, 0.002609 seconds]:
+/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/libswiftos.dylib [arm64, 0.002609 seconds]:
+2018-05-01 09:45:29 +0000  
+2018-05-01 09:45:29 +0000  
+2018-05-01 09:45:29 +0000  2018-05-01 09:45:29 +0000  /Applications/Xcode.app/Contents/Developer/usr/bin/symbols exited with 0
+
+2018-05-01 09:45:29 +0000  
+2018-05-01 09:45:29 +0000  Excluding symbols for kba.app
+2018-05-01 09:45:29 +0000  Processing step: IDEDistributionCopyAppleProvidedContentStep
+2018-05-01 09:45:29 +0000  Running /usr/bin/ditto '-V' '/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/SwiftSupport' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/SwiftSupport'
+2018-05-01 09:45:29 +0000  >>> Copying /Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/SwiftSupport 
+2018-05-01 09:45:29 +0000  copying file ./iphoneos/libswiftCoreImage.dylib ... 
+2018-05-01 09:45:29 +0000  351529 bytes for ./iphoneos/libswiftCoreImage.dylib
+2018-05-01 09:45:29 +0000  copying file ./iphoneos/libswiftObjectiveC.dylib ... 
+2018-05-01 09:45:29 +0000  737121 bytes for ./iphoneos/libswiftObjectiveC.dylib
+copying file ./iphoneos/libswiftCore.dylib ... 
+2018-05-01 09:45:29 +0000  96713490 bytes for ./iphoneos/libswiftCore.dylib
+copying file ./iphoneos/libswiftCoreGraphics.dylib ... 
+2018-05-01 09:45:29 +0000  2199570 bytes for ./iphoneos/libswiftCoreGraphics.dylib
+2018-05-01 09:45:29 +0000  copying file ./iphoneos/libswiftUIKit.dylib ... 
+2018-05-01 09:45:29 +0000  1410757 bytes for ./iphoneos/libswiftUIKit.dylib
+copying file ./iphoneos/libswiftMetal.dylib ... 
+2018-05-01 09:45:29 +0000  558438 bytes for ./iphoneos/libswiftMetal.dylib
+copying file ./iphoneos/libswiftDispatch.dylib ... 
+2018-05-01 09:45:29 +0000  3697961 bytes for ./iphoneos/libswiftDispatch.dylib
+2018-05-01 09:45:29 +0000  copying file ./iphoneos/libswiftos.dylib ... 
+2018-05-01 09:45:29 +0000  656415 bytes for ./iphoneos/libswiftos.dylib
+copying file ./iphoneos/libswiftCoreFoundation.dylib ... 
+2018-05-01 09:45:29 +0000  288225 bytes for ./iphoneos/libswiftCoreFoundation.dylib
+copying file ./iphoneos/libswiftDarwin.dylib ... 
+2018-05-01 09:45:29 +0000  1091344 bytes for ./iphoneos/libswiftDarwin.dylib
+2018-05-01 09:45:29 +0000  copying file ./iphoneos/libswiftQuartzCore.dylib ... 
+2018-05-01 09:45:29 +0000  369774 bytes for ./iphoneos/libswiftQuartzCore.dylib
+copying file ./iphoneos/libswiftFoundation.dylib ... 
+2018-05-01 09:45:29 +0000  43073646 bytes for ./iphoneos/libswiftFoundation.dylib
+2018-05-01 09:45:29 +0000  2018-05-01 09:45:29 +0000  
+
+2018-05-01 09:45:29 +0000  /usr/bin/ditto exited with 02018-05-01 09:45:29 +0000  2018-05-01 09:45:29 +0000  
+
+
+2018-05-01 09:45:29 +0000  Processing step: IDEDistributionAppThinningStep
+2018-05-01 09:45:29 +0000  Skipping step: IDEDistributionAppThinningStep because it said so
+2018-05-01 09:45:29 +0000  Processing step: IDEDistributionODRStep
+2018-05-01 09:45:29 +0000  Processing step: IDEDistributionStripXattrsStep
+2018-05-01 09:45:29 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fa492826800 'org.cocoapods.Alamofire' '<DVTFilePath:0x7fa48a716e60:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/Alamofire.framework'>'>
+2018-05-01 09:45:29 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fa491e888d0 'org.cocoapods.ChameleonFramework' '<DVTFilePath:0x7fa49280c770:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/ChameleonFramework.framework'>'>
+2018-05-01 09:45:29 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fa492840940 'org.cocoapods.Realm' '<DVTFilePath:0x7fa491e720a0:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/Realm.framework'>'>
+2018-05-01 09:45:29 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fa49280d5e0 'org.cocoapods.RealmSwift' '<DVTFilePath:0x7fa491e57750:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/RealmSwift.framework'>'>
+2018-05-01 09:45:29 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fa491e89400 'org.cocoapods.SVProgressHUD' '<DVTFilePath:0x7fa491bf94a0:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/SVProgressHUD.framework'>'>
+2018-05-01 09:45:29 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fa492824cb0 'org.cocoapods.SkyFloatingLabelTextField' '<DVTFilePath:0x7fa4917abd30:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/SkyFloatingLabelTextField.framework'>'>
+2018-05-01 09:45:29 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fa491e89820 'org.cocoapods.SwiftyJSON' '<DVTFilePath:0x7fa491e4bd40:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/SwiftyJSON.framework'>'>
+2018-05-01 09:45:29 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fa491e83890 'org.cocoapods.SwipeCellKit' '<DVTFilePath:0x7fa48a70bb40:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/SwipeCellKit.framework'>'>
+2018-05-01 09:45:29 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fa491e7b930 'org.cocoapods.TransitionButton' '<DVTFilePath:0x7fa491e4bfc0:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/TransitionButton.framework'>'>
+2018-05-01 09:45:29 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fa48a71b7f0 'com.apple.dt.runtime.swiftCore' '<DVTFilePath:0x7fa491bf5f80:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftCore.dylib'>'>
+2018-05-01 09:45:29 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fa49283dd90 'com.apple.dt.runtime.swiftCoreFoundation' '<DVTFilePath:0x7fa48a70a8c0:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftCoreFoundation.dylib'>'>
+2018-05-01 09:45:29 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fa4928266e0 'com.apple.dt.runtime.swiftCoreGraphics' '<DVTFilePath:0x7fa491bf6b00:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftCoreGraphics.dylib'>'>
+2018-05-01 09:45:29 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fa492832e60 'com.apple.dt.runtime.swiftCoreImage' '<DVTFilePath:0x7fa491e54c50:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftCoreImage.dylib'>'>
+2018-05-01 09:45:29 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fa491be7c70 'com.apple.dt.runtime.swiftDarwin' '<DVTFilePath:0x7fa48a714b80:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftDarwin.dylib'>'>
+2018-05-01 09:45:29 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fa48d693ea0 'com.apple.dt.runtime.swiftDispatch' '<DVTFilePath:0x7fa491e708f0:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftDispatch.dylib'>'>
+2018-05-01 09:45:29 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fa4911f7fb0 'com.apple.dt.runtime.swiftFoundation' '<DVTFilePath:0x7fa491e76a10:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftFoundation.dylib'>'>
+2018-05-01 09:45:29 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fa49281aac0 'com.apple.dt.runtime.swiftMetal' '<DVTFilePath:0x7fa491e6ef90:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftMetal.dylib'>'>
+2018-05-01 09:45:29 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fa491777050 'com.apple.dt.runtime.swiftObjectiveC' '<DVTFilePath:0x7fa491bf5060:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftObjectiveC.dylib'>'>
+2018-05-01 09:45:29 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fa49283d170 'com.apple.dt.runtime.swiftQuartzCore' '<DVTFilePath:0x7fa48a715c70:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftQuartzCore.dylib'>'>
+2018-05-01 09:45:29 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fa491e9b000 'com.apple.dt.runtime.swiftUIKit' '<DVTFilePath:0x7fa491bf8210:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftUIKit.dylib'>'>
+2018-05-01 09:45:29 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fa491e9d440 'com.apple.dt.runtime.swiftos' '<DVTFilePath:0x7fa491e71de0:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftos.dylib'>'>
+2018-05-01 09:45:29 +0000  Running /usr/bin/xattr '-crs' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app'
+2018-05-01 09:45:30 +0000  
+2018-05-01 09:45:30 +0000  
+2018-05-01 09:45:30 +0000  2018-05-01 09:45:30 +0000  /usr/bin/xattr exited with 02018-05-01 09:45:30 +0000  
+
+
+2018-05-01 09:45:30 +0000  
+2018-05-01 09:45:30 +0000  Processing step: IDEDistributionCodesignStep
+2018-05-01 09:45:30 +0000  Entitlements for <IDEDistributionItem: 0x7fa492826800 'org.cocoapods.Alamofire' '<DVTFilePath:0x7fa48a716e60:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/Alamofire.framework'>'>: {
+}
+2018-05-01 09:45:30 +0000  Writing entitlements for <IDEDistributionItem: 0x7fa492826800 'org.cocoapods.Alamofire' '<DVTFilePath:0x7fa48a716e60:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/Alamofire.framework'>'> to: /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlementsSzcLGY
+2018-05-01 09:45:30 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '7E35B0143871DF04BAF2879C7AB450BBD04CF2CB' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlementsSzcLGY' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/Alamofire.framework'
+2018-05-01 09:45:30 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/Alamofire.framework: signed bundle with Mach-O universal (arm64) [org.cocoapods.Alamofire]
+2018-05-01 09:45:30 +0000  
+2018-05-01 09:45:30 +0000  
+2018-05-01 09:45:30 +0000  2018-05-01 09:45:30 +0000  /usr/bin/codesign exited with 0
+
+2018-05-01 09:45:30 +0000  
+2018-05-01 09:45:30 +0000  
+2018-05-01 09:45:30 +0000  Entitlements for <IDEDistributionItem: 0x7fa491e888d0 'org.cocoapods.ChameleonFramework' '<DVTFilePath:0x7fa49280c770:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/ChameleonFramework.framework'>'>: {
+}
+2018-05-01 09:45:30 +0000  Writing entitlements for <IDEDistributionItem: 0x7fa491e888d0 'org.cocoapods.ChameleonFramework' '<DVTFilePath:0x7fa49280c770:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/ChameleonFramework.framework'>'> to: /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlementsOKKEUl
+2018-05-01 09:45:30 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '7E35B0143871DF04BAF2879C7AB450BBD04CF2CB' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlementsOKKEUl' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/ChameleonFramework.framework'
+2018-05-01 09:45:30 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/ChameleonFramework.framework: signed bundle with Mach-O universal (arm64) [org.cocoapods.ChameleonFramework]
+2018-05-01 09:45:30 +0000  
+2018-05-01 09:45:30 +0000  /usr/bin/codesign exited with 02018-05-01 09:45:30 +0000  
+
+2018-05-01 09:45:30 +0000  
+2018-05-01 09:45:30 +0000  Entitlements for <IDEDistributionItem: 0x7fa492840940 'org.cocoapods.Realm' '<DVTFilePath:0x7fa491e720a0:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/Realm.framework'>'>: {
+}
+2018-05-01 09:45:30 +0000  Writing entitlements for <IDEDistributionItem: 0x7fa492840940 'org.cocoapods.Realm' '<DVTFilePath:0x7fa491e720a0:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/Realm.framework'>'> to: /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlementsgZrO5q
+2018-05-01 09:45:30 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '7E35B0143871DF04BAF2879C7AB450BBD04CF2CB' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlementsgZrO5q' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/Realm.framework'
+2018-05-01 09:45:30 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/Realm.framework: signed bundle with Mach-O universal (arm64) [org.cocoapods.Realm]
+2018-05-01 09:45:30 +0000  2018-05-01 09:45:30 +0000  
+
+2018-05-01 09:45:30 +0000  
+2018-05-01 09:45:30 +0000  /usr/bin/codesign exited with 0
+2018-05-01 09:45:30 +0000  
+2018-05-01 09:45:30 +0000  Entitlements for <IDEDistributionItem: 0x7fa49280d5e0 'org.cocoapods.RealmSwift' '<DVTFilePath:0x7fa491e57750:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/RealmSwift.framework'>'>: {
+}
+2018-05-01 09:45:30 +0000  Writing entitlements for <IDEDistributionItem: 0x7fa49280d5e0 'org.cocoapods.RealmSwift' '<DVTFilePath:0x7fa491e57750:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/RealmSwift.framework'>'> to: /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlements8TqANc
+2018-05-01 09:45:30 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '7E35B0143871DF04BAF2879C7AB450BBD04CF2CB' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlements8TqANc' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/RealmSwift.framework'
+2018-05-01 09:45:30 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/RealmSwift.framework: signed bundle with Mach-O universal (arm64) [org.cocoapods.RealmSwift]
+2018-05-01 09:45:30 +0000  
+2018-05-01 09:45:30 +0000  
+2018-05-01 09:45:30 +0000  2018-05-01 09:45:30 +0000  /usr/bin/codesign exited with 0
+
+2018-05-01 09:45:30 +0000  2018-05-01 09:45:30 +0000  
+
+2018-05-01 09:45:30 +0000  Entitlements for <IDEDistributionItem: 0x7fa491e89400 'org.cocoapods.SVProgressHUD' '<DVTFilePath:0x7fa491bf94a0:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/SVProgressHUD.framework'>'>: {
+}
+2018-05-01 09:45:30 +0000  Writing entitlements for <IDEDistributionItem: 0x7fa491e89400 'org.cocoapods.SVProgressHUD' '<DVTFilePath:0x7fa491bf94a0:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/SVProgressHUD.framework'>'> to: /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlementsIHMh5y
+2018-05-01 09:45:30 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '7E35B0143871DF04BAF2879C7AB450BBD04CF2CB' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlementsIHMh5y' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/SVProgressHUD.framework'
+2018-05-01 09:45:31 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/SVProgressHUD.framework: signed bundle with Mach-O universal (arm64) [org.cocoapods.SVProgressHUD]
+2018-05-01 09:45:31 +0000  2018-05-01 09:45:31 +0000  
+
+2018-05-01 09:45:31 +0000  2018-05-01 09:45:31 +0000  /usr/bin/codesign exited with 0
+
+2018-05-01 09:45:31 +0000  2018-05-01 09:45:31 +0000  
+
+2018-05-01 09:45:31 +0000  Entitlements for <IDEDistributionItem: 0x7fa492824cb0 'org.cocoapods.SkyFloatingLabelTextField' '<DVTFilePath:0x7fa4917abd30:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/SkyFloatingLabelTextField.framework'>'>: {
+}
+2018-05-01 09:45:31 +0000  Writing entitlements for <IDEDistributionItem: 0x7fa492824cb0 'org.cocoapods.SkyFloatingLabelTextField' '<DVTFilePath:0x7fa4917abd30:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/SkyFloatingLabelTextField.framework'>'> to: /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlementsuycMOv
+2018-05-01 09:45:31 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '7E35B0143871DF04BAF2879C7AB450BBD04CF2CB' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlementsuycMOv' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/SkyFloatingLabelTextField.framework'
+2018-05-01 09:45:31 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/SkyFloatingLabelTextField.framework: signed bundle with Mach-O universal (arm64) [org.cocoapods.SkyFloatingLabelTextField]
+2018-05-01 09:45:31 +0000  
+2018-05-01 09:45:31 +0000  
+2018-05-01 09:45:31 +0000  
+2018-05-01 09:45:31 +0000  /usr/bin/codesign exited with 0
+2018-05-01 09:45:31 +0000  2018-05-01 09:45:31 +0000  
+
+2018-05-01 09:45:31 +0000  Entitlements for <IDEDistributionItem: 0x7fa491e89820 'org.cocoapods.SwiftyJSON' '<DVTFilePath:0x7fa491e4bd40:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/SwiftyJSON.framework'>'>: {
+}
+2018-05-01 09:45:31 +0000  Writing entitlements for <IDEDistributionItem: 0x7fa491e89820 'org.cocoapods.SwiftyJSON' '<DVTFilePath:0x7fa491e4bd40:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/SwiftyJSON.framework'>'> to: /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlementsYcWpxt
+2018-05-01 09:45:31 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '7E35B0143871DF04BAF2879C7AB450BBD04CF2CB' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlementsYcWpxt' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/SwiftyJSON.framework'
+2018-05-01 09:45:31 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/SwiftyJSON.framework: signed bundle with Mach-O universal (arm64) [org.cocoapods.SwiftyJSON]
+2018-05-01 09:45:31 +0000  
+2018-05-01 09:45:31 +0000  /usr/bin/codesign exited with 02018-05-01 09:45:31 +0000  
+
+2018-05-01 09:45:31 +0000  
+2018-05-01 09:45:31 +0000  Entitlements for <IDEDistributionItem: 0x7fa491e83890 'org.cocoapods.SwipeCellKit' '<DVTFilePath:0x7fa48a70bb40:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/SwipeCellKit.framework'>'>: {
+}
+2018-05-01 09:45:31 +0000  Writing entitlements for <IDEDistributionItem: 0x7fa491e83890 'org.cocoapods.SwipeCellKit' '<DVTFilePath:0x7fa48a70bb40:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/SwipeCellKit.framework'>'> to: /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlementsuPS8yb
+2018-05-01 09:45:31 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '7E35B0143871DF04BAF2879C7AB450BBD04CF2CB' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlementsuPS8yb' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/SwipeCellKit.framework'
+2018-05-01 09:45:31 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/SwipeCellKit.framework: signed bundle with Mach-O universal (arm64) [org.cocoapods.SwipeCellKit]
+2018-05-01 09:45:31 +0000  
+2018-05-01 09:45:31 +0000  
+2018-05-01 09:45:31 +0000  /usr/bin/codesign exited with 02018-05-01 09:45:31 +0000  2018-05-01 09:45:31 +0000  
+
+
+2018-05-01 09:45:31 +0000  Entitlements for <IDEDistributionItem: 0x7fa491e7b930 'org.cocoapods.TransitionButton' '<DVTFilePath:0x7fa491e4bfc0:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/TransitionButton.framework'>'>: {
+}
+2018-05-01 09:45:31 +0000  Writing entitlements for <IDEDistributionItem: 0x7fa491e7b930 'org.cocoapods.TransitionButton' '<DVTFilePath:0x7fa491e4bfc0:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/TransitionButton.framework'>'> to: /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlementsa7mh5G
+2018-05-01 09:45:31 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '7E35B0143871DF04BAF2879C7AB450BBD04CF2CB' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlementsa7mh5G' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/TransitionButton.framework'
+2018-05-01 09:45:31 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/TransitionButton.framework: signed bundle with Mach-O universal (arm64) [org.cocoapods.TransitionButton]
+2018-05-01 09:45:31 +0000  2018-05-01 09:45:31 +0000  
+
+2018-05-01 09:45:31 +0000  /usr/bin/codesign exited with 0
+2018-05-01 09:45:31 +0000  2018-05-01 09:45:31 +0000  
+
+2018-05-01 09:45:31 +0000  Entitlements for <IDEDistributionItem: 0x7fa48a71b7f0 'com.apple.dt.runtime.swiftCore' '<DVTFilePath:0x7fa491bf5f80:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftCore.dylib'>'>: {
+}
+2018-05-01 09:45:31 +0000  Writing entitlements for <IDEDistributionItem: 0x7fa48a71b7f0 'com.apple.dt.runtime.swiftCore' '<DVTFilePath:0x7fa491bf5f80:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftCore.dylib'>'> to: /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlementsBCptKT
+2018-05-01 09:45:31 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '7E35B0143871DF04BAF2879C7AB450BBD04CF2CB' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlementsBCptKT' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftCore.dylib'
+2018-05-01 09:45:31 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftCore.dylib: replacing existing signature
+2018-05-01 09:45:32 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftCore.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCore]
+2018-05-01 09:45:32 +0000  
+2018-05-01 09:45:32 +0000  
+2018-05-01 09:45:32 +0000  
+2018-05-01 09:45:32 +0000  /usr/bin/codesign exited with 02018-05-01 09:45:32 +0000  
+2018-05-01 09:45:32 +0000  
+
+2018-05-01 09:45:32 +0000  Entitlements for <IDEDistributionItem: 0x7fa49283dd90 'com.apple.dt.runtime.swiftCoreFoundation' '<DVTFilePath:0x7fa48a70a8c0:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftCoreFoundation.dylib'>'>: {
+}
+2018-05-01 09:45:32 +0000  Writing entitlements for <IDEDistributionItem: 0x7fa49283dd90 'com.apple.dt.runtime.swiftCoreFoundation' '<DVTFilePath:0x7fa48a70a8c0:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftCoreFoundation.dylib'>'> to: /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlementsBMqi60
+2018-05-01 09:45:32 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '7E35B0143871DF04BAF2879C7AB450BBD04CF2CB' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlementsBMqi60' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftCoreFoundation.dylib'
+2018-05-01 09:45:32 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftCoreFoundation.dylib: replacing existing signature
+2018-05-01 09:45:32 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftCoreFoundation.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCoreFoundation]
+2018-05-01 09:45:32 +0000  
+2018-05-01 09:45:32 +0000  
+2018-05-01 09:45:32 +0000  2018-05-01 09:45:32 +0000  /usr/bin/codesign exited with 0
+
+2018-05-01 09:45:32 +0000  2018-05-01 09:45:32 +0000  
+
+2018-05-01 09:45:32 +0000  Entitlements for <IDEDistributionItem: 0x7fa4928266e0 'com.apple.dt.runtime.swiftCoreGraphics' '<DVTFilePath:0x7fa491bf6b00:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftCoreGraphics.dylib'>'>: {
+}
+2018-05-01 09:45:32 +0000  Writing entitlements for <IDEDistributionItem: 0x7fa4928266e0 'com.apple.dt.runtime.swiftCoreGraphics' '<DVTFilePath:0x7fa491bf6b00:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftCoreGraphics.dylib'>'> to: /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlementsb3xHwI
+2018-05-01 09:45:32 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '7E35B0143871DF04BAF2879C7AB450BBD04CF2CB' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlementsb3xHwI' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftCoreGraphics.dylib'
+2018-05-01 09:45:32 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftCoreGraphics.dylib: replacing existing signature
+2018-05-01 09:45:33 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftCoreGraphics.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCoreGraphics]
+2018-05-01 09:45:33 +0000  
+2018-05-01 09:45:33 +0000  2018-05-01 09:45:33 +0000  
+
+2018-05-01 09:45:33 +0000  /usr/bin/codesign exited with 02018-05-01 09:45:33 +0000  
+2018-05-01 09:45:33 +0000  
+
+2018-05-01 09:45:33 +0000  Entitlements for <IDEDistributionItem: 0x7fa492832e60 'com.apple.dt.runtime.swiftCoreImage' '<DVTFilePath:0x7fa491e54c50:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftCoreImage.dylib'>'>: {
+}
+2018-05-01 09:45:33 +0000  Writing entitlements for <IDEDistributionItem: 0x7fa492832e60 'com.apple.dt.runtime.swiftCoreImage' '<DVTFilePath:0x7fa491e54c50:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftCoreImage.dylib'>'> to: /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlements01vdfP
+2018-05-01 09:45:33 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '7E35B0143871DF04BAF2879C7AB450BBD04CF2CB' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlements01vdfP' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftCoreImage.dylib'
+2018-05-01 09:45:33 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftCoreImage.dylib: replacing existing signature
+2018-05-01 09:45:33 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftCoreImage.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCoreImage]
+2018-05-01 09:45:33 +0000  
+2018-05-01 09:45:33 +0000  
+2018-05-01 09:45:33 +0000  /usr/bin/codesign exited with 02018-05-01 09:45:33 +0000  
+2018-05-01 09:45:33 +0000  
+
+2018-05-01 09:45:33 +0000  Entitlements for <IDEDistributionItem: 0x7fa491be7c70 'com.apple.dt.runtime.swiftDarwin' '<DVTFilePath:0x7fa48a714b80:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftDarwin.dylib'>'>: {
+}
+2018-05-01 09:45:33 +0000  Writing entitlements for <IDEDistributionItem: 0x7fa491be7c70 'com.apple.dt.runtime.swiftDarwin' '<DVTFilePath:0x7fa48a714b80:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftDarwin.dylib'>'> to: /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlementsyTgrjT
+2018-05-01 09:45:33 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '7E35B0143871DF04BAF2879C7AB450BBD04CF2CB' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlementsyTgrjT' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftDarwin.dylib'
+2018-05-01 09:45:33 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftDarwin.dylib: replacing existing signature
+2018-05-01 09:45:33 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftDarwin.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftDarwin]
+2018-05-01 09:45:33 +0000  
+2018-05-01 09:45:33 +0000  2018-05-01 09:45:33 +0000  
+2018-05-01 09:45:33 +0000  /usr/bin/codesign exited with 0
+
+2018-05-01 09:45:33 +0000  
+2018-05-01 09:45:33 +0000  
+2018-05-01 09:45:33 +0000  Entitlements for <IDEDistributionItem: 0x7fa48d693ea0 'com.apple.dt.runtime.swiftDispatch' '<DVTFilePath:0x7fa491e708f0:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftDispatch.dylib'>'>: {
+}
+2018-05-01 09:45:33 +0000  Writing entitlements for <IDEDistributionItem: 0x7fa48d693ea0 'com.apple.dt.runtime.swiftDispatch' '<DVTFilePath:0x7fa491e708f0:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftDispatch.dylib'>'> to: /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlementsgn4fwR
+2018-05-01 09:45:33 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '7E35B0143871DF04BAF2879C7AB450BBD04CF2CB' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlementsgn4fwR' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftDispatch.dylib'
+2018-05-01 09:45:33 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftDispatch.dylib: replacing existing signature
+2018-05-01 09:45:33 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftDispatch.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftDispatch]
+2018-05-01 09:45:33 +0000  
+2018-05-01 09:45:33 +0000  
+2018-05-01 09:45:33 +0000  2018-05-01 09:45:33 +0000  /usr/bin/codesign exited with 0
+
+2018-05-01 09:45:33 +0000  
+2018-05-01 09:45:33 +0000  
+2018-05-01 09:45:33 +0000  Entitlements for <IDEDistributionItem: 0x7fa4911f7fb0 'com.apple.dt.runtime.swiftFoundation' '<DVTFilePath:0x7fa491e76a10:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftFoundation.dylib'>'>: {
+}
+2018-05-01 09:45:33 +0000  Writing entitlements for <IDEDistributionItem: 0x7fa4911f7fb0 'com.apple.dt.runtime.swiftFoundation' '<DVTFilePath:0x7fa491e76a10:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftFoundation.dylib'>'> to: /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlementsIFeQnu
+2018-05-01 09:45:33 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '7E35B0143871DF04BAF2879C7AB450BBD04CF2CB' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlementsIFeQnu' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftFoundation.dylib'
+2018-05-01 09:45:33 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftFoundation.dylib: replacing existing signature
+2018-05-01 09:45:34 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftFoundation.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftFoundation]
+2018-05-01 09:45:34 +0000  
+2018-05-01 09:45:34 +0000  2018-05-01 09:45:34 +0000  
+
+2018-05-01 09:45:34 +0000  /usr/bin/codesign exited with 02018-05-01 09:45:34 +0000  
+2018-05-01 09:45:34 +0000  
+
+2018-05-01 09:45:34 +0000  Entitlements for <IDEDistributionItem: 0x7fa49281aac0 'com.apple.dt.runtime.swiftMetal' '<DVTFilePath:0x7fa491e6ef90:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftMetal.dylib'>'>: {
+}
+2018-05-01 09:45:34 +0000  Writing entitlements for <IDEDistributionItem: 0x7fa49281aac0 'com.apple.dt.runtime.swiftMetal' '<DVTFilePath:0x7fa491e6ef90:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftMetal.dylib'>'> to: /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlementsFApgUv
+2018-05-01 09:45:34 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '7E35B0143871DF04BAF2879C7AB450BBD04CF2CB' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlementsFApgUv' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftMetal.dylib'
+2018-05-01 09:45:34 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftMetal.dylib: replacing existing signature
+2018-05-01 09:45:34 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftMetal.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftMetal]
+2018-05-01 09:45:34 +0000  
+2018-05-01 09:45:34 +0000  
+2018-05-01 09:45:34 +0000  2018-05-01 09:45:34 +0000  /usr/bin/codesign exited with 0
+
+2018-05-01 09:45:34 +0000  
+2018-05-01 09:45:34 +0000  Entitlements for <IDEDistributionItem: 0x7fa491777050 'com.apple.dt.runtime.swiftObjectiveC' '<DVTFilePath:0x7fa491bf5060:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftObjectiveC.dylib'>'>: {
+}
+2018-05-01 09:45:34 +0000  Writing entitlements for <IDEDistributionItem: 0x7fa491777050 'com.apple.dt.runtime.swiftObjectiveC' '<DVTFilePath:0x7fa491bf5060:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftObjectiveC.dylib'>'> to: /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlementsdqEMKR
+2018-05-01 09:45:34 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '7E35B0143871DF04BAF2879C7AB450BBD04CF2CB' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlementsdqEMKR' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftObjectiveC.dylib'
+2018-05-01 09:45:34 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftObjectiveC.dylib: replacing existing signature
+2018-05-01 09:45:34 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftObjectiveC.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftObjectiveC]
+2018-05-01 09:45:34 +0000  
+2018-05-01 09:45:34 +0000  2018-05-01 09:45:34 +0000  
+
+2018-05-01 09:45:34 +0000  /usr/bin/codesign exited with 02018-05-01 09:45:34 +0000  
+
+2018-05-01 09:45:34 +0000  
+2018-05-01 09:45:34 +0000  Entitlements for <IDEDistributionItem: 0x7fa49283d170 'com.apple.dt.runtime.swiftQuartzCore' '<DVTFilePath:0x7fa48a715c70:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftQuartzCore.dylib'>'>: {
+}
+2018-05-01 09:45:34 +0000  Writing entitlements for <IDEDistributionItem: 0x7fa49283d170 'com.apple.dt.runtime.swiftQuartzCore' '<DVTFilePath:0x7fa48a715c70:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftQuartzCore.dylib'>'> to: /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlements6lybQt
+2018-05-01 09:45:34 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '7E35B0143871DF04BAF2879C7AB450BBD04CF2CB' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlements6lybQt' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftQuartzCore.dylib'
+2018-05-01 09:45:34 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftQuartzCore.dylib: replacing existing signature
+2018-05-01 09:45:34 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftQuartzCore.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftQuartzCore]
+2018-05-01 09:45:34 +0000  
+2018-05-01 09:45:34 +0000  
+2018-05-01 09:45:34 +0000  2018-05-01 09:45:34 +0000  /usr/bin/codesign exited with 0
+2018-05-01 09:45:34 +0000  
+
+2018-05-01 09:45:34 +0000  
+2018-05-01 09:45:34 +0000  
+2018-05-01 09:45:34 +0000  Entitlements for <IDEDistributionItem: 0x7fa491e9b000 'com.apple.dt.runtime.swiftUIKit' '<DVTFilePath:0x7fa491bf8210:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftUIKit.dylib'>'>: {
+}
+2018-05-01 09:45:34 +0000  Writing entitlements for <IDEDistributionItem: 0x7fa491e9b000 'com.apple.dt.runtime.swiftUIKit' '<DVTFilePath:0x7fa491bf8210:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftUIKit.dylib'>'> to: /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlementsqRcNFA
+2018-05-01 09:45:34 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '7E35B0143871DF04BAF2879C7AB450BBD04CF2CB' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlementsqRcNFA' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftUIKit.dylib'
+2018-05-01 09:45:34 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftUIKit.dylib: replacing existing signature
+2018-05-01 09:45:34 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftUIKit.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftUIKit]
+2018-05-01 09:45:34 +0000  
+2018-05-01 09:45:34 +0000  
+2018-05-01 09:45:34 +0000  2018-05-01 09:45:34 +0000  /usr/bin/codesign exited with 0
+2018-05-01 09:45:34 +0000  
+
+2018-05-01 09:45:34 +0000  
+2018-05-01 09:45:34 +0000  Entitlements for <IDEDistributionItem: 0x7fa491e9d440 'com.apple.dt.runtime.swiftos' '<DVTFilePath:0x7fa491e71de0:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftos.dylib'>'>: {
+}
+2018-05-01 09:45:34 +0000  Writing entitlements for <IDEDistributionItem: 0x7fa491e9d440 'com.apple.dt.runtime.swiftos' '<DVTFilePath:0x7fa491e71de0:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app/Frameworks/libswiftos.dylib'>'> to: /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlementsaILGFl
+2018-05-01 09:45:34 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '7E35B0143871DF04BAF2879C7AB450BBD04CF2CB' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlementsaILGFl' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftos.dylib'
+2018-05-01 09:45:35 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftos.dylib: replacing existing signature
+2018-05-01 09:45:35 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app/Frameworks/libswiftos.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftos]
+2018-05-01 09:45:35 +0000  
+2018-05-01 09:45:35 +0000  2018-05-01 09:45:35 +0000  /usr/bin/codesign exited with 02018-05-01 09:45:35 +0000  
+
+
+2018-05-01 09:45:35 +0000  Entitlements for <IDEDistributionItem: 0x7fa491e5e240 'ie.infiniteloop.kba' '<DVTFilePath:0x7fa491378010:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app'>'>: {
+    "application-identifier" = "7HYJNY4W65.ie.infiniteloop.kba";
+    "beta-reports-active" = 1;
+    "com.apple.developer.team-identifier" = 7HWLS3RAU9;
+    "get-task-allow" = 0;
+    "keychain-access-groups" =     (
+        "7HYJNY4W65.ie.infiniteloop.kba"
+    );
+}
+2018-05-01 09:45:35 +0000  Writing entitlements for <IDEDistributionItem: 0x7fa491e5e240 'ie.infiniteloop.kba' '<DVTFilePath:0x7fa491378010:'/Users/fiachreid/Library/Developer/Xcode/Archives/2018-05-01/kba 01-05-2018, 09.40.xcarchive/Products/Applications/kba.app'>'> to: /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlementserNkuM
+2018-05-01 09:45:35 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '7E35B0143871DF04BAF2879C7AB450BBD04CF2CB' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/entitlementserNkuM' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app'
+2018-05-01 09:45:36 +0000  /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root/Payload/kba.app: signed app bundle with Mach-O thin (arm64) [ie.infiniteloop.kba]
+2018-05-01 09:45:36 +0000  
+2018-05-01 09:45:36 +0000  
+2018-05-01 09:45:36 +0000  
+2018-05-01 09:45:36 +0000  /usr/bin/codesign exited with 0
+2018-05-01 09:45:36 +0000  
+2018-05-01 09:45:36 +0000  
+2018-05-01 09:45:36 +0000  Processing step: IDEDistributionStreamingZipItemStep
+2018-05-01 09:45:36 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-05-01 09:45:36 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-05-01 09:45:36 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-05-01 09:45:36 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-05-01 09:45:36 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-05-01 09:45:36 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-05-01 09:45:36 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-05-01 09:45:36 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-05-01 09:45:36 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-05-01 09:45:36 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-05-01 09:45:36 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-05-01 09:45:36 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-05-01 09:45:36 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-05-01 09:45:36 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-05-01 09:45:36 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-05-01 09:45:36 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-05-01 09:45:36 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-05-01 09:45:36 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-05-01 09:45:36 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-05-01 09:45:36 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-05-01 09:45:36 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-05-01 09:45:36 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-05-01 09:45:36 +0000  Processing step: IDEDistributionCreateIPAStep
+2018-05-01 09:45:36 +0000  Running /usr/bin/rsync '-8aPhhE' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Symbols' '--link-dest' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root'
+2018-05-01 09:45:36 +0000  building file list ... 
+2018-05-01 09:45:36 +0000   0 files...2018-05-01 09:45:36 +0000  37 files to consider
+2018-05-01 09:45:36 +0000  Symbols/
+2018-05-01 09:45:36 +0000  
+2018-05-01 09:45:36 +0000  sent 2.03K bytes  received 26 bytes  4.11K bytes/sec
+total size is 15.28M  speedup is 7622.26
+2018-05-01 09:45:36 +0000  2018-05-01 09:45:36 +0000  
+
+2018-05-01 09:45:36 +0000  /usr/bin/rsync exited with 02018-05-01 09:45:36 +0000  2018-05-01 09:45:36 +0000  
+
+
+2018-05-01 09:45:36 +0000  Running /usr/bin/ditto '-V' '-c' '-k' '--norsrc' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root' '/var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Packages/kba.ipa'
+2018-05-01 09:45:36 +0000  >>> Copying /var/folders/n3/xw4rnlzj2w9frm95ym0pgcc00000gn/T/XcodeDistPipeline.2lR/Root 
+2018-05-01 09:45:36 +0000  copying file ./BCSymbolMaps/6D7A9AC3-AF56-3682-8D0E-47901332207E.bcsymbolmap ... 
+2018-05-01 09:45:36 +0000  309097 bytes for ./BCSymbolMaps/6D7A9AC3-AF56-3682-8D0E-47901332207E.bcsymbolmap
+2018-05-01 09:45:36 +0000  copying file ./BCSymbolMaps/6D82E300-856C-38E1-8B6D-E727D551FFE5.bcsymbolmap ... 
+2018-05-01 09:45:36 +0000  93192 bytes for ./BCSymbolMaps/6D82E300-856C-38E1-8B6D-E727D551FFE5.bcsymbolmap
+copying file ./BCSymbolMaps/16D573EC-8AB0-3BC4-9A99-A8AC6B3C4904.bcsymbolmap ... 
+2018-05-01 09:45:36 +0000  92289 bytes for ./BCSymbolMaps/16D573EC-8AB0-3BC4-9A99-A8AC6B3C4904.bcsymbolmap
+copying file ./BCSymbolMaps/225DEE1A-643B-34CC-85F7-C1E418A7D168.bcsymbolmap ... 
+2018-05-01 09:45:36 +0000  51971 bytes for ./BCSymbolMaps/225DEE1A-643B-34CC-85F7-C1E418A7D168.bcsymbolmap
+copying file ./BCSymbolMaps/D4CD18B9-E258-363D-A90A-D3574517E0BD.bcsymbolmap ... 
+2018-05-01 09:45:36 +0000  29213 bytes for ./BCSymbolMaps/D4CD18B9-E258-363D-A90A-D3574517E0BD.bcsymbolmap
+copying file ./BCSymbolMaps/943A2B1A-213D-3358-BAD3-F1D7BA71CD6D.bcsymbolmap ... 
+2018-05-01 09:45:36 +0000  32136 bytes for ./BCSymbolMaps/943A2B1A-213D-3358-BAD3-F1D7BA71CD6D.bcsymbolmap
+copying file ./BCSymbolMaps/5E92796F-4092-32E9-9A02-2221E781198D.bcsymbolmap ... 
+2018-05-01 09:45:36 +0000  23922 bytes for ./BCSymbolMaps/5E92796F-4092-32E9-9A02-2221E781198D.bcsymbolmap
+copying file ./BCSymbolMaps/ACD7D03C-C873-3915-A13D-D455130CF7C4.bcsymbolmap ... 
+2018-05-01 09:45:36 +0000  967305 bytes for ./BCSymbolMaps/ACD7D03C-C873-3915-A13D-D455130CF7C4.bcsymbolmap
+2018-05-01 09:45:36 +0000  copying file ./BCSymbolMaps/F57286F0-AC48-3EBD-A431-7CA95774E01A.bcsymbolmap ... 
+2018-05-01 09:45:36 +0000  292773 bytes for ./BCSymbolMaps/F57286F0-AC48-3EBD-A431-7CA95774E01A.bcsymbolmap
+copying file ./BCSymbolMaps/07102257-717F-3D28-B0C5-0409B56D59EC.bcsymbolmap ... 
+2018-05-01 09:45:36 +0000  144873 bytes for ./BCSymbolMaps/07102257-717F-3D28-B0C5-0409B56D59EC.bcsymbolmap
+2018-05-01 09:45:36 +0000  copying file ./Payload/kba.app/de.lproj/LaunchScreen.strings ... 
+2018-05-01 09:45:36 +0000  1 bytes for ./Payload/kba.app/de.lproj/LaunchScreen.strings
+copying file ./Payload/kba.app/de.lproj/Main.strings ... 
+2018-05-01 09:45:36 +0000  1493 bytes for ./Payload/kba.app/de.lproj/Main.strings
+copying file ./Payload/kba.app/de.lproj/Localizable.strings ... 
+2018-05-01 09:45:36 +0000  961 bytes for ./Payload/kba.app/de.lproj/Localizable.strings
+2018-05-01 09:45:36 +0000  copying file ./Payload/kba.app/_CodeSignature/CodeResources ... 
+2018-05-01 09:45:36 +0000  30196 bytes for ./Payload/kba.app/_CodeSignature/CodeResources
+2018-05-01 09:45:36 +0000  copying file ./Payload/kba.app/AppIcon60x60@2x.png ... 
+2018-05-01 09:45:36 +0000  17264 bytes for ./Payload/kba.app/AppIcon60x60@2x.png
+2018-05-01 09:45:36 +0000  copying file ./Payload/kba.app/Base.lproj/Localizable.strings ... 
+471 bytes for ./Payload/kba.app/Base.lproj/Localizable.strings
+2018-05-01 09:45:36 +0000  copying file ./Payload/kba.app/Base.lproj/Main.storyboardc/n5h-E9-nOx-view-OyU-I9-Wh7.nib ... 
+2018-05-01 09:45:36 +0000  4334 bytes for ./Payload/kba.app/Base.lproj/Main.storyboardc/n5h-E9-nOx-view-OyU-I9-Wh7.nib
+copying file ./Payload/kba.app/Base.lproj/Main.storyboardc/ResultsTableViewController.nib ... 
+2018-05-01 09:45:36 +0000  1392 bytes for ./Payload/kba.app/Base.lproj/Main.storyboardc/ResultsTableViewController.nib
+copying file ./Payload/kba.app/Base.lproj/Main.storyboardc/rX0-R8-2v3-view-Syl-uf-n11.nib ... 
+2018-05-01 09:45:36 +0000  4406 bytes for ./Payload/kba.app/Base.lproj/Main.storyboardc/rX0-R8-2v3-view-Syl-uf-n11.nib
+copying file ./Payload/kba.app/Base.lproj/Main.storyboardc/I82-mT-qoe-view-Jd1-cu-ODF.nib ... 
+2018-05-01 09:45:36 +0000  5590 bytes for ./Payload/kba.app/Base.lproj/Main.storyboardc/I82-mT-qoe-view-Jd1-cu-ODF.nib
+copying file ./Payload/kba.app/Base.lproj/Main.storyboardc/1TB-oJ-CBY-view-Ys3-tP-GzZ.nib ... 
+2018-05-01 09:45:36 +0000  4400 bytes for ./Payload/kba.app/Base.lproj/Main.storyboardc/1TB-oJ-CBY-view-Ys3-tP-GzZ.nib
+copying file ./Payload/kba.app/Base.lproj/Main.storyboardc/5Cs-6Y-JLp-view-Z4p-Dy-Etf.nib ... 
+2018-05-01 09:45:36 +0000  5683 bytes for ./Payload/kba.app/Base.lproj/Main.storyboardc/5Cs-6Y-JLp-view-Z4p-Dy-Etf.nib
+copying file ./Payload/kba.app/Base.lproj/Main.storyboardc/UITabBarController-gOX-Xh-t5h.nib ... 
+2018-05-01 09:45:36 +0000  5167 bytes for ./Payload/kba.app/Base.lproj/Main.storyboardc/UITabBarController-gOX-Xh-t5h.nib
+copying file ./Payload/kba.app/Base.lproj/Main.storyboardc/Hej-UV-y4d-view-H74-TF-Fbq.nib ... 
+2018-05-01 09:45:36 +0000  4402 bytes for ./Payload/kba.app/Base.lproj/Main.storyboardc/Hej-UV-y4d-view-H74-TF-Fbq.nib
+copying file ./Payload/kba.app/Base.lproj/Main.storyboardc/UITableViewController-1TB-oJ-CBY.nib ... 
+2018-05-01 09:45:36 +0000  1872 bytes for ./Payload/kba.app/Base.lproj/Main.storyboardc/UITableViewController-1TB-oJ-CBY.nib
+2018-05-01 09:45:36 +0000  copying file ./Payload/kba.app/Base.lproj/Main.storyboardc/RMA-o3-Wg5-view-a4a-Fg-gyO.nib ... 
+2018-05-01 09:45:36 +0000  4309 bytes for ./Payload/kba.app/Base.lproj/Main.storyboardc/RMA-o3-Wg5-view-a4a-Fg-gyO.nib
+copying file ./Payload/kba.app/Base.lproj/Main.storyboardc/UIViewController-5Cs-6Y-JLp.nib ... 
+2018-05-01 09:45:36 +0000  978 bytes for ./Payload/kba.app/Base.lproj/Main.storyboardc/UIViewController-5Cs-6Y-JLp.nib
+copying file ./Payload/kba.app/Base.lproj/Main.storyboardc/UITableViewController-Hej-UV-y4d.nib ... 
+2018-05-01 09:45:36 +0000  1879 bytes for ./Payload/kba.app/Base.lproj/Main.storyboardc/UITableViewController-Hej-UV-y4d.nib
+copying file ./Payload/kba.app/Base.lproj/Main.storyboardc/J9H-RZ-DX7-view-xfa-sL-KmY.nib ... 
+2018-05-01 09:45:36 +0000  4169 bytes for ./Payload/kba.app/Base.lproj/Main.storyboardc/J9H-RZ-DX7-view-xfa-sL-KmY.nib
+copying file ./Payload/kba.app/Base.lproj/Main.storyboardc/UITableViewController-rX0-R8-2v3.nib ... 
+2018-05-01 09:45:36 +0000  1773 bytes for ./Payload/kba.app/Base.lproj/Main.storyboardc/UITableViewController-rX0-R8-2v3.nib
+copying file ./Payload/kba.app/Base.lproj/Main.storyboardc/Info.plist ... 
+2018-05-01 09:45:36 +0000  631 bytes for ./Payload/kba.app/Base.lproj/Main.storyboardc/Info.plist
+2018-05-01 09:45:36 +0000  copying file ./Payload/kba.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib ... 
+2018-05-01 09:45:36 +0000  2328 bytes for ./Payload/kba.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib
+copying file ./Payload/kba.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib ... 
+2018-05-01 09:45:36 +0000  832 bytes for ./Payload/kba.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib
+copying file ./Payload/kba.app/Base.lproj/LaunchScreen.storyboardc/Info.plist ... 
+2018-05-01 09:45:36 +0000  258 bytes for ./Payload/kba.app/Base.lproj/LaunchScreen.storyboardc/Info.plist
+copying file ./Payload/kba.app/kba ... 
+2018-05-01 09:45:36 +0000  988352 bytes for ./Payload/kba.app/kba
+copying file ./Payload/kba.app/Assets.car ... 
+2018-05-01 09:45:36 +0000  1326792 bytes for ./Payload/kba.app/Assets.car
+copying file ./Payload/kba.app/AppIcon76x76@2x~ipad.png ... 
+2018-05-01 09:45:36 +0000  24836 bytes for ./Payload/kba.app/AppIcon76x76@2x~ipad.png
+2018-05-01 09:45:36 +0000  copying file ./Payload/kba.app/Frameworks/TransitionButton.framework/_CodeSignature/CodeResources ... 
+2018-05-01 09:45:36 +0000  2202 bytes for ./Payload/kba.app/Frameworks/TransitionButton.framework/_CodeSignature/CodeResources
+copying file ./Payload/kba.app/Frameworks/TransitionButton.framework/TransitionButton ... 
+2018-05-01 09:45:36 +0000  352576 bytes for ./Payload/kba.app/Frameworks/TransitionButton.framework/TransitionButton
+copying file ./Payload/kba.app/Frameworks/TransitionButton.framework/Info.plist ... 
+2018-05-01 09:45:36 +0000  756 bytes for ./Payload/kba.app/Frameworks/TransitionButton.framework/Info.plist
+2018-05-01 09:45:36 +0000  copying file ./Payload/kba.app/Frameworks/SwiftyJSON.framework/_CodeSignature/CodeResources ... 
+2202 bytes for ./Payload/kba.app/Frameworks/SwiftyJSON.framework/_CodeSignature/CodeResources
+2018-05-01 09:45:36 +0000  copying file ./Payload/kba.app/Frameworks/SwiftyJSON.framework/SwiftyJSON ... 
+2018-05-01 09:45:36 +0000  856736 bytes for ./Payload/kba.app/Frameworks/SwiftyJSON.framework/SwiftyJSON
+copying file ./Payload/kba.app/Frameworks/SwiftyJSON.framework/Info.plist ... 
+2018-05-01 09:45:36 +0000  742 bytes for ./Payload/kba.app/Frameworks/SwiftyJSON.framework/Info.plist
+copying file ./Payload/kba.app/Frameworks/libswiftCoreImage.dylib ... 
+2018-05-01 09:45:36 +0000  308000 bytes for ./Payload/kba.app/Frameworks/libswiftCoreImage.dylib
+2018-05-01 09:45:36 +0000  copying file ./Payload/kba.app/Frameworks/RealmSwift.framework/_CodeSignature/CodeResources ... 
+2018-05-01 09:45:36 +0000  2202 bytes for ./Payload/kba.app/Frameworks/RealmSwift.framework/_CodeSignature/CodeResources
+copying file ./Payload/kba.app/Frameworks/RealmSwift.framework/RealmSwift ... 
+2018-05-01 09:45:36 +0000  2172288 bytes for ./Payload/kba.app/Frameworks/RealmSwift.framework/RealmSwift
+copying file ./Payload/kba.app/Frameworks/RealmSwift.framework/Info.plist ... 
+2018-05-01 09:45:36 +0000  742 bytes for ./Payload/kba.app/Frameworks/RealmSwift.framework/Info.plist
+copying file ./Payload/kba.app/Frameworks/libswiftObjectiveC.dylib ... 
+2018-05-01 09:45:36 +0000  554464 bytes for ./Payload/kba.app/Frameworks/libswiftObjectiveC.dylib
+copying file ./Payload/kba.app/Frameworks/libswiftCore.dylib ... 
+2018-05-01 09:45:39 +0000  66629936 bytes for ./Payload/kba.app/Frameworks/libswiftCore.dylib
+copying file ./Payload/kba.app/Frameworks/libswiftCoreGraphics.dylib ... 
+2018-05-01 09:45:39 +0000  1628928 bytes for ./Payload/kba.app/Frameworks/libswiftCoreGraphics.dylib
+copying file ./Payload/kba.app/Frameworks/libswiftUIKit.dylib ... 
+2018-05-01 09:45:39 +0000  1043392 bytes for ./Payload/kba.app/Frameworks/libswiftUIKit.dylib
+2018-05-01 09:45:39 +0000  copying file ./Payload/kba.app/Frameworks/SVProgressHUD.framework/_CodeSignature/CodeResources ... 
+2018-05-01 09:45:39 +0000  6110 bytes for ./Payload/kba.app/Frameworks/SVProgressHUD.framework/_CodeSignature/CodeResources
+2018-05-01 09:45:39 +0000  copying file ./Payload/kba.app/Frameworks/SVProgressHUD.framework/SVProgressHUD ... 
+2018-05-01 09:45:39 +0000  443312 bytes for ./Payload/kba.app/Frameworks/SVProgressHUD.framework/SVProgressHUD
+2018-05-01 09:45:39 +0000  copying file ./Payload/kba.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/info.png ... 
+2018-05-01 09:45:39 +0000  365 bytes for ./Payload/kba.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/info.png
+copying file ./Payload/kba.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/error@3x.png ... 
+398 bytes for ./Payload/kba.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/error@3x.png
+2018-05-01 09:45:39 +0000  copying file ./Payload/kba.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/angle-mask@3x.png ... 
+2018-05-01 09:45:39 +0000  8319 bytes for ./Payload/kba.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/angle-mask@3x.png
+copying file ./Payload/kba.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/angle-mask@2x.png ... 
+2018-05-01 09:45:39 +0000  4893 bytes for ./Payload/kba.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/angle-mask@2x.png
+copying file ./Payload/kba.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/error@2x.png ... 
+2018-05-01 09:45:39 +0000  306 bytes for ./Payload/kba.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/error@2x.png
+copying file ./Payload/kba.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/info@3x.png ... 
+2018-05-01 09:45:39 +0000  1200 bytes for ./Payload/kba.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/info@3x.png
+2018-05-01 09:45:39 +0000  copying file ./Payload/kba.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/success@2x.png ... 
+462 bytes for ./Payload/kba.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/success@2x.png
+2018-05-01 09:45:39 +0000  copying file ./Payload/kba.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/success@3x.png ... 
+714 bytes for ./Payload/kba.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/success@3x.png
+2018-05-01 09:45:39 +0000  copying file ./Payload/kba.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/info@2x.png ... 
+816 bytes for ./Payload/kba.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/info@2x.png
+copying file ./Payload/kba.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/error.png ... 
+2018-05-01 09:45:39 +0000  184 bytes for ./Payload/kba.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/error.png
+copying file ./Payload/kba.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/success.png ... 
+2018-05-01 09:45:39 +0000  262 bytes for ./Payload/kba.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/success.png
+copying file ./Payload/kba.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/angle-mask.png ... 
+2018-05-01 09:45:39 +0000  1845 bytes for ./Payload/kba.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/angle-mask.png
+copying file ./Payload/kba.app/Frameworks/SVProgressHUD.framework/Info.plist ... 
+2018-05-01 09:45:39 +0000  748 bytes for ./Payload/kba.app/Frameworks/SVProgressHUD.framework/Info.plist
+2018-05-01 09:45:39 +0000  copying file ./Payload/kba.app/Frameworks/libswiftMetal.dylib ... 
+2018-05-01 09:45:39 +0000  449264 bytes for ./Payload/kba.app/Frameworks/libswiftMetal.dylib
+2018-05-01 09:45:39 +0000  copying file ./Payload/kba.app/Frameworks/libswiftDispatch.dylib ... 
+2018-05-01 09:45:39 +0000  2722672 bytes for ./Payload/kba.app/Frameworks/libswiftDispatch.dylib
+2018-05-01 09:45:39 +0000  copying file ./Payload/kba.app/Frameworks/libswiftos.dylib ... 
+2018-05-01 09:45:39 +0000  497520 bytes for ./Payload/kba.app/Frameworks/libswiftos.dylib
+2018-05-01 09:45:39 +0000  copying file ./Payload/kba.app/Frameworks/Realm.framework/_CodeSignature/CodeResources ... 
+2018-05-01 09:45:39 +0000  2202 bytes for ./Payload/kba.app/Frameworks/Realm.framework/_CodeSignature/CodeResources
+copying file ./Payload/kba.app/Frameworks/Realm.framework/Info.plist ... 
+2018-05-01 09:45:39 +0000  732 bytes for ./Payload/kba.app/Frameworks/Realm.framework/Info.plist
+copying file ./Payload/kba.app/Frameworks/Realm.framework/Realm ... 
+2018-05-01 09:45:40 +0000  24544160 bytes for ./Payload/kba.app/Frameworks/Realm.framework/Realm
+2018-05-01 09:45:40 +0000  copying file ./Payload/kba.app/Frameworks/libswiftCoreFoundation.dylib ... 
+2018-05-01 09:45:40 +0000  258112 bytes for ./Payload/kba.app/Frameworks/libswiftCoreFoundation.dylib
+2018-05-01 09:45:40 +0000  copying file ./Payload/kba.app/Frameworks/SwipeCellKit.framework/_CodeSignature/CodeResources ... 
+2018-05-01 09:45:40 +0000  2202 bytes for ./Payload/kba.app/Frameworks/SwipeCellKit.framework/_CodeSignature/CodeResources
+copying file ./Payload/kba.app/Frameworks/SwipeCellKit.framework/SwipeCellKit ... 
+2018-05-01 09:45:40 +0000  1040624 bytes for ./Payload/kba.app/Frameworks/SwipeCellKit.framework/SwipeCellKit
+copying file ./Payload/kba.app/Frameworks/SwipeCellKit.framework/Info.plist ... 
+2018-05-01 09:45:40 +0000  746 bytes for ./Payload/kba.app/Frameworks/SwipeCellKit.framework/Info.plist
+2018-05-01 09:45:40 +0000  copying file ./Payload/kba.app/Frameworks/ChameleonFramework.framework/_CodeSignature/CodeResources ... 
+2018-05-01 09:45:40 +0000  2202 bytes for ./Payload/kba.app/Frameworks/ChameleonFramework.framework/_CodeSignature/CodeResources
+copying file ./Payload/kba.app/Frameworks/ChameleonFramework.framework/ChameleonFramework ... 
+2018-05-01 09:45:40 +0000  590064 bytes for ./Payload/kba.app/Frameworks/ChameleonFramework.framework/ChameleonFramework
+copying file ./Payload/kba.app/Frameworks/ChameleonFramework.framework/Info.plist ... 
+2018-05-01 09:45:40 +0000  760 bytes for ./Payload/kba.app/Frameworks/ChameleonFramework.framework/Info.plist
+copying file ./Payload/kba.app/Frameworks/libswiftDarwin.dylib ... 
+2018-05-01 09:45:40 +0000  839104 bytes for ./Payload/kba.app/Frameworks/libswiftDarwin.dylib
+copying file ./Payload/kba.app/Frameworks/libswiftQuartzCore.dylib ... 
+2018-05-01 09:45:40 +0000  310976 bytes for ./Payload/kba.app/Frameworks/libswiftQuartzCore.dylib
+2018-05-01 09:45:40 +0000  copying file ./Payload/kba.app/Frameworks/Alamofire.framework/_CodeSignature/CodeResources ... 
+2202 bytes for ./Payload/kba.app/Frameworks/Alamofire.framework/_CodeSignature/CodeResources
+2018-05-01 09:45:40 +0000  copying file ./Payload/kba.app/Frameworks/Alamofire.framework/Alamofire ... 
+2018-05-01 09:45:40 +0000  2608688 bytes for ./Payload/kba.app/Frameworks/Alamofire.framework/Alamofire
+copying file ./Payload/kba.app/Frameworks/Alamofire.framework/Info.plist ... 
+2018-05-01 09:45:40 +0000  740 bytes for ./Payload/kba.app/Frameworks/Alamofire.framework/Info.plist
+2018-05-01 09:45:40 +0000  copying file ./Payload/kba.app/Frameworks/SkyFloatingLabelTextField.framework/_CodeSignature/CodeResources ... 
+2018-05-01 09:45:40 +0000  2202 bytes for ./Payload/kba.app/Frameworks/SkyFloatingLabelTextField.framework/_CodeSignature/CodeResources
+2018-05-01 09:45:40 +0000  copying file ./Payload/kba.app/Frameworks/SkyFloatingLabelTextField.framework/SkyFloatingLabelTextField ... 
+2018-05-01 09:45:40 +0000  524800 bytes for ./Payload/kba.app/Frameworks/SkyFloatingLabelTextField.framework/SkyFloatingLabelTextField
+2018-05-01 09:45:40 +0000  copying file ./Payload/kba.app/Frameworks/SkyFloatingLabelTextField.framework/Info.plist ... 
+774 bytes for ./Payload/kba.app/Frameworks/SkyFloatingLabelTextField.framework/Info.plist
+2018-05-01 09:45:40 +0000  copying file ./Payload/kba.app/Frameworks/libswiftFoundation.dylib ... 
+2018-05-01 09:45:42 +0000  30131760 bytes for ./Payload/kba.app/Frameworks/libswiftFoundation.dylib
+2018-05-01 09:45:42 +0000  copying file ./Payload/kba.app/embedded.mobileprovision ... 
+7474 bytes for ./Payload/kba.app/embedded.mobileprovision
+2018-05-01 09:45:42 +0000  copying file ./Payload/kba.app/Info.plist ... 
+1376 bytes for ./Payload/kba.app/Info.plist
+copying file ./Payload/kba.app/PkgInfo ... 
+2018-05-01 09:45:42 +0000  8 bytes for ./Payload/kba.app/PkgInfo
+2018-05-01 09:45:42 +0000  copying file ./SwiftSupport/iphoneos/libswiftCoreImage.dylib ... 
+2018-05-01 09:45:42 +0000  307520 bytes for ./SwiftSupport/iphoneos/libswiftCoreImage.dylib
+copying file ./SwiftSupport/iphoneos/libswiftObjectiveC.dylib ... 
+2018-05-01 09:45:42 +0000  553984 bytes for ./SwiftSupport/iphoneos/libswiftObjectiveC.dylib
+copying file ./SwiftSupport/iphoneos/libswiftCore.dylib ... 
+2018-05-01 09:45:45 +0000  66629456 bytes for ./SwiftSupport/iphoneos/libswiftCore.dylib
+copying file ./SwiftSupport/iphoneos/libswiftCoreGraphics.dylib ... 
+2018-05-01 09:45:45 +0000  1628432 bytes for ./SwiftSupport/iphoneos/libswiftCoreGraphics.dylib
+copying file ./SwiftSupport/iphoneos/libswiftUIKit.dylib ... 
+2018-05-01 09:45:46 +0000  1042912 bytes for ./SwiftSupport/iphoneos/libswiftUIKit.dylib
+copying file ./SwiftSupport/iphoneos/libswiftMetal.dylib ... 
+2018-05-01 09:45:46 +0000  448768 bytes for ./SwiftSupport/iphoneos/libswiftMetal.dylib
+copying file ./SwiftSupport/iphoneos/libswiftDispatch.dylib ... 
+2018-05-01 09:45:46 +0000  2722176 bytes for ./SwiftSupport/iphoneos/libswiftDispatch.dylib
+2018-05-01 09:45:46 +0000  copying file ./SwiftSupport/iphoneos/libswiftos.dylib ... 
+2018-05-01 09:45:46 +0000  497040 bytes for ./SwiftSupport/iphoneos/libswiftos.dylib
+copying file ./SwiftSupport/iphoneos/libswiftCoreFoundation.dylib ... 
+2018-05-01 09:45:46 +0000  257616 bytes for ./SwiftSupport/iphoneos/libswiftCoreFoundation.dylib
+copying file ./SwiftSupport/iphoneos/libswiftDarwin.dylib ... 
+2018-05-01 09:45:46 +0000  838608 bytes for ./SwiftSupport/iphoneos/libswiftDarwin.dylib
+copying file ./SwiftSupport/iphoneos/libswiftQuartzCore.dylib ... 
+2018-05-01 09:45:46 +0000  310496 bytes for ./SwiftSupport/iphoneos/libswiftQuartzCore.dylib
+copying file ./SwiftSupport/iphoneos/libswiftFoundation.dylib ... 
+2018-05-01 09:45:47 +0000  30131264 bytes for ./SwiftSupport/iphoneos/libswiftFoundation.dylib
+2018-05-01 09:45:47 +0000  copying file ./Symbols/DCFD7479-6F7F-3200-AF77-BF3EBA498355.symbols ... 
+2018-05-01 09:45:47 +0000  2368 bytes for ./Symbols/DCFD7479-6F7F-3200-AF77-BF3EBA498355.symbols
+copying file ./Symbols/52EBEF45-5DF1-317D-8310-F05CEE9ED74D.symbols ... 
+2018-05-01 09:45:47 +0000  13208 bytes for ./Symbols/52EBEF45-5DF1-317D-8310-F05CEE9ED74D.symbols
+2018-05-01 09:45:47 +0000  copying file ./Symbols/823D89E9-5018-3004-B07A-8385380D65C7.symbols ... 
+2018-05-01 09:45:47 +0000  6592 bytes for ./Symbols/823D89E9-5018-3004-B07A-8385380D65C7.symbols
+2018-05-01 09:45:47 +0000  copying file ./Symbols/6E35C3D1-15C2-316C-87B3-DDA8AF5F1D72.symbols ... 
+2018-05-01 09:45:47 +0000  43960 bytes for ./Symbols/6E35C3D1-15C2-316C-87B3-DDA8AF5F1D72.symbols
+2018-05-01 09:45:47 +0000  copying file ./Symbols/81F66E04-BAB1-33FE-B336-9B4162A68AFC.symbols ... 
+2018-05-01 09:45:47 +0000  2472 bytes for ./Symbols/81F66E04-BAB1-33FE-B336-9B4162A68AFC.symbols
+copying file ./Symbols/CACBF3AE-8ABB-362C-B85E-1BFC5879DDF8.symbols ... 
+2018-05-01 09:45:47 +0000  21552 bytes for ./Symbols/CACBF3AE-8ABB-362C-B85E-1BFC5879DDF8.symbols
+2018-05-01 09:45:47 +0000  copying file ./Symbols/99FE325C-BA6F-32B8-80AF-4F65D3411517.symbols ... 
+2018-05-01 09:45:47 +0000  3348520 bytes for ./Symbols/99FE325C-BA6F-32B8-80AF-4F65D3411517.symbols
+2018-05-01 09:45:47 +0000  copying file ./Symbols/A8918F61-41B8-31F7-8310-248489B980D5.symbols ... 
+2018-05-01 09:45:47 +0000  44536 bytes for ./Symbols/A8918F61-41B8-31F7-8310-248489B980D5.symbols
+2018-05-01 09:45:47 +0000  copying file ./Symbols/5C914A0C-CE08-38DE-8250-E6896D037E6A.symbols ... 
+2018-05-01 09:45:47 +0000  12952 bytes for ./Symbols/5C914A0C-CE08-38DE-8250-E6896D037E6A.symbols
+2018-05-01 09:45:47 +0000  copying file ./Symbols/51BCAE24-E868-3046-B714-A4DC8AD58AE4.symbols ... 
+2018-05-01 09:45:47 +0000  103104 bytes for ./Symbols/51BCAE24-E868-3046-B714-A4DC8AD58AE4.symbols
+2018-05-01 09:45:47 +0000  copying file ./Symbols/B6FA4187-E4D5-3312-9FAC-8A7793454110.symbols ... 
+2018-05-01 09:45:47 +0000  223640 bytes for ./Symbols/B6FA4187-E4D5-3312-9FAC-8A7793454110.symbols
+2018-05-01 09:45:47 +0000  copying file ./Symbols/901FAE5E-9E96-37BC-B743-01B3B63E235D.symbols ... 
+2018-05-01 09:45:47 +0000  21552 bytes for ./Symbols/901FAE5E-9E96-37BC-B743-01B3B63E235D.symbols
+2018-05-01 09:45:47 +0000  copying file ./Symbols/E3FAAA76-0D12-35BA-92BA-2D22987F0638.symbols ... 
+2018-05-01 09:45:47 +0000  6592 bytes for ./Symbols/E3FAAA76-0D12-35BA-92BA-2D22987F0638.symbols
+copying file ./Symbols/39B93A13-DBC8-3E0C-A1B3-35FABA5480B1.symbols ... 
+2018-05-01 09:45:47 +0000  2728 bytes for ./Symbols/39B93A13-DBC8-3E0C-A1B3-35FABA5480B1.symbols
+2018-05-01 09:45:47 +0000  copying file ./Symbols/8ED77568-C9ED-3229-BA7A-6B0D92719402.symbols ... 
+2018-05-01 09:45:47 +0000  21592 bytes for ./Symbols/8ED77568-C9ED-3229-BA7A-6B0D92719402.symbols
+2018-05-01 09:45:47 +0000  copying file ./Symbols/84C6189D-14AC-327A-AD00-F813181D2BD1.symbols ... 
+2018-05-01 09:45:48 +0000  3347936 bytes for ./Symbols/84C6189D-14AC-327A-AD00-F813181D2BD1.symbols
+2018-05-01 09:45:48 +0000  copying file ./Symbols/966DDD4D-8A03-3041-9D42-A37268354104.symbols ... 
+2018-05-01 09:45:48 +0000  6928 bytes for ./Symbols/966DDD4D-8A03-3041-9D42-A37268354104.symbols
+copying file ./Symbols/F1F2287F-B515-3A28-BEEA-12EC2D547BF8.symbols ... 
+2018-05-01 09:45:48 +0000  102384 bytes for ./Symbols/F1F2287F-B515-3A28-BEEA-12EC2D547BF8.symbols
+2018-05-01 09:45:48 +0000  copying file ./Symbols/F8DBDC31-7EB7-3A35-AC52-2490830DDBD4.symbols ... 
+2018-05-01 09:45:48 +0000  60328 bytes for ./Symbols/F8DBDC31-7EB7-3A35-AC52-2490830DDBD4.symbols
+2018-05-01 09:45:48 +0000  copying file ./Symbols/DBD251FE-2608-3963-A0A0-D8A86EB64E0C.symbols ... 
+2018-05-01 09:45:48 +0000  13208 bytes for ./Symbols/DBD251FE-2608-3963-A0A0-D8A86EB64E0C.symbols
+2018-05-01 09:45:48 +0000  copying file ./Symbols/9433FC53-F726-30DC-8C53-851703DD440B.symbols ... 
+2018-05-01 09:45:48 +0000  2816 bytes for ./Symbols/9433FC53-F726-30DC-8C53-851703DD440B.symbols
+copying file ./Symbols/1194F495-00EA-38CB-BCBA-E0EF1A3B0D14.symbols ... 
+2018-05-01 09:45:48 +0000  60000 bytes for ./Symbols/1194F495-00EA-38CB-BCBA-E0EF1A3B0D14.symbols
+2018-05-01 09:45:48 +0000  copying file ./Symbols/844914D5-7322-3A0B-95E1-1B380BE9D18B.symbols ... 
+2018-05-01 09:45:48 +0000  1510736 bytes for ./Symbols/844914D5-7322-3A0B-95E1-1B380BE9D18B.symbols
+2018-05-01 09:45:48 +0000  copying file ./Symbols/402FD36F-3025-37FF-93CD-C58DCA7ED35D.symbols ... 
+2018-05-01 09:45:48 +0000  13120 bytes for ./Symbols/402FD36F-3025-37FF-93CD-C58DCA7ED35D.symbols
+2018-05-01 09:45:48 +0000  copying file ./Symbols/CA49E7B9-407C-3436-9E71-1BD96983265C.symbols ... 
+2018-05-01 09:45:48 +0000  2368 bytes for ./Symbols/CA49E7B9-407C-3436-9E71-1BD96983265C.symbols
+copying file ./Symbols/8AEF7D3A-C8E4-3618-A204-14353E0A88FB.symbols ... 
+2018-05-01 09:45:48 +0000  2728 bytes for ./Symbols/8AEF7D3A-C8E4-3618-A204-14353E0A88FB.symbols
+2018-05-01 09:45:48 +0000  copying file ./Symbols/93D62379-9897-3127-BFD3-526BB4013E5F.symbols ... 
+2018-05-01 09:45:48 +0000  12952 bytes for ./Symbols/93D62379-9897-3127-BFD3-526BB4013E5F.symbols
+2018-05-01 09:45:48 +0000  copying file ./Symbols/31302350-F2A9-398B-9DB7-89AF41C9F6C8.symbols ... 
+2018-05-01 09:45:48 +0000  12760 bytes for ./Symbols/31302350-F2A9-398B-9DB7-89AF41C9F6C8.symbols
+2018-05-01 09:45:48 +0000  copying file ./Symbols/3A18E7ED-93D3-385A-968F-4EB382A46370.symbols ... 
+2018-05-01 09:45:48 +0000  103176 bytes for ./Symbols/3A18E7ED-93D3-385A-968F-4EB382A46370.symbols
+2018-05-01 09:45:48 +0000  copying file ./Symbols/3DB343D4-7102-3B33-8565-DF200CC0197E.symbols ... 
+2018-05-01 09:45:48 +0000  3329432 bytes for ./Symbols/3DB343D4-7102-3B33-8565-DF200CC0197E.symbols
+2018-05-01 09:45:48 +0000  copying file ./Symbols/E82A7F82-30CF-326A-B53A-424CF8E39570.symbols ... 
+2018-05-01 09:45:48 +0000  221720 bytes for ./Symbols/E82A7F82-30CF-326A-B53A-424CF8E39570.symbols
+2018-05-01 09:45:48 +0000  copying file ./Symbols/83D74E0A-99F2-3658-A591-F4ABBD60C578.symbols ... 
+2018-05-01 09:45:48 +0000  44536 bytes for ./Symbols/83D74E0A-99F2-3658-A591-F4ABBD60C578.symbols
+2018-05-01 09:45:48 +0000  copying file ./Symbols/39002AAF-2C42-3487-80AB-6EBA82C171E1.symbols ... 
+2018-05-01 09:45:48 +0000  1504856 bytes for ./Symbols/39002AAF-2C42-3487-80AB-6EBA82C171E1.symbols
+2018-05-01 09:45:48 +0000  copying file ./Symbols/ED0A87D8-337C-3482-8319-4442A2EC42BF.symbols ... 
+2018-05-01 09:45:48 +0000  1510592 bytes for ./Symbols/ED0A87D8-337C-3482-8319-4442A2EC42BF.symbols
+2018-05-01 09:45:48 +0000  copying file ./Symbols/9B2B8FE3-E073-3684-A26F-B8CBB8A7C9AE.symbols ... 
+2018-05-01 09:45:48 +0000  60328 bytes for ./Symbols/9B2B8FE3-E073-3684-A26F-B8CBB8A7C9AE.symbols
+2018-05-01 09:45:48 +0000  copying file ./Symbols/9E1FC0B9-5A61-3A1D-98D5-BAC795B97779.symbols ... 
+2018-05-01 09:45:48 +0000  223712 bytes for ./Symbols/9E1FC0B9-5A61-3A1D-98D5-BAC795B97779.symbols
+2018-05-01 09:45:48 +0000  
+2018-05-01 09:45:48 +0000  2018-05-01 09:45:48 +0000  /usr/bin/ditto exited with 0
+2018-05-01 09:45:48 +0000  
+
+2018-05-01 09:45:48 +0000  
+2018-05-01 09:45:48 +0000  Processing step: IDEDistributionCreateManifestStep
+2018-05-01 09:45:48 +0000  Skipping step: IDEDistributionCreateManifestStep because it said so
